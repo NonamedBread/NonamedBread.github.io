@@ -1,5 +1,5 @@
 ---
-title: "정처기실기"
+title: "정처기 실기"
 layout: archive
 permalink: categories/정처기실기    
 author_profile: true

@@ -3,9 +3,9 @@ main:
   - title: "Home"
     url: https://NonamedBread.github.io
   - title: "Category"
-    url: /collection-archive/
+  #  url: /collection-archive/
   - title: "About Me"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  #  url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "GitHub"
     url: https://github.com/NonamedBread
   

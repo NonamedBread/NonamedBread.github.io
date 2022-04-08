@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -102,8 +102,8 @@ analytics:
 
 # Site Author
 author:
-  avatar           : "assets/images/profile.jpg"
-  name             : "빵떡쓰"
+  avatar           : "https://user-images.githubusercontent.com/93482597/162416903-81312dfe-8272-48c0-9686-dd542041207c.jpg"
+  name             : "Lee Kyuhwan"
   bio              : "Now I am Deep Dive into Blockchain"
   location         : "Gyeonggi, South Korea"
   email            :

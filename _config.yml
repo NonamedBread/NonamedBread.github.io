@@ -102,15 +102,15 @@ analytics:
 
 # Site Author
 author:
-  avatar           :  path of avatar image, e.g. "/assets/images/myPainting.jpg"
-  name             : "공부하는 빵돌이"
-  bio              : "Now i am Deep Dive into Blockchain"
+  avatar           : "assets/images/profile.jpg"
+  name             : "빵떡쓰"
+  bio              : "Now I am Deep Dive into Blockchain"
   location         : "Gyeonggi, South Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:lgh778923@gmail.com"
+       #url: "mailto: lgh778923@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -122,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://NonamedBread.github.io"
+      #url: "https://NonamedBread.github.io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

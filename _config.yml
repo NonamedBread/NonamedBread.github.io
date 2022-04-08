@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  avatar           : "https://user-images.githubusercontent.com/93482597/162416903-81312dfe-8272-48c0-9686-dd542041207c.jpg"
+  avatar           : "https://user-images.githubusercontent.com/93482597/162436959-6c42068b-4a02-41f8-a861-11d07864906e.jpg"
   name             : "Lee Kyuhwan"
   bio              : "Now I am Deep Dive into Blockchain"
   location         : "Gyeonggi, South Korea"
@@ -288,3 +288,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar_main: true

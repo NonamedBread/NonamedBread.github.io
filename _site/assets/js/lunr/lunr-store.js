@@ -16,4 +16,10 @@ var store = [{
         "tags": ["EIP_PS"],
         "url": "/eip_ps/6~7%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8/",
         "teaser": null
+      },{
+        "title": "Test",
+        "excerpt":"Test  ","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/Test/",
+        "teaser": null
       }]

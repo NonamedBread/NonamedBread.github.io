@@ -356,7 +356,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-소프트웨어-생명-주기">1. 소프트웨어 생명 주기</a><ul><li><a href="#소프트웨어-생명-주기software-life-cycle">소프트웨어 생명 주기(Software Life Cycle)</a></li><li><a href="#폭포수-모형waterfall-model-원형-모형">폭포수 모형(Waterfall Model, 원형 모형)</a></li><li><a href="#프로토타입-모형prototype-model-원형-모형">프로토타입 모형(Prototype Model, 원형 모형)</a></li><li><a href="#나선형-모형spiral-model-점진적-모형">나선형 모형(Spiral Model, 점진적 모형)</a></li><li><a href="#애자일-모형agile-model">애자일 모형(Agile Model)</a></li><li><a href="#애자일-개발-4가지-핵심-가치">애자일 개발 4가지 핵심 가치</a></li><li><a href="#소프트웨어-공학">소프트웨어 공학</a></li></ul></li><li><a href="#2-스크럼scrum-기법">2. 스크럼(Scrum) 기법</a><ul><li><a href="#스크럼scrum">스크럼(Scrum)</a></li><li><a href="#스크럼-팀">스크럼 팀</a></li><li><a href="#스크럼-개발-프로세스">스크럼 개발 프로세스</a></li></ul></li><li><a href="#3-xpextreme-programming-기법">3. XP(eXtreme Programming) 기법</a><ul><li><a href="#xpextreme-programming">xp(eXtreme Programming)</a></li><li><a href="#xp-개발-프로세스">xp 개발 프로세스</a></li><li><a href="#xp의-주요-실천-방법practice">xp의 주요 실천 방법(Practice)</a></li></ul></li><li><a href="#4-현행-시스템-파악">4. 현행 시스템 파악</a></li></ul>
+              <ul class="toc__menu"><li><a href="#1-소프트웨어-생명-주기">1. 소프트웨어 생명 주기</a><ul><li><a href="#소프트웨어-생명-주기software-life-cycle">소프트웨어 생명 주기(Software Life Cycle)</a></li><li><a href="#폭포수-모형waterfall-model-원형-모형">폭포수 모형(Waterfall Model, 원형 모형)</a></li><li><a href="#프로토타입-모형prototype-model-원형-모형">프로토타입 모형(Prototype Model, 원형 모형)</a></li><li><a href="#나선형-모형spiral-model-점진적-모형">나선형 모형(Spiral Model, 점진적 모형)</a></li><li><a href="#애자일-모형agile-model">애자일 모형(Agile Model)</a></li><li><a href="#애자일-개발-4가지-핵심-가치">애자일 개발 4가지 핵심 가치</a></li><li><a href="#소프트웨어-공학">소프트웨어 공학</a></li></ul></li><li><a href="#2-스크럼scrum-기법">2. 스크럼(Scrum) 기법</a><ul><li><a href="#스크럼scrum">스크럼(Scrum)</a></li><li><a href="#스크럼-팀">스크럼 팀</a></li><li><a href="#스크럼-개발-프로세스">스크럼 개발 프로세스</a></li></ul></li><li><a href="#3-xpextreme-programming-기법">3. XP(eXtreme Programming) 기법</a><ul><li><a href="#xpextreme-programming">xp(eXtreme Programming)</a></li><li><a href="#xp-개발-프로세스">xp 개발 프로세스</a></li><li><a href="#xp의-주요-실천-방법practice">xp의 주요 실천 방법(Practice)</a></li></ul></li><li><a href="#4-현행-시스템-파악">4. 현행 시스템 파악</a></li><li><a href="#5-개발-기술-환경-파악">5. 개발 기술 환경 파악</a><ul><li><a href="#개발-기술-환경-파악의-개요">개발 기술 환경 파악의 개요</a></li><li><a href="#운영체제os--operating-system">운영체제(OS , Operating System)</a></li><li><a href="#데이터베이스-관리-시스템dbms-database-mangement-system">데이터베이스 관리 시스템(DBMS; DataBase Mangement System)</a></li><li><a href="#웹-애플리케이션-서버was-web-application-server">웹 애플리케이션 서버(WAS; Web Application Server)</a></li><li><a href="#오픈-소스-open-source">오픈 소스 (Open Source)</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -527,21 +527,43 @@
       <li>단순성(Simplicity)</li>
       <li>용기(Courage)</li>
       <li>존중(Respect)</li>
-      <li>피드백(Feedback)
-        <blockquote>
-          <p>용단의피존</p>
-          <h2 id="xp-개발-프로세스">xp 개발 프로세스</h2>
-          <p>|프로세스|내용|
-|—|—|
-|릴리즈 계획 수립<br />(Release Planning)|부분 혹은 전체 개발 완료 시점에 대한 일정을 수립<br />몇개의 스토리가 적용되어 부분적으로 기능이 완료된 제품을 제공하는 것을 릴리즈라고 함|
-|이터레이션<br />(Iteration, 주기)|실제 개발 작업을 진행하는 과정으로, 보통 1~3주 정도의 기간으로 진행됨|
-|승인 검사<br />(Acceptance Test, 인수 테스트)|하나의 이터레이션 안에서 부분 완료 제품이 구현되면 수행하는 테스트|
-|소규모 릴리즈<br />(Small Release)|요구사항에 유연하게 대응할 수 있도록 릴리즈의 규모를 축소 한 것|</p>
-        </blockquote>
-      </li>
+      <li>피드백(Feedback)</li>
     </ul>
   </li>
 </ul>
+
+<blockquote>
+  <p>용단의피존</p>
+</blockquote>
+
+<h2 id="xp-개발-프로세스">xp 개발 프로세스</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>프로세스</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>릴리즈 계획 수립<br />(Release Planning)</td>
+      <td>부분 혹은 전체 개발 완료 시점에 대한 일정을 수립<br />몇개의 스토리가 적용되어 부분적으로 기능이 완료된 제품을 제공하는 것을 릴리즈라고 함</td>
+    </tr>
+    <tr>
+      <td>이터레이션<br />(Iteration, 주기)</td>
+      <td>실제 개발 작업을 진행하는 과정으로, 보통 1~3주 정도의 기간으로 진행됨</td>
+    </tr>
+    <tr>
+      <td>승인 검사<br />(Acceptance Test, 인수 테스트)</td>
+      <td>하나의 이터레이션 안에서 부분 완료 제품이 구현되면 수행하는 테스트</td>
+    </tr>
+    <tr>
+      <td>소규모 릴리즈<br />(Small Release)</td>
+      <td>요구사항에 유연하게 대응할 수 있도록 릴리즈의 규모를 축소 한 것</td>
+    </tr>
+  </tbody>
+</table>
 
 <blockquote>
   <p>계획하고 진행한 후 검사하고 출시한다 (진행 -&gt; 이터레이션, 출시 -&gt; 릴리즈)</p>
@@ -637,16 +659,16 @@
   <p>시스템의 개발 범위를 명확히 설정하려면 현행 시스텡이 어떻게 구성되어 있는지 파악해야 됨</p>
 </blockquote>
 
-<p># 5. 개발 기술 환경 파악</p>
+<h1 id="5-개발-기술-환경-파악">5. 개발 기술 환경 파악</h1>
 
 <blockquote>
   <p>요구사항 식별 시 고려사항 암기</p>
 </blockquote>
 
-<p>## 개발 기술 환경 파악의 개요
-  개발 하고자 하는 소프트웨어와 관련된 운영체제(OS), 데이터베이스 관리 시스템(DBMS), 미들웨어 등을 선정할 때 고려해야 하 할 사항을 기술하고, 오픈 소스를 사용할 때 주의해야 할 내용을 제시</p>
+<h2 id="개발-기술-환경-파악의-개요">개발 기술 환경 파악의 개요</h2>
+<p>개발 하고자 하는 소프트웨어와 관련된 운영체제(OS), 데이터베이스 관리 시스템(DBMS), 미들웨어 등을 선정할 때 고려해야 하 할 사항을 기술하고, 오픈 소스를 사용할 때 주의해야 할 내용을 제시</p>
 
-<p>## 운영체제(OS , Operating System)</p>
+<h2 id="운영체제os--operating-system">운영체제(OS , Operating System)</h2>
 
 <ul>
   <li>컴퓨터 시스템의 자원을 효율적으로 관리하며, 컴퓨터를 효율적으로 사용할 수 있도록 환경을 제공하는 소프트웨어</li>
@@ -661,7 +683,7 @@
   </li>
 </ul>
 
-<p>## 데이터베이스 관리 시스템(DBMS; DataBase Mangement System)</p>
+<h2 id="데이터베이스-관리-시스템dbms-database-mangement-system">데이터베이스 관리 시스템(DBMS; DataBase Mangement System)</h2>
 
 <ul>
   <li>
@@ -679,7 +701,7 @@
   </li>
 </ul>
 
-<p>## 웹 애플리케이션 서버(WAS; Web Application Server)</p>
+<h2 id="웹-애플리케이션-서버was-web-application-server">웹 애플리케이션 서버(WAS; Web Application Server)</h2>
 
 <ul>
   <li>
@@ -694,7 +716,7 @@
   </li>
 </ul>
 
-<p>## 오픈 소스 (Open Source)</p>
+<h2 id="오픈-소스-open-source">오픈 소스 (Open Source)</h2>
 
 <ul>
   <li>누구나 별다른 제한 없이 사용할 수 있도록 소스 코드를 공개한 소프트웨어</li>

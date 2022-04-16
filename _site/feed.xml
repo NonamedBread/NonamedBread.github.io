@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-17T00:48:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 1~5</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 1~5" /><published>2022-04-08T00:00:00+09:00</published><updated>2022-04-09T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/"><![CDATA[<h1 id="1-소프트웨어-생명-주기">1. 소프트웨어 생명 주기</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-17T02:29:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 11~15</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 11~15" /><published>2022-04-17T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/"><![CDATA[<h1 id="under-construction">under construction</h1>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 1~5</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 1~5" /><published>2022-04-08T00:00:00+09:00</published><updated>2022-04-09T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/"><![CDATA[<h1 id="1-소프트웨어-생명-주기">1. 소프트웨어 생명 주기</h1>
 
 <h2 id="소프트웨어-생명-주기software-life-cycle">소프트웨어 생명 주기(Software Life Cycle)</h2>
 <ul>
@@ -361,7 +361,7 @@
     - 라이선스의 종류
     - 사용자 수
     - 기술의 지속 가능성</li>
-</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 6~10</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 6~10" /><published>2022-04-08T00:00:00+09:00</published><updated>2022-04-10T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/"><![CDATA[<h1 id="6-요구사항-정의">6. 요구사항 정의</h1>
+</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 6~10</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 6~10" /><published>2022-04-08T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/"><![CDATA[<h1 id="6-요구사항-정의">6. 요구사항 정의</h1>
 <blockquote>
   <p>요구사항의 개념을 정리해 두는것이 좋음</p>
   <h2 id="요구사항">요구사항</h2>
@@ -607,11 +607,116 @@
       
   <tr>
     <td>{  }</td>
-    <td> 자료의 반복 : Iteration of <br /> <image src="https://user-images.githubusercontent.com/93482597/163680303-d45b3fb1-f5eb-41d3-8353-345d4c0455be.png" with="20px" height="20px"> : n번 이상 반복 </image> <br /><image src="https://user-images.githubusercontent.com/93482597/163680300-7fe7ae4c-7719-42b0-b159-d222da00bda5.png" with="60" height="60"> : 최대로 n번 반복 </image> <br /> <image src="https://user-images.githubusercontent.com/93482597/163680299-ce091380-a147-4bf6-8b89-5dce33e1acf8.png" with="60px" height="60px"> </image> : m 이상  n 이하로 반복</td>
+    <td> 자료의 반복 : Iteration of <br /> <image src="https://user-images.githubusercontent.com/93482597/163680303-d45b3fb1-f5eb-41d3-8353-345d4c0455be.png " with="60" height="60"> : n번 이상 반복 </image> <br /><image src="https://user-images.githubusercontent.com/93482597/163680300-7fe7ae4c-7719-42b0-b159-d222da00bda5.png" with="60" height="60"> : 최대로 n번 반복 </image> <br /> <image src="https://user-images.githubusercontent.com/93482597/163680299-ce091380-a147-4bf6-8b89-5dce33e1acf8.png" with="60px" height="60px"> </image> : m 이상  n 이하로 반복</td>
   </tr> 
       
 <tr>
     <td>"  "</td>
     <td> 자료의 설명 : 주석(Comment)</td>
 </tr> 
+</table>
+
+<h1 id="9-요구사항-분석case와-hipo">9. 요구사항 분석CASE와 HIPO</h1>
+
+<h2 id="요구사항-분석용-case자동화-도구">요구사항 분석용 CASE(자동화 도구)</h2>
+
+<ul>
+  <li>
+    <p>요구사항을 자동으로 분석하고, 요구사항 분석 명세서를 기술하도록 개발된 도구</p>
+  </li>
+  <li>
+    <p>대표적인 요구사항 분석용 CASE</p>
+  </li>
+</ul>
+
+<table>
+  <tr>
+    <td>SADT</td>
+    <td>
+      시스템 정의, 소프트웨어 요구사항 분석, 시스템/소프트웨어 설계를 위한 도구 <br />SoftTech 사에서 개발<br />구조적 요구 분석을 하기 위해 블록 다이어그램을 채택한 자동화 도구
+    </td>
+  </tr>
+
+   <tr>
+    <td>SREM = RSL/REVS</td>
+    <td>TRW 사가 실시간 처리 소프트웨어 시스템에서 요구사항을 명확히 기술하도록 할 목적으로 개발한 도구<br />RSL과 REVS를 사용하는 자동화 도구</td>
+  </tr>
+
+   <tr>
+    <td>PSL/PSA</td>
+    <td>PSL과 PSA를 사용하는 자동화 도구<br />미시간 대학에서 개발</td>
+  </tr>
+
+   <tr>
+    <td>TAGS</td>
+    <td>시스템 공학 방법 응용에 대한 자동 접근 방법<br />개발 주기의 전 과정에 이용할 수 있는 자동화 도구</td>
+  </tr>
+</table>
+
+<blockquote>
+  <p>도구의 종류와 각각의 의미를 정확하게 암기 (SSPPT)</p>
+</blockquote>
+
+<h2 id="hipohierarchy-input-process-output">HIPO(Hierarchy Input Process Output)</h2>
+
+<ul>
+  <li>
+    <p>시스템 실행 과정인 입력, 처리, 출력의 기능을 표현한 것</p>
+  </li>
+  <li>
+    <p>하향식 소프트웨어 개발을 위한 문서화 도구</p>
+  </li>
+</ul>
+
+<h1 id="10-umlunified-modeling-language의-개요">10. UML(Unified Modeling Language)의 개요</h1>
+
+<h2 id="umlunified-modeling-language">UML(Unified Modeling Language)</h2>
+<p>시스템 개발 과정에서 의사소통이 원활하게 이루어지도록 표준화한 대표적인 객체지향 모델링 언어이다.</p>
+
+<ul>
+  <li>UML의 구성요소
+    <ul>
+      <li>사물(Things)</li>
+      <li>관계(Relationships)</li>
+      <li>다이어그램(Diagram)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="사물-things">사물 (Things)</h2>
+
+<ul>
+  <li>
+    <p>다이어그램 안에서 형성될 수 있는 대상들</p>
+  </li>
+  <li>
+    <p>사물의 종류</p>
+  </li>
+</ul>
+<table>
+  <tr>
+    <td>사물</td>
+    <td>내용</td>
+  </tr>
+
+  <tr>
+    <td>구조 사물<br />(Structural Things)</td>
+    <td>시스템의 개념적, 물리적 요소를 표현<br />클래스(Class), 유스케이스(Use Case), 컴포넌트(Component), 노드(Node) 등</td>
+  </tr>
+
+  <tr>
+    <td>행동 사물<br />(Behavioral Things)</td>
+    <td>시간과 공간에 따른 요소들의 행위를 표현<br />상호작용(Interaction), 상태 머신(State Machine)등</td>
+  </tr>
+
+  <tr>
+    <td>그룹 사물<br />(Grouping Things)</td>
+    <td>요소들을 그룹으로 묶어서 표현<br />패키지(Package)</td>
+  </tr>
+
+  <tr>
+    <td>주해 사물<br />(Annotation Things)</td>
+    <td>부가적인 설명이나 제약조건 등을 표현<br />노트(Note)</td>
+  </tr>
+
 </table>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry></feed>

@@ -10,4 +10,10 @@ var store = [{
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/",
         "teaser": null
+      },{
+        "title": "정처기 실기 요구사항 확인 11~15",
+        "excerpt":"under construction  ","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/",
+        "teaser": null
       }]

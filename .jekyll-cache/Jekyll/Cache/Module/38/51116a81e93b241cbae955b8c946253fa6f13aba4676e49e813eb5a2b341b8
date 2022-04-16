@@ -1,0 +1,35 @@
+I"�
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          NonamedBread
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://NonamedBread.github.io" >Home</a>
+          </li><li class="masthead__menu-item">
+            <a href="/categories/" >Category</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://abrupt-jump-f72.notion.site/Portfolio-943e3f950b214a5b802c6b3d305c3300" >About Me</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://github.com/NonamedBread" >GitHub</a>
+          </li></ul>
+        
+        <!-- 다크 모드 토글 버튼 -->
+        
+        <input id="toggle_dark_theme" class="mh_toogle" type="checkbox">
+        <label for="toggle_dark_theme" class="material-icons-sharp mh_toggle_btn"></label>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>:ET

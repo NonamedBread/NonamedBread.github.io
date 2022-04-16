@@ -73,7 +73,8 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NonamedBread Feed">
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="NonamedBread Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -84,10 +85,13 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="/assets/css/main_dark.css">
 
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+<!-- <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript> -->
 
 
     <!-- start custom head snippets -->
@@ -125,14 +129,19 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://NonamedBread.github.io">Home</a>
-            </li><li class="masthead__menu-item">
-              <a href="/categories/">Category</a>
-            </li><li class="masthead__menu-item">
-              <a href="https://abrupt-jump-f72.notion.site/Portfolio-943e3f950b214a5b802c6b3d305c3300">About Me</a>
-            </li><li class="masthead__menu-item">
-              <a href="https://github.com/NonamedBread">GitHub</a>
-            </li></ul>
+            <a href="https://NonamedBread.github.io" >Home</a>
+          </li><li class="masthead__menu-item">
+            <a href="/categories/" >Category</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://abrupt-jump-f72.notion.site/Portfolio-943e3f950b214a5b802c6b3d305c3300" >About Me</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://github.com/NonamedBread" >GitHub</a>
+          </li></ul>
+        
+        <!-- 다크 모드 토글 버튼 -->
+        
+        <input id="toggle_dark_theme" class="mh_toogle" type="checkbox">
+        <label for="toggle_dark_theme" class="material-icons-sharp mh_toggle_btn"></label>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -143,7 +152,6 @@
     </div>
   </div>
 </div>
-
 
     <div class="initial-content">
       
@@ -673,6 +681,10 @@
 
 
 
+
+  
+    <script src="/assets/js/custom/dark-theme.js"></script>
+  
 
 
 

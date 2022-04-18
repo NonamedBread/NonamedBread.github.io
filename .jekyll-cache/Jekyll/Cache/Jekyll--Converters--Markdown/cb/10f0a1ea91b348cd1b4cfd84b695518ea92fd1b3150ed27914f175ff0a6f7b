@@ -1,0 +1,21 @@
+I"�<h1 id="11-uml---관계relationship">11. UML - 관계(Relationship)</h1>
+
+<h2 id="관계relationships">관계(Relationships)</h2>
+
+<ul>
+  <li>
+    <p>사물과 사물 사이의 연관성을 표현하는 것</p>
+  </li>
+  <li>
+    <p>관계의 종류</p>
+    <ul>
+      <li>연관 관계</li>
+      <li>집합 관계</li>
+      <li>포함 관계</li>
+      <li>일반화 관계</li>
+      <li>의존 관계</li>
+      <li>실체화 관계</li>
+    </ul>
+  </li>
+</ul>
+:ET

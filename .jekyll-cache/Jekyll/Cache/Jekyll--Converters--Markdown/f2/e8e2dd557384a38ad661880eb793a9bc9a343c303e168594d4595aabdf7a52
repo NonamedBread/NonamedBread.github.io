@@ -1,0 +1,123 @@
+I"�<h1 id="14활동activity-다이어그램">14.활동(Activity) 다이어그램</h1>
+
+<ul>
+  <li>
+    <p>자료 흐릅도(DFD, Data Flow Diagram)와 유사</p>
+  </li>
+  <li>
+    <p>시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것</p>
+  </li>
+  <li>
+    <p>유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현</p>
+  </li>
+</ul>
+
+<h2 id="활동activity-다이어그램-구성-요소">활동(Activity) 다이어그램 구성 요소</h2>
+
+<table>
+  <tr>
+    <th>
+      구성요소
+    </th>
+    <th>
+      표현 방법
+    </th>
+    <th>
+    내용
+    </th>
+  </tr>
+  <tr>
+    <td>
+      액션(Action) / 액티비티(Activity)
+    </td>
+    <td>
+     액션
+     <image src="https://user-images.githubusercontent.com/93482597/163842008-e7bcb2e6-ed40-41a9-9729-547c839e7f4e.png" />
+     액티비티
+     <image src="https://user-images.githubusercontent.com/93482597/163842165-f2abf7d7-185b-4d9f-be98-3e12100087c9.png" />
+    </td>
+    <td>
+      액션 : 더 이상 분해할 수 없는 단일 작업<br />액티비티 : 몇 개의 액션으로 분리될 수 있는 작업
+    </td>
+  </tr>
+  <tr>
+    <td>
+    시작노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842710-a9fe1c28-b987-425d-9c6e-136a68add711.png" />
+    </td>
+    <td>
+      액션이나 액티비티가 시작됨을 표현한 것
+    </td>
+  </tr>
+  <tr>
+    <td>
+      종료 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842454-5826ff6e-54f4-45a6-9d59-7288fa5aa603.png" />
+    </td>
+    <td>
+     액티비티 안의 모든 흐름이 종료됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+      조건(판단) 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842939-86d69c88-7c64-45a9-91b9-5fec8a31799f.png" />
+    </td>
+    <td>
+      조건에 따라 제어의 흐름이 분리됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+    병합 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163843327-29febc2d-e0d5-4d54-9d42-b908f818746a.png" />
+    </td>
+    <td>
+      여러 경로의 흐름이 하나로 합쳐짐을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+     포크(Fork) 노드
+    </td>
+    <td>
+    <image src="https://user-images.githubusercontent.com/93482597/163843596-04e31644-56f3-4276-a148-a95f6ab0cc54.png" />
+    </td>
+    <td>
+    액티비티의 흐름이 분리되어 수행됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+    조인(Join) 노드
+    </td>
+    <td>
+    <image src="https://user-images.githubusercontent.com/93482597/ 163843736-4de59faf-0dab-4ae7-b5bc-3529399271c1.png" />
+    </td>
+    <td>
+      분리되어 수행되던 액티비티의 흐름이 다시 합쳐짐을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+      스윔레인(Swim Lane)
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163843855-563221c4-bae9-46f5-b778-3216b183c044.png" />
+    </td>
+    <td>
+     액티비티 수행을 담당하는 주체를 구분하는 선<br />가로 또는 세로 실선을 그어 구분
+    </td>
+  </tr>
+</table>
+
+<h1 id="15">15.</h1>
+:ET

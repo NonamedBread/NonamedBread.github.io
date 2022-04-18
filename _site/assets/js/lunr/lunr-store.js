@@ -11,9 +11,15 @@ var store = [{
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 11~15",
-        "excerpt":"under construction  ","categories": ["EIP_PS"],
+        "title": "정처기 실기 요구사항 확인 11~13",
+        "excerpt":"11. UML - 관계(Relationship) 관계(Relationships) 사물과 사물 사이의 연관성을 표현하는 것 관계의 종류 연관 관계 집합 관계 포함 관계 일반화 관계 의존 관계 실체화 관계 개별적인 개념과 표현 방법을 확실히 숙지 연관(Association) 관계 2개 이상의 사물이 서로 관련되어 있는 관계 실선으로 연결하여 표현 방향성은 화살표로 표현 양방향 관게는 실선으로만 연결...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/",
+        "teaser": null
+      },{
+        "title": "정처기 실기 요구사항 확인 13~",
+        "excerpt":"14.활동(Activity) 다이어그램 자료 흐릅도(DFD, Data Flow Diagram)와 유사 시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것 유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현 활동(Activity) 다이어그램 구성 요소 구성요소 표현 방법 내용 액션(Action) / 액티비티(Activity) 액션 액티비티 액션 : 더 이상 분해할...","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/",
         "teaser": null
       }]

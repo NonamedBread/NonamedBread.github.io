@@ -1,148 +1,321 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T00:40:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 14~</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 14~" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-19T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/"><![CDATA[<h1 id="14활동activity-다이어그램">14.활동(Activity) 다이어그램</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T02:27:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 21~30</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 21~30" /><published>2022-04-22T00:00:00+09:00</published><updated>2022-04-22T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/"><![CDATA[<h1 id="21-sw-공학의-발전적-추세">21. S/W 공학의 발전적 추세</h1>
+
+<h2 id="소프트웨어-재사용software-reuse">소프트웨어 재사용(Software Reuse)</h2>
+<ul>
+  <li>이미 개발되어 인정받은 소프트웨어를 다른 소프트웨어 개발이나 유지에 사용</li>
+</ul>
+
+<h3 id="소프트웨어-재사용-방법">소프트웨어 재사용 방법</h3>
 
 <ul>
   <li>
-    <p>자료 흐릅도(DFD, Data Flow Diagram)와 유사</p>
+    <p>합성 중심(Composition-Based) : 전자 칩과 같은 소프트웨어 부품, 즉 블록을 만들어서 끼워 맞춰 소프트웨어를 완성시키는 방법, 블록 구성 방법이라고도 함</p>
   </li>
   <li>
-    <p>시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것</p>
-  </li>
-  <li>
-    <p>유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현</p>
+    <p>생성 중심(Generation-Based) : 추상화 형태로 써진 명세를 구체화하여 프로그램을 만드는 방법으로, 패턴 구성 방법이라고도 함</p>
   </li>
 </ul>
 
-<h2 id="활동activity-다이어그램-구성-요소">활동(Activity) 다이어그램 구성 요소</h2>
+<h2 id="소프트웨어-재공학software-reengineering">소프트웨어 재공학(Software Reengineering)</h2>
+<ul>
+  <li>기존 시스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상 시키는 것</li>
+</ul>
+
+<h3 id="이점">이점</h3>
+<ul>
+  <li>소프트웨어의 품질 향상</li>
+  <li>생산성 증가</li>
+  <li>수명 연장</li>
+  <li>오류 감소</li>
+</ul>
+
+<h2 id="casecomputer-aided-software-engineering">CASE(Computer Aided Software Engineering)</h2>
+
+<ul>
+  <li>소프트웨어 개발 과정에서 사용되는 요구분석, 설계, 구현, 검사 및 디버깅 과정 전체 또는 일부를 컴퓨터와 전용 소프트웨어 도구를 사용하여 자동화 하는 것</li>
+</ul>
+
+<h3 id="주요-기능">주요 기능</h3>
+<ul>
+  <li>소프트웨어 생명 주기 전 단계의 연결</li>
+  <li>다양한 소프트웨어 개발 모형 지원</li>
+  <li>그래픽 지원</li>
+</ul>
+
+<h1 id="22-비용-산정-기법">22. 비용 산정 기법</h1>
+
+<h2 id="소프트웨어-비용-산정">소프트웨어 비용 산정</h2>
+
+<ul>
+  <li>소프트웨어 비용 산정은 개발에 소요되는 인원, 자원, 기간 등으로 소프트웨어의 규모를 확인하여 개발 계획 수립에 필요한 비용을 산정하는 것</li>
+</ul>
+
+<h2 id="소프트웨어-비용-결정-요소">소프트웨어 비용 결정 요소</h2>
+
+<ul>
+  <li>프로젝트 요소
+    <ul>
+      <li>제품 복잡도 : 소프트웨어의 종류에 따라 발생할 수 있는 문제점들의 난이도</li>
+      <li>시스템 크기 : 소프트웨어의 규모에 따라 개발해야 할 시스템의 크기</li>
+      <li>요구되는 신뢰도 : 일정 기간 내 주어진 조건하에서 프로그램이 필요한 기능을 수행하는 정도</li>
+    </ul>
+  </li>
+  <li>자원 요소
+    <ul>
+      <li>인적 자원 : 소프트웨어 개발 관련자들이 갖춘 능력 혹은 자질</li>
+      <li>하드웨어 자원 : 소프트웨어 개발 시 필요한 장비와 워드프로세서, 프린터 등의 보조 장비</li>
+      <li>소프트웨어 자원 : 소프트웨어 개발 시 필요한 언어 분석기, 문서화 도구 등의 개발 지원 도구</li>
+    </ul>
+  </li>
+  <li>생산성 요소
+    <ul>
+      <li>개발자 능력 : 개발자들이 각춘 전문지식, 경험, 이해도, 책임감, 창의력 등</li>
+      <li>개발 기간 : 소프트웨어를 개발하는 기간</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="23-비용산정-방법---하향식">23. 비용산정 방법 - 하향식</h1>
+
+<h2 id="하향식-비용-산정-기법">하향식 비용 산정 기법</h2>
+
+<ul>
+  <li>
+    <p>과거의 유사한 경험을 바탕으로 전문 지식이 많은 개발자들이 참여한 회으를 통해 비용을 산정하는 비과학적인 방법</p>
+  </li>
+  <li>
+    <p>하향식 비용 산정 기법</p>
+    <ul>
+      <li>전문가 감정 기법</li>
+      <li>델파이 기법</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="전문가-감정-기법">전문가 감정 기법</h2>
+
+<ul>
+  <li>경험이 많은 두 명 이상의 전문가에게 비용 산정을 의로하는 기법</li>
+</ul>
+
+<h2 id="델파이-기법">델파이 기법</h2>
+
+<ul>
+  <li>전문가 감정 기법의 주관적인 편견을 보완하기 위해 많은 전문가의 의견을 종합하여 산정하는 기법</li>
+</ul>
+
+<h1 id="24--비용-산정-방식---상향식">24 . 비용 산정 방식 - 상향식</h1>
+
+<ul>
+  <li>세부적인 작업 단위별로 비용을 산정한 후 집계하여 전체 비용을 산정하는 방법</li>
+  <li>주요 상향식 비용 산정 기법
+    <ul>
+      <li>LOC(원시 코드 라인 수) 기법</li>
+      <li>개발 단계별 인월수 기법</li>
+      <li>수학적 산정 기법</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="loc원시-코드-라인수-source-line-of-code-기법">LOC(원시 코드 라인수, source LIne Of Code) 기법</h2>
+
+<ul>
+  <li>
+    <p>각 기능의 원시 코드 라인 수의 비관치, 낙관치, 기대치를 측정하여 예측지를 구하고 이를 이용하여 비용을 산정하는 기법</p>
+  </li>
+  <li>예측치
+    <ul>
+      <li>(a+4m+b)/6</li>
+      <li>a 낙관치, b : 비관치, m : 기대치(중간치)
+        <h3 id="산정-공식">산정 공식</h3>
+      </li>
+    </ul>
+  </li>
+  <li>노력(인월) = 개발기간 X 투입인원 = LOC / 1인당 월평균 생산 코드 라인 수</li>
+  <li>개발 비용 = 노력(인월) X 단위 비용(1인당 월평균 인건비)</li>
+  <li>개발 기간 = 노력(인월) / 투입 인원</li>
+  <li>생산성 = LOC / 노력(인월)</li>
+</ul>
+
+<h2 id="개발-단계별-인월수effort-per-task기법">개발 단계별 인월수(Effort Per Task)기법</h2>
+<ul>
+  <li>LOC 기법을 보완하기 위한 기법으로, 각 기능을 구현 시키는 데 필요한 노력을 생명 주기의 각 단계별로 산정</li>
+</ul>
+
+<h1 id="25-수학적-산정-기법">25. 수학적 산정 기법</h1>
+
+<ul>
+  <li>
+    <p>상향식 비용 산정 기법으로, 경험적 추정 모형, 실험적 추적 모형이라고도 한다.</p>
+  </li>
+  <li>
+    <p>주요 수학적 산정 기법</p>
+    <ul>
+      <li>COCOMO 모형</li>
+      <li>Putnam 모형</li>
+      <li>기능 점수(FP)모형</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="cocomoconstructive-cost-model-모형">COCOMO(COnstructive COst MOdel) 모형</h2>
+
+<ul>
+  <li>LOC(원시 코드 라인 수)에 의한 비용 산정 기법</li>
+  <li>보헴(Boehm)이 제안</li>
+</ul>
+
+<h2 id="cocomo의-소프트웨어-개발-유형">COCOMO의 소프트웨어 개발 유형</h2>
 
 <table>
-  <tr>
-    <th>
-      구성요소
-    </th>
-    <th>
-      표현 방법
-    </th>
-    <th>
-    내용
-    </th>
-  </tr>
-  <tr>
-    <td>
-      액션(Action) / 액티비티(Activity)
-    </td>
-    <td>
-     액션
-     <image src="https://user-images.githubusercontent.com/93482597/163842008-e7bcb2e6-ed40-41a9-9729-547c839e7f4e.png" />
-     액티비티
-     <image src="https://user-images.githubusercontent.com/93482597/163842165-f2abf7d7-185b-4d9f-be98-3e12100087c9.png" />
-    </td>
-    <td>
-      액션 : 더 이상 분해할 수 없는 단일 작업<br />액티비티 : 몇 개의 액션으로 분리될 수 있는 작업
-    </td>
-  </tr>
-  <tr>
-    <td>
-    시작노드
-    </td>
-    <td>
-      <image src="https://user-images.githubusercontent.com/93482597/163842710-a9fe1c28-b987-425d-9c6e-136a68add711.png" />
-    </td>
-    <td>
-      액션이나 액티비티가 시작됨을 표현한 것
-    </td>
-  </tr>
-  <tr>
-    <td>
-      종료 노드
-    </td>
-    <td>
-      <image src="https://user-images.githubusercontent.com/93482597/163842454-5826ff6e-54f4-45a6-9d59-7288fa5aa603.png" />
-    </td>
-    <td>
-     액티비티 안의 모든 흐름이 종료됨을 표현
-    </td>
-  </tr>
-  <tr>
-    <td>
-      조건(판단) 노드
-    </td>
-    <td>
-      <image src="https://user-images.githubusercontent.com/93482597/163842939-86d69c88-7c64-45a9-91b9-5fec8a31799f.png" />
-    </td>
-    <td>
-      조건에 따라 제어의 흐름이 분리됨을 표현
-    </td>
-  </tr>
-  <tr>
-    <td>
-    병합 노드
-    </td>
-    <td>
-      <image src="https://user-images.githubusercontent.com/93482597/163843327-29febc2d-e0d5-4d54-9d42-b908f818746a.png" />
-    </td>
-    <td>
-      여러 경로의 흐름이 하나로 합쳐짐을 표현
-    </td>
-  </tr>
-  <tr>
-    <td>
-     포크(Fork) 노드
-    </td>
-    <td>
-    <image src="https://user-images.githubusercontent.com/93482597/163843596-04e31644-56f3-4276-a148-a95f6ab0cc54.png" />
-    </td>
-    <td>
-    액티비티의 흐름이 분리되어 수행됨을 표현
-    </td>
-  </tr>
-  <tr>
-    <td>
-    조인(Join) 노드
-    </td>
-    <td>
-    <image src="https://user-images.githubusercontent.com/93482597/163843736-4de59faf-0dab-4ae7-b5bc-3529399271c1.png" />
-    </td>
-    <td>
-      분리되어 수행되던 액티비티의 흐름이 다시 합쳐짐을 표현
-    </td>
-  </tr>
-  <tr>
-    <td>
-      스윔레인(Swim Lane)
-    </td>
-    <td>
-      <image src="https://user-images.githubusercontent.com/93482597/163846448-bce172e2-f785-436e-8e30-420b954c8a8e.png" />
-    </td>
-    <td>
-     액티비티 수행을 담당하는 주체를 구분하는 선<br />가로 또는 세로 실선을 그어 구분
-    </td>
-  </tr>
+    <tr>
+        <th>
+            유형
+        </th>
+        <th>
+            특징
+        </th>
+    </tr>
+    <tr>
+        <td>
+            조직형(Organic Model)
+        </td>
+        <td>
+            기관 내부에서 개발된 중, 소규모의 소프트웨어<br />5만(50KDSI) 라인 이하의 소프트웨어를 개발하는 유형
+        </td>
+    </tr>
+    <tr>
+        <td>
+            반분리형(Semi-Detached Model)
+        </td>
+        <td>
+            조직형과 내장형의 중간형 소프트웨어<br />30만(300KDSI) 라인 이하의 소프트웨어를 개발하는 유형
+        </td>
+    </tr>
+    <tr>
+        <td>
+            내장형(Embedded Model)
+        </td>
+        <td>
+            초대형 규모의 소프트웨어<br />30만(300KDSI) 라인 이상의 소프트웨어를 개발하는 유형
+        </td>
+    </tr>
 </table>
 
-<h1 id="15-클래스class-다이어그램">15. 클래스(Class) 다이어그램</h1>
+<h2 id="cocomo-모형의-종류">COCOMO 모형의 종류</h2>
 
-<h2 id="클래스-다이어그램">클래스 다이어그램</h2>
+<table>
+    <tr>
+        <th>
+        종류
+        </th>
+        <th>
+        특징
+        </th>
+    </tr>
+    <tr>
+        <td>
+        기본형(Basic) COCOMO
+        </td>
+        <td>
+        소프트웨어의 크기와 개발 유형만을 이용하여 비용 산정
+        </td>
+    </tr>
+    <tr>
+        <td>
+        중간형(Intermediate) COCOMO
+        </td>
+        <td>
+        기본형 COCOMO의 공식을 토대로 사용하나, 다음 4가지 특성에 의해 비용을 산정<br />제품의 특성<br />컴퓨터의 특성<br />개발 요원의 특성<br />프로젝트 특성
+        </td>
+    </tr>
+    <tr>
+        <td>
+        발전형(Detailed) COCOMO
+        </td>
+        <td>
+        중간형 COCOMO를 보완하여 만들어진 모형<br />개발 공정별로 보다 자세하고 정확하게 노력을 산출하여 비용 산정
+        </td>
+    </tr>
+</table>
+
+<h2 id="putnam-모형">Putnam 모형</h2>
 
 <ul>
-  <li>시스템을 구성하는 요소에 대해 이해할 수 있는 구조적 다이어그램</li>
-  <li>시스템을 구성하는 요소를 문서화 하는데 사용</li>
-  <li>코딩에 필요한 객체의 속성, 함수 등의 정보를 잘 표현하고 있어 시스템을 모델링하는 데자주 사용</li>
-  <li>
-    <p>클래스, 제약조건, 관계 등으로 구성</p>
+  <li>소프트웨어 생명 주기의 전 과정 동안에 사용될 노력의 분포를 예상하는 모형</li>
+  <li>푸트남(Putnam)이 제안, 생명 주기 예측 모형이라고도 함</li>
+  <li>시간에 따른 함수로 표현되는 Rayleigh-Norden 곡선의 노력 분포도를 기초로 함</li>
+</ul>
+
+<h2 id="기능-점수fp-function-point-모형">기능 점수(FP; Function Point) 모형</h2>
+
+<ul>
+  <li>알브레히트(Albrecht)가 제안</li>
+  <li>소프트웨어의 기능을 증대시키는 요인별로 기능점수(FP)를 구한 후 이를 이용해서 비용을 산정</li>
+  <li>소프트웨어 기능 증대 요인
+    <ul>
+      <li>자료 입력(입력 양식)</li>
+      <li>정보 출력(출력 보고서)</li>
+      <li>명령어(사용자 질의수)</li>
+      <li>데이터 파일</li>
+      <li>필요한 외부 루틴과의 인터페이스</li>
+    </ul>
   </li>
-  <li>클래스 다이어그램은 UML 다이어그램 중 객체(Object)들을 클래스로 추상화하여 표현하는 다이어그램으로 대표적인 구조적 다이어그램이다.</li>
-  <li>클래스는 각각의 객체들이 갖는 속성과 메소드를 표현한 것으로 3개의 구획으로 나눠 이름, 속성, 메소드를 표기한다.</li>
 </ul>
 
-<h2 id="연관-클래스">연관 클래스</h2>
+<h2 id="비용산정-자동화-추정-도구">비용산정 자동화 추정 도구</h2>
+
+<table>
+    <tr>
+        <td>
+        SLIM
+        </td>
+        <td>
+        Rayleigh-Norden 곡선과 Putnam 예측 모델을 기초로 하여 개발된 자동화 추정 도구
+        </td>
+    </tr>
+    <tr>
+        <td>
+        ESTIMACS
+        </td>
+        <td>
+        다양한 프로젝트와 개인별 요소를 수용하도록 FP 모형을 기초로 하여 개발된 자동화 추정 도구
+        </td>
+    </tr>
+    
+</table>
+
+<h1 id="26--프로젝트-일정">26 . 프로젝트 일정</h1>
+
+<h2 id="pertprogram-evaluation-and-review-technique-프로그램-평가-및-검토-기술">PERT(Program Evaluation and Review Technique, 프로그램 평가 및 검토 기술)</h2>
 
 <ul>
-  <li>연관 관계에 있는 두 클래스에 추가적으로 표현해야 할 속성이나 오퍼레이션이 있는 경우 생성하는 클래스</li>
-  <li>두 클래스의 연관 관계를 나타내는 선의 가운데로부터 점선을 연관클래스로 이어 표시</li>
-  <li>연관클래스의 이름은 연관 관계의 이름을 이용해 지정</li>
+  <li>프로젝트에 필요한 전체 작업의 상호 관계를 표시하는 네트워크</li>
+  <li>각 작업별로 다음과 같이 단계를 나누어 종료시기를 결정
+    <ul>
+      <li>낙관적인 경우</li>
+      <li>가능성이 있는 경우</li>
+      <li>비관적인 경우</li>
+    </ul>
+  </li>
 </ul>
 
-<h1 id="16-시퀀스sequence-다이어그램">16. 시퀀스(Sequence) 다이어그램</h1>
+<h2 id="cpmcritical-path-method-임계-경로-기법">CPM(Critical Path Method, 임계 경로 기법)</h2>
+
+<ul>
+  <li>작업을 나열하고 작업에 필요한 소요 기간을 예측하는데 사용하는 기법
+    <blockquote>
+      <p>그림에서 굵은 선이 임계 경로, 즉 최장 경로</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="간트-차트">간트 차트</h2>
+
+<ul>
+  <li>프로젝트 작업 일정을 막대 도표를 이용하여 표시하는 프로젝트 일정표이다.</li>
+  <li>시간선(Time-Line) 차트 라고도 한다.</li>
+</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 16~20</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 16~20" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-21T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/"><![CDATA[<h1 id="16-시퀀스sequence-다이어그램">16. 시퀀스(Sequence) 다이어그램</h1>
 
 <h2 id="구성-요소">구성 요소</h2>
 
@@ -255,113 +428,7 @@
       <li>요구 분석 단계 -&gt; 설계 단계 -&gt; 구현 단계 -&gt; 테스트 및 검증 단계 -&gt; 인도 단계</li>
     </ul>
   </li>
-</ul>
-
-<h1 id="21-sw-공학의-발전적-추세">21. S/W 공학의 발전적 추세</h1>
-
-<h2 id="소프트웨어-재사용software-reuse">소프트웨어 재사용(Software Reuse)</h2>
-<ul>
-  <li>이미 개발되어 인정받은 소프트웨어를 다른 소프트웨어 개발이나 유지에 사용</li>
-</ul>
-
-<h3 id="소프트웨어-재사용-방법">소프트웨어 재사용 방법</h3>
-
-<ul>
-  <li>
-    <p>합성 중심(Composition-Based) : 전자 칩과 같은 소프트웨어 부품, 즉 블록을 만들어서 끼워 맞춰 소프트웨어를 완성시키는 방법, 블록 구성 방법이라고도 함</p>
-  </li>
-  <li>
-    <p>생성 중심(Generation-Based) : 추상화 형태로 써진 명세를 구체화하여 프로그램을 만드는 방법으로, 패턴 구성 방법이라고도 함</p>
-  </li>
-</ul>
-
-<h2 id="소프트웨어-재공학software-reengineering">소프트웨어 재공학(Software Reengineering)</h2>
-<ul>
-  <li>기존 시스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상 시키는 것</li>
-</ul>
-
-<h3 id="이점">이점</h3>
-<ul>
-  <li>소프트웨어의 품질 향상</li>
-  <li>생산성 증가</li>
-  <li>수명 연장</li>
-  <li>오류 감소</li>
-</ul>
-
-<h2 id="casecomputer-aided-software-engineering">CASE(Computer Aided Software Engineering)</h2>
-
-<ul>
-  <li>소프트웨어 개발 과정에서 사용되는 요구분석, 설계, 구현, 검사 및 디버깅 과정 전체 또는 일부를 컴퓨터와 전용 소프트웨어 도구를 사용하여 자동화 하는 것</li>
-</ul>
-
-<h3 id="주요-기능">주요 기능</h3>
-<ul>
-  <li>소프트웨어 생명 주기 전 단계의 연결</li>
-  <li>다양한 소프트웨어 개발 모형 지원</li>
-  <li>그래픽 지원</li>
-</ul>
-
-<h1 id="22-비용-산정-기법">22. 비용 산정 기법</h1>
-
-<h2 id="소프트웨어-비용-산정">소프트웨어 비용 산정</h2>
-
-<ul>
-  <li>소프트웨어 비용 산정은 개발에 소요되는 인원, 자원, 기간 등으로 소프트웨어의 규모를 확인하여 개발 계획 수립에 필요한 비용을 산정하는 것</li>
-</ul>
-
-<h2 id="소프트웨어-비용-결정-요소">소프트웨어 비용 결정 요소</h2>
-
-<ul>
-  <li>프로젝트 요소
-    <ul>
-      <li>제품 복잡도 : 소프트웨어의 종류에 따라 발생할 수 있는 문제점들의 난이도</li>
-      <li>시스템 크기 : 소프트웨어의 규모에 따라 개발해야 할 시스템의 크기</li>
-      <li>요구되는 신뢰도 : 일정 기간 내 주어진 조건하에서 프로그램이 필요한 기능을 수행하는 정도</li>
-    </ul>
-  </li>
-  <li>자원 요소
-    <ul>
-      <li>인적 자원 : 소프트웨어 개발 관련자들이 갖춘 능력 혹은 자질</li>
-      <li>하드웨어 자원 : 소프트웨어 개발 시 필요한 장비와 워드프로세서, 프린터 등의 보조 장비</li>
-      <li>소프트웨어 자원 : 소프트웨어 개발 시 필요한 언어 분석기, 문서화 도구 등의 개발 지원 도구</li>
-    </ul>
-  </li>
-  <li>생산성 요소
-    <ul>
-      <li>개발자 능력 : 개발자들이 각춘 전문지식, 경험, 이해도, 책임감, 창의력 등</li>
-      <li>개발 기간 : 소프트웨어를 개발하는 기간</li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="비용산정-방법---하향식">비용산정 방법 - 하향식</h1>
-
-<h2 id="하향식-비용-산정-기법">하향식 비용 산정 기법</h2>
-
-<ul>
-  <li>
-    <p>과거의 유사한 경험을 바탕으로 전문 지식이 많은 개발자들이 참여한 회으를 통해 비용을 산정하는 비과학적인 방법</p>
-  </li>
-  <li>
-    <p>하향식 비용 산정 기법</p>
-    <ul>
-      <li>전문가 감정 기법</li>
-      <li>델파이 기법</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="전문가-감정-기법">전문가 감정 기법</h2>
-
-<ul>
-  <li>경험이 많은 두 명 이상의 전문가에게 비용 산정을 의로하는 기법</li>
-</ul>
-
-<h2 id="델파이-기법">델파이 기법</h2>
-
-<ul>
-  <li>전문가 감정 기법의 주관적인 편견을 보완하기 위해 많은 전문가의 의견을 종합하여 산정하는 기법</li>
-</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 11~13</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 11~13" /><published>2022-04-17T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/"><![CDATA[<h1 id="11-uml---관계relationship">11. UML - 관계(Relationship)</h1>
+</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 11~15</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 11~15" /><published>2022-04-17T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/"><![CDATA[<h1 id="11-uml---관계relationship">11. UML - 관계(Relationship)</h1>
 
 <h2 id="관계relationships">관계(Relationships)</h2>
 
@@ -725,6 +792,150 @@
   <li>
     <p>관계(Relationship)</p>
   </li>
+</ul>
+
+<h1 id="14활동activity-다이어그램">14.활동(Activity) 다이어그램</h1>
+
+<ul>
+  <li>
+    <p>자료 흐릅도(DFD, Data Flow Diagram)와 유사</p>
+  </li>
+  <li>
+    <p>시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것</p>
+  </li>
+  <li>
+    <p>유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현</p>
+  </li>
+</ul>
+
+<h2 id="활동activity-다이어그램-구성-요소">활동(Activity) 다이어그램 구성 요소</h2>
+
+<table>
+  <tr>
+    <th>
+      구성요소
+    </th>
+    <th>
+      표현 방법
+    </th>
+    <th>
+    내용
+    </th>
+  </tr>
+  <tr>
+    <td>
+      액션(Action) / 액티비티(Activity)
+    </td>
+    <td>
+     액션
+     <image src="https://user-images.githubusercontent.com/93482597/163842008-e7bcb2e6-ed40-41a9-9729-547c839e7f4e.png" />
+     액티비티
+     <image src="https://user-images.githubusercontent.com/93482597/163842165-f2abf7d7-185b-4d9f-be98-3e12100087c9.png" />
+    </td>
+    <td>
+      액션 : 더 이상 분해할 수 없는 단일 작업<br />액티비티 : 몇 개의 액션으로 분리될 수 있는 작업
+    </td>
+  </tr>
+  <tr>
+    <td>
+    시작노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842710-a9fe1c28-b987-425d-9c6e-136a68add711.png" />
+    </td>
+    <td>
+      액션이나 액티비티가 시작됨을 표현한 것
+    </td>
+  </tr>
+  <tr>
+    <td>
+      종료 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842454-5826ff6e-54f4-45a6-9d59-7288fa5aa603.png" />
+    </td>
+    <td>
+     액티비티 안의 모든 흐름이 종료됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+      조건(판단) 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163842939-86d69c88-7c64-45a9-91b9-5fec8a31799f.png" />
+    </td>
+    <td>
+      조건에 따라 제어의 흐름이 분리됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+    병합 노드
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163843327-29febc2d-e0d5-4d54-9d42-b908f818746a.png" />
+    </td>
+    <td>
+      여러 경로의 흐름이 하나로 합쳐짐을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+     포크(Fork) 노드
+    </td>
+    <td>
+    <image src="https://user-images.githubusercontent.com/93482597/163843596-04e31644-56f3-4276-a148-a95f6ab0cc54.png" />
+    </td>
+    <td>
+    액티비티의 흐름이 분리되어 수행됨을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+    조인(Join) 노드
+    </td>
+    <td>
+    <image src="https://user-images.githubusercontent.com/93482597/163843736-4de59faf-0dab-4ae7-b5bc-3529399271c1.png" />
+    </td>
+    <td>
+      분리되어 수행되던 액티비티의 흐름이 다시 합쳐짐을 표현
+    </td>
+  </tr>
+  <tr>
+    <td>
+      스윔레인(Swim Lane)
+    </td>
+    <td>
+      <image src="https://user-images.githubusercontent.com/93482597/163846448-bce172e2-f785-436e-8e30-420b954c8a8e.png" />
+    </td>
+    <td>
+     액티비티 수행을 담당하는 주체를 구분하는 선<br />가로 또는 세로 실선을 그어 구분
+    </td>
+  </tr>
+</table>
+
+<h1 id="15-클래스class-다이어그램">15. 클래스(Class) 다이어그램</h1>
+
+<h2 id="클래스-다이어그램">클래스 다이어그램</h2>
+
+<ul>
+  <li>시스템을 구성하는 요소에 대해 이해할 수 있는 구조적 다이어그램</li>
+  <li>시스템을 구성하는 요소를 문서화 하는데 사용</li>
+  <li>코딩에 필요한 객체의 속성, 함수 등의 정보를 잘 표현하고 있어 시스템을 모델링하는 데자주 사용</li>
+  <li>
+    <p>클래스, 제약조건, 관계 등으로 구성</p>
+  </li>
+  <li>클래스 다이어그램은 UML 다이어그램 중 객체(Object)들을 클래스로 추상화하여 표현하는 다이어그램으로 대표적인 구조적 다이어그램이다.</li>
+  <li>클래스는 각각의 객체들이 갖는 속성과 메소드를 표현한 것으로 3개의 구획으로 나눠 이름, 속성, 메소드를 표기한다.</li>
+</ul>
+
+<h2 id="연관-클래스">연관 클래스</h2>
+
+<ul>
+  <li>연관 관계에 있는 두 클래스에 추가적으로 표현해야 할 속성이나 오퍼레이션이 있는 경우 생성하는 클래스</li>
+  <li>두 클래스의 연관 관계를 나타내는 선의 가운데로부터 점선을 연관클래스로 이어 표시</li>
+  <li>연관클래스의 이름은 연관 관계의 이름을 이용해 지정</li>
 </ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">정처기 실기 요구사항 확인 1~5</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 1~5" /><published>2022-04-08T00:00:00+09:00</published><updated>2022-04-09T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/"><![CDATA[<h1 id="1-소프트웨어-생명-주기">1. 소프트웨어 생명 주기</h1>
 
 <h2 id="소프트웨어-생명-주기software-life-cycle">소프트웨어 생명 주기(Software Life Cycle)</h2>

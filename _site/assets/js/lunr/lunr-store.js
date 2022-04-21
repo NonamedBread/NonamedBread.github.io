@@ -23,15 +23,21 @@ var store = [{
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 11~13",
+        "title": "정처기 실기 요구사항 확인 11~15",
         "excerpt":"11. UML - 관계(Relationship) 관계(Relationships) 사물과 사물 사이의 연관성을 표현하는 것 관계의 종류 연관 관계 집합 관계 포함 관계 일반화 관계 의존 관계 실체화 관계 개별적인 개념과 표현 방법을 확실히 숙지 연관(Association) 관계 2개 이상의 사물이 서로 관련되어 있는 관계 실선으로 연결하여 표현 방향성은 화살표로 표현 양방향 관게는 실선으로만 연결...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 14~",
-        "excerpt":"14.활동(Activity) 다이어그램 자료 흐릅도(DFD, Data Flow Diagram)와 유사 시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것 유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현 활동(Activity) 다이어그램 구성 요소 구성요소 표현 방법 내용 액션(Action) / 액티비티(Activity) 액션 액티비티 액션 : 더 이상 분해할...","categories": ["EIP_PS"],
+        "title": "정처기 실기 요구사항 확인 16~20",
+        "excerpt":"16. 시퀀스(Sequence) 다이어그램 구성 요소 액터(Actor) : 시스템으로부터 서비스를 요청하는 외부 요소로, 사람이나 외부 시스템을 의미 객체(Object) : 메시지를 주고받는 주체 생명선(Lifeline) : 객체가 메모리에 존재하는 기간으로, 객체 아래쪽에 점선을 그어 표현// 객체 소멸이 표시된 기간까지 존재 실행 상자(Active Box, 활성 상자) : 객체가 메시지를 주고 받으며 구동되고 있음을 표현...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/",
+        "teaser": null
+      },{
+        "title": "정처기 실기 요구사항 확인 21~30",
+        "excerpt":"21. S/W 공학의 발전적 추세 소프트웨어 재사용(Software Reuse) 이미 개발되어 인정받은 소프트웨어를 다른 소프트웨어 개발이나 유지에 사용 소프트웨어 재사용 방법 합성 중심(Composition-Based) : 전자 칩과 같은 소프트웨어 부품, 즉 블록을 만들어서 끼워 맞춰 소프트웨어를 완성시키는 방법, 블록 구성 방법이라고도 함 생성 중심(Generation-Based) : 추상화 형태로 써진 명세를 구체화하여 프로그램을 만드는...","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/",
         "teaser": null
       }]

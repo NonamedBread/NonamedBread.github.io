@@ -117,7 +117,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:lgh778923@gmail.com
+      #url: mailto:lgh778923@gmail.com
     - label: "Blog"
       icon: "fas fa-fw fa-link"
       url: "https://velog.io/@rbghks2102"

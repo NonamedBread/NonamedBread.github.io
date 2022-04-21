@@ -40,4 +40,10 @@ var store = [{
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/",
         "teaser": null
+      },{
+        "title": "요구사항 확인 오답노트",
+        "excerpt":" ","categories": ["EIP_PS"],
+        "tags": ["EIP_PS","정처기 오답노트"],
+        "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/",
+        "teaser": null
       }]

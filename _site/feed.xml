@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T04:52:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 21~30</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 21~30" /><published>2022-04-22T00:00:00+09:00</published><updated>2022-04-22T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/"><![CDATA[<h1 id="21-sw-공학의-발전적-추세">21. S/W 공학의 발전적 추세</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T05:05:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 21~30</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 21~30" /><published>2022-04-22T00:00:00+09:00</published><updated>2022-04-22T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/"><![CDATA[<h1 id="21-sw-공학의-발전적-추세">21. S/W 공학의 발전적 추세</h1>
 
 <h2 id="소프트웨어-재사용software-reuse">소프트웨어 재사용(Software Reuse)</h2>
 <ul>
@@ -2202,12 +2202,12 @@ sudo apt install tableplus
 </blockquote>
 
 <h2 id="4-개발회고">4. 개발회고</h2>
-<p>### 목적
- 이더리움 개발환경이 아닌 클레이튼 개발환경에서 NFT 개발
- ### Keep 
- 클레이튼 개발환경에서 NFT를 개발하며 NFT가 무엇인지 다시 한번 상기시킬 수 있어서 좋았으며, 이더리움이 다른 플랫폼 블록체인을 사용하여 NFT를 개발한다는 것이 의미있었다.
- ### Problem
- 배운 내용 거기서 멈춰 버렸다. 좀 더 나아가 다른것을 시도하지 못했으며 내가 알고 있는 다른것들과 같이 사용하지 못했다.</p>
+<h3 id="목적">목적</h3>
+<p>이더리움 개발환경이 아닌 클레이튼 개발환경에서 NFT 개발</p>
+<h3 id="keep">Keep</h3>
+<p>클레이튼 개발환경에서 NFT를 개발하며 NFT가 무엇인지 다시 한번 상기시킬 수 있어서 좋았으며, 이더리움이 다른 플랫폼 블록체인을 사용하여 NFT를 개발한다는 것이 의미있었다.</p>
+<h3 id="problem">Problem</h3>
+<p>배운 내용 거기서 멈춰 버렸다. 좀 더 나아가 다른것을 시도하지 못했으며 내가 알고 있는 다른것들과 같이 사용하지 못했다.</p>
 
-<p>### Try
- 단순히 NFT 발행이 아니라 디지털 아트나 음악 같은 디지털 파일에 소유권 증명을 할 수 있는 NFT발행을 해보고 싶다.</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Klaytn" /><category term="Klaytn" /></entry></feed>
+<h3 id="try">Try</h3>
+<p>단순히 NFT 발행이 아니라 디지털 아트나 음악 같은 디지털 파일에 소유권 증명을 할 수 있는 NFT발행을 해보고 싶다.</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Klaytn" /><category term="Klaytn" /></entry></feed>

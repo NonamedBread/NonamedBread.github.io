@@ -111,16 +111,16 @@ analytics:
 author:
   avatar           : "https://user-images.githubusercontent.com/93482597/162436959-6c42068b-4a02-41f8-a861-11d07864906e.jpg"
   name             : "Lee Kyuhwan"
-  bio              : "Now I am Deep Dive into Blockchain"
+  bio              : "Now I am Deep Dive into Blockchain<br>블로그 이사중"
   location         : "Gyeonggi, South Korea"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       #url: "mailto: lgh778923@gmail.com"
-    - label: "Website"
+      url: mailto:lgh778923@gmail.com
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://velog.io/@rbghks2102"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -129,7 +129,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      #url: "https://NonamedBread.github.io"
+      url: "https://github.com/NonamedBread"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

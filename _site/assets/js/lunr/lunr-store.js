@@ -1,4 +1,10 @@
 var store = [{
+        "title": "MySQL CLI",
+        "excerpt":"SHOW DATABASES DATABASE를 조회 USE 데이터베이스명 현재 사용중인 DATABASE를 변경 SELECT DATABASE() 현재 사용중인 DATABASE를 확인 SHOW TABLES DATABASE에 추가 되어 있는 테이블을 확인 DESC 테이블명 테이블 scheme를 확인 테이블명 변경 단일 테이블 이름 변경 RENAME TABLE old_table TO new_table; 단일 테이블 이름 변경 (ALTER) ALTER TABLE old_table RENAME new_table;...","categories": ["MySQL"],
+        "tags": ["MySQL"],
+        "url": "/mysql/MYSQL_CLI/",
+        "teaser": null
+      },{
         "title": "MySQL 세팅",
         "excerpt":"MySQL 설치 Ubuntu sudo apt-get upadte sudo apt-get install mysql-server macOS brew install mysql brew info mysql MySQL 접속 비밀번호 비어있는 경우 mysql -u root 비밀번호 설정한 경우 mysql -u root -p 비밀번호 변경 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPassword'; 비밀번호 변경 참고 SQL GUI Support Tool MySQL...","categories": ["MySQL"],
         "tags": ["MySQL"],

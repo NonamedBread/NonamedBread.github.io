@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T00:21:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 14~</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 14~" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-19T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/"><![CDATA[<h1 id="14활동activity-다이어그램">14.활동(Activity) 다이어그램</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T00:40:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">정처기 실기 요구사항 확인 14~</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/" rel="alternate" type="text/html" title="정처기 실기 요구사항 확인 14~" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-19T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/"><![CDATA[<h1 id="14활동activity-다이어그램">14.활동(Activity) 다이어그램</h1>
 
 <ul>
   <li>
@@ -1446,7 +1446,50 @@
     <td>부가적인 설명이나 제약조건 등을 표현<br />노트(Note)</td>
   </tr>
 
-</table>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">MySQL 세팅</title><link href="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/" rel="alternate" type="text/html" title="MySQL 세팅" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85</id><content type="html" xml:base="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/"><![CDATA[<h1 id="mysql-설치">MySQL 설치</h1>
+</table>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">MySQL CLI</title><link href="http://localhost:4000/mysql/MYSQL_CLI/" rel="alternate" type="text/html" title="MySQL CLI" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/mysql/MYSQL_CLI</id><content type="html" xml:base="http://localhost:4000/mysql/MYSQL_CLI/"><![CDATA[<h1 id="show-databases">SHOW DATABASES</h1>
+
+<p>DATABASE를 조회
+<img src="https://images.velog.io/images/rbghks2102/post/647c674f-6fa6-4d20-9628-0d8757f3c77a/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-03-14%2014-20-52.png" alt="" /></p>
+
+<h1 id="use-데이터베이스명">USE 데이터베이스명</h1>
+<p>현재 사용중인 DATABASE를 변경</p>
+
+<p><img src="https://images.velog.io/images/rbghks2102/post/8ff38215-e220-458b-b810-eb196c56d09f/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-03-14%2014-23-12.png" alt="" /></p>
+
+<h1 id="select-database">SELECT DATABASE()</h1>
+<p>현재 사용중인 DATABASE를 확인</p>
+
+<h1 id="show-tables">SHOW TABLES</h1>
+
+<p>DATABASE에 추가 되어 있는 테이블을 확인</p>
+
+<p><img src="https://images.velog.io/images/rbghks2102/post/55427666-875a-44e4-ab17-43768a222c9f/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-03-14%2014-24-46.png" alt="" /></p>
+
+<h1 id="desc-테이블명">DESC 테이블명</h1>
+<p>테이블 scheme를 확인</p>
+
+<p><img src="https://images.velog.io/images/rbghks2102/post/43fc7b3b-a643-4516-b44a-882a94e368ae/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-03-14%2014-25-58.png" alt="" /></p>
+
+<h1 id="테이블명-변경">테이블명 변경</h1>
+<h2 id="단일-테이블-이름-변경">단일 테이블 이름 변경</h2>
+<p>RENAME TABLE old_table TO new_table;</p>
+
+<p><img src="https://images.velog.io/images/rbghks2102/post/acf75197-4a9c-4ef1-9eac-1d53c129af5d/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-03-14%2017-43-47.png" alt="" /></p>
+
+<h2 id="단일-테이블-이름-변경-alter">단일 테이블 이름 변경 (ALTER)</h2>
+
+<pre><code class="language-SQL">ALTER TABLE old_table RENAME new_table;
+</code></pre>
+
+<h2 id="다수-테이블-이름-변경">다수 테이블 이름 변경</h2>
+<pre><code class="language-SQL">RENAME TABLE old_table1 TO new_table1,
+             old_table2 TO new_table2,
+             old_table3 TO new_table3;
+</code></pre>
+
+<h2 id="다른-데이터베이스로-테이블-이동">다른 데이터베이스로 테이블 이동</h2>
+<pre><code class="language-SQL">RENAME TABLE current_db.table_name TO other_db.table_name;
+</code></pre>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry><entry><title type="html">MySQL 세팅</title><link href="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/" rel="alternate" type="text/html" title="MySQL 세팅" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85</id><content type="html" xml:base="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/"><![CDATA[<h1 id="mysql-설치">MySQL 설치</h1>
 
 <h2 id="ubuntu">Ubuntu</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get upadte

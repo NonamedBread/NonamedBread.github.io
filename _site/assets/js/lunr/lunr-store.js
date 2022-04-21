@@ -1,4 +1,10 @@
 var store = [{
+        "title": "MySQL 세팅",
+        "excerpt":"MySQL 설치 Ubuntu sudo apt-get upadte sudo apt-get install mysql-server macOS brew install mysql brew info mysql MySQL 접속 비밀번호 비어있는 경우 mysql -u root 비밀번호 설정한 경우 mysql -u root -p 비밀번호 변경 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPassword'; 비밀번호 변경 참고 SQL GUI Support Tool MySQL...","categories": ["MySQL"],
+        "tags": ["MySQL"],
+        "url": "/mysql/MySQL%EC%84%B8%ED%8C%85/",
+        "teaser": null
+      },{
         "title": "정처기 실기 요구사항 확인 1~5",
         "excerpt":"1. 소프트웨어 생명 주기 소프트웨어 생명 주기(Software Life Cycle) 소프트웨어를 개발하기 위한 과정을 각 단계별로 나눈 것 대표 모형 폭포수 모형 프로토타입 모형 나선형 모형 애자일 모형 폭포수 모형(Waterfall Model, 원형 모형) 각 단계를 확실히 매듭짓고 다음 단계를 진행하는 개발 방법론 전통적인 소프트웨어 생명 주기 모형 프로토타입 모형(Prototype Model, 원형...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],

@@ -9,19 +9,21 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Tag - NonamedBread</title>
+<!-- begin _includes/seo.html --><title>MySQL 세팅 - NonamedBread</title>
 <meta name="description" content="An amazing website.">
 
 
   <meta name="author" content="Lee Kyuhwan">
   
+  <meta property="article:author" content="Lee Kyuhwan">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="NonamedBread">
-<meta property="og:title" content="Tag">
-<meta property="og:url" content="http://localhost:4000/tags/">
+<meta property="og:title" content="MySQL 세팅">
+<meta property="og:url" content="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/">
 
 
   <meta property="og:description" content="An amazing website.">
@@ -32,7 +34,11 @@
 
 
 
+  <meta property="article:published_time" content="2022-03-14T00:00:00+09:00">
 
+
+
+  <meta property="article:modified_time" content="2022-03-14T00:00:00+09:00">
 
 
 
@@ -41,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/tags/">
+<link rel="canonical" href="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/">
 
 
 
@@ -101,7 +107,7 @@
 
   </head>
 
-  <body class="layout--tags">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -325,71 +331,185 @@
   
   
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Tag</h1>
-    
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="MySQL 세팅">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-03-14T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-03-14T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/" class="u-url" itemprop="url">MySQL 세팅
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
     
 
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
 
 
+        </header>
+      
 
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#mysql-설치">MySQL 설치</a><ul><li><a href="#ubuntu">Ubuntu</a></li><li><a href="#macos">macOS</a></li><li><a href="#mysql-접속">MySQL 접속</a><ul><li><a href="#비밀번호-비어있는-경우">비밀번호 비어있는 경우</a></li><li><a href="#비밀번호-설정한-경우">비밀번호 설정한 경우</a></li><li><a href="#비밀번호-변경">비밀번호 변경</a></li></ul></li><li><a href="#sql-gui-support-tool">SQL GUI Support Tool</a><ul><li><a href="#table-plus-설치">Table Plus 설치</a></li></ul></li></ul></li></ul>
 
-<ul class="taxonomy__index">
-  
-    
-      
-    
-      
-        <li>
-          <a href="#eip-ps">
-            <strong>EIP_PS</strong> <span class="taxonomy__count">4</span>
-          </a>
-        </li>
-      
-    
-  
-    
-      
-    
-      
-    
-  
-    
-      
-    
-      
-    
-  
-    
-      
-        <li>
-          <a href="#mysql">
-            <strong>MySQL</strong> <span class="taxonomy__count">1</span>
-          </a>
-        </li>
-      
-    
-      
-    
-  
+            </nav>
+          </aside>
+        
+        <h1 id="mysql-설치">MySQL 설치</h1>
+
+<h2 id="ubuntu">Ubuntu</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get upadte
+sudo apt-get install mysql-server
+</code></pre></div></div>
+
+<h2 id="macos">macOS</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install mysql
+brew info mysql
+</code></pre></div></div>
+
+<h2 id="mysql-접속">MySQL 접속</h2>
+<h3 id="비밀번호-비어있는-경우">비밀번호 비어있는 경우</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root
+</code></pre></div></div>
+<h3 id="비밀번호-설정한-경우">비밀번호 설정한 경우</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
+</code></pre></div></div>
+<h3 id="비밀번호-변경">비밀번호 변경</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPassword'; 
+</code></pre></div></div>
+<blockquote>
+  <p><a href="https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server">비밀번호 변경 참고</a></p>
+</blockquote>
+
+<h2 id="sql-gui-support-tool">SQL GUI Support Tool</h2>
+<ul>
+  <li><a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a></li>
+  <li>Sequel Pro (OSX 전용)</li>
+  <li><a href="https://tableplus.com/">Table Plus</a> (추천)</li>
+  <li>DBeaver</li>
+  <li>DataGrip</li>
 </ul>
 
+<h3 id="table-plus-설치">Table Plus 설치</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ubuntu 20.04
+# Add TablePlus gpg key
+wget -qO - http://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add -
+
+# Add TablePlus repo
+sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/20 tableplus main"
+
+# Install
+sudo apt update
+sudo apt install tableplus
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
 
 
   
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
     
+      <a href="/tags/#mysql" class="page__taxonomy-item p-category" rel="tag">MySQL</a>
+    
+    </span>
+  </p>
+
+
+
+
   
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
     
-      <section id="eip-ps" class="taxonomy__section">
-        <h2 class="archive__subtitle">EIP_PS</h2>
-        <div class="entries-list">
+      <a href="/categories/#mysql" class="page__taxonomy-item p-category" rel="tag">MySQL</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-03-14">March 14, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=MySQL+%EC%84%B8%ED%8C%85%20http%3A%2F%2Flocalhost%3A4000%2Fmysql%2FMySQL%25EC%2584%25B8%25ED%258C%2585%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fmysql%2FMySQL%25EC%2584%25B8%25ED%258C%2585%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fmysql%2FMySQL%25EC%2584%25B8%25ED%258C%2585%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/" class="pagination--pager" title="정처기 실기 요구사항 확인 1~5
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
           
-            
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -412,7 +532,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          4 minute read
+          5 minute read
         
       </span>
     
@@ -424,12 +544,12 @@
   </article>
 </div>
 
+        
           
-            
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -464,12 +584,12 @@
   </article>
 </div>
 
+        
           
-            
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -504,12 +624,12 @@
   </article>
 </div>
 
+        
           
-            
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -544,81 +664,11 @@
   </article>
 </div>
 
-          
-        </div>
-        <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-      </section>
-    
-  
-
-  
-    
-  
-    
-  
-
-  
-    
-  
-    
-  
-
-  
-    
-      <section id="mysql" class="taxonomy__section">
-        <h2 class="archive__subtitle">MySQL</h2>
-        <div class="entries-list">
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/mysql/MySQL%EC%84%B8%ED%8C%85/" rel="permalink">MySQL 세팅
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-      </section>
-    
+      </div>
+    </div>
   
-    
   
-
-
-  </div>
 </div>
     </div>
 

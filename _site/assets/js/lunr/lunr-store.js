@@ -1,4 +1,10 @@
 var store = [{
+        "title": "NFT 개발하기(Klaytn)",
+        "excerpt":"클레이튼 개발환경에서 NFT 개발 1. 컴파일 먼저 Klayrn IDE에 접속하여 새로운 프로젝트를 만들고 파일을 생성한 후 컴파일 한다. 프로젝트 이름은 BreadNFT라고 지었으며 파일이름은 Bread.sol로 만들었다. 그 후 KIP-17을 사용할 것이기 때문에 ERC721부분을 KIP17로 수정한다 contract MyNFTs is KIP17Full, Ownable { using Counters for Counters.Counter; Counters.Counter private _tokenIds; // ERC721을 KIP17Full로...","categories": ["Klaytn"],
+        "tags": ["Klaytn"],
+        "url": "/klaytn/Klaytn_NFT/",
+        "teaser": null
+      },{
         "title": "MySQL CLI",
         "excerpt":"SHOW DATABASES DATABASE를 조회 USE 데이터베이스명 현재 사용중인 DATABASE를 변경 SELECT DATABASE() 현재 사용중인 DATABASE를 확인 SHOW TABLES DATABASE에 추가 되어 있는 테이블을 확인 DESC 테이블명 테이블 scheme를 확인 테이블명 변경 단일 테이블 이름 변경 RENAME TABLE old_table TO new_table; 단일 테이블 이름 변경 (ALTER) ALTER TABLE old_table RENAME new_table;...","categories": ["MySQL"],
         "tags": ["MySQL"],

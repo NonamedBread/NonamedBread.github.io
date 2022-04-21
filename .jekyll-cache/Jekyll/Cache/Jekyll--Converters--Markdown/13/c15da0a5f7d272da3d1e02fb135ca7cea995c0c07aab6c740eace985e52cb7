@@ -1,0 +1,25 @@
+I"3
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/klaytn/Klaytn_NFT/">NFT 개발하기(Klaytn)</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.02.08
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#klaytn" class="page__taxonomy-item-category" rel="tag">Klaytn</a>
+                    
+                    
+                    <a href="/tags/#klaytn" class="page__taxonomy-item-tag" rel="tag">Klaytn</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+:ET

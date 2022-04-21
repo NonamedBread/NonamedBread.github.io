@@ -17,7 +17,7 @@ var store = [{
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 13~",
+        "title": "정처기 실기 요구사항 확인 14~",
         "excerpt":"14.활동(Activity) 다이어그램 자료 흐릅도(DFD, Data Flow Diagram)와 유사 시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한 것 유스케이스 안에서 혹은 유스케이스 사이의 복잡한 처리의 흐름을 표현 활동(Activity) 다이어그램 구성 요소 구성요소 표현 방법 내용 액션(Action) / 액티비티(Activity) 액션 액티비티 액션 : 더 이상 분해할...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/",

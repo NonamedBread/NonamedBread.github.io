@@ -1,4 +1,4 @@
-I"W
+I"�
 <div class="list__item">
     <article class="archive-item">
         <div>
@@ -6,7 +6,7 @@
               <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/">요구사항 확인 오답노트</a>
             </span>
             <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.22
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.23
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         
@@ -104,6 +104,30 @@
         <div>
             <span>
               <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/">정처기 실기 요구사항 확인 6~10</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.08
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#eip-ps" class="page__taxonomy-item-category" rel="tag">EIP_PS</a>
+                    
+                    
+                    <a href="/tags/#eip-ps" class="page__taxonomy-item-tag" rel="tag">EIP_PS</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/">정처기 실기 요구사항 확인 1~5</a>
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.08

@@ -48,7 +48,7 @@ var store = [{
         "teaser": null
       },{
         "title": "요구사항 확인 오답노트",
-        "excerpt":" ","categories": ["EIP_PS"],
+        "excerpt":"문제 1 프로토타입 모형(Prototype Model)에 대해 간략히 서술 2 소프트웨어 개발 방법론의 바탕이 되는 것으로, 소프트웨어를 개발하기 위한 설계, 운용, 유지보수 등의 과정을 단게별로 나눈것 3 고객의 요구사항 변화에 유연하게 대응할 수 있도록 일정한 주기를 반복하며 개발 4 수시로 발생하는 고객의 요구사항에 유연하게 대응하기 위해 고객의 참여와 개발 과정의 반복을...","categories": ["EIP_PS"],
         "tags": ["EIP_PS","정처기 오답노트"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/",
         "teaser": null

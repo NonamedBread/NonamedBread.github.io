@@ -52,4 +52,16 @@ var store = [{
         "tags": ["EIP_PS","정처기 오답노트"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/",
         "teaser": null
+      },{
+        "title": "데이터 입출력 구현 31~40",
+        "excerpt":" ","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/",
+        "teaser": null
+      },{
+        "title": "암호와 & 합의 알고리즘",
+        "excerpt":"암호화 기술과 보안 블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다 블록체인 보안적 특징 기존 데이터베이스와 차이점 무결성 기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의...","categories": ["Blockchain_theory"],
+        "tags": ["Blockchain_theory"],
+        "url": "/blockchain_theory/Encryption_consensus_algorithm/",
+        "teaser": null
       }]

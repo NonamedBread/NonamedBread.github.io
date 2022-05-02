@@ -1,4 +1,28 @@
-I"�
+I"A
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/">데이터 입출력 구현 31~40</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.25
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#eip-ps" class="page__taxonomy-item-category" rel="tag">EIP_PS</a>
+                    
+                    
+                    <a href="/tags/#eip-ps" class="page__taxonomy-item-tag" rel="tag">EIP_PS</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+
 <div class="list__item">
     <article class="archive-item">
         <div>

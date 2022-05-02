@@ -37,6 +37,17 @@
 <lastmod>2022-04-23T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/</loc>
+<lastmod>2022-04-25T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/</loc>
+<lastmod>2022-04-26T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/categories/Blockchain_theory</loc>
+</url>
+<url>
 <loc>http://localhost:4000/categories/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%8B%A4%EA%B8%B0</loc>
 </url>
 <url>
@@ -59,5 +70,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page3/</loc>
 </url>
 </urlset>

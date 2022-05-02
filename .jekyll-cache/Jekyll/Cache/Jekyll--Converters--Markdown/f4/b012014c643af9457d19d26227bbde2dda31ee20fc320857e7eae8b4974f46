@@ -1,0 +1,25 @@
+I"�
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/blockchain_theory/Encryption_consensus_algorithm/">암호와 &amp; 합의 알고리즘</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.04.26
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#blockchain-theory" class="page__taxonomy-item-category" rel="tag">Blockchain_theory</a>
+                    
+                    
+                    <a href="/tags/#blockchain-theory" class="page__taxonomy-item-tag" rel="tag">Blockchain theory</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+:ET

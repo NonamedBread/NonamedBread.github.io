@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T15:06:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">요구사항 확인 오답노트</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="alternate" type="text/html" title="요구사항 확인 오답노트" /><published>2022-04-23T00:00:00+09:00</published><updated>2022-04-23T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/"><![CDATA[<h1 id="문제">문제</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-26T20:44:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">암호와 &amp;amp; 합의 알고리즘</title><link href="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/" rel="alternate" type="text/html" title="암호와 &amp;amp; 합의 알고리즘" /><published>2022-04-26T00:00:00+09:00</published><updated>2022-04-26T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/"><![CDATA[<h1 id="암호화-기술과-보안">암호화 기술과 보안</h1>
+
+<p>블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다</p>
+
+<h1 id="블록체인-보안적-특징">블록체인 보안적 특징</h1>
+
+<h3 id="기존-데이터베이스와-차이점">기존 데이터베이스와 차이점</h3>
+
+<h3 id="무결성">무결성</h3>
+
+<p>기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의 무결성은 보장된다.</p>
+
+<h3 id="비가역성">비가역성</h3>
+
+<p>블록체인 기술은 중앙 통제 방식이 아닌 분산 데이터 저장 방식시이 깨문에 단일 공격 지점이 없어 데이터 위변조 위험이 차단된다.</p>
+
+<h2 id="보안적-특징">보안적 특징</h2>
+
+<ol>
+  <li>데이터 무결성
+합의 알고리즘을 통해 데이터의 정확성과 일관성을 유지(무결성)</li>
+  <li>거래 투명성
+퍼블릭 블록체인의 경우 네트워크에 접속해 트랜잭션의 기록을 확인할 수 있다.</li>
+  <li>감시 가능성
+Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는 수정할 수 없다.</li>
+</ol>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">데이터 입출력 구현 31~40</title><link href="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/" rel="alternate" type="text/html" title="데이터 입출력 구현 31~40" /><published>2022-04-25T00:00:00+09:00</published><updated>2022-04-25T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/"><![CDATA[]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">요구사항 확인 오답노트</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="alternate" type="text/html" title="요구사항 확인 오답노트" /><published>2022-04-23T00:00:00+09:00</published><updated>2022-04-23T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/"><![CDATA[<h1 id="문제">문제</h1>
 
 <h2 id="1">1</h2>
 <ul>
@@ -2210,80 +2235,4 @@ sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/20 ta
 # Install
 sudo apt update
 sudo apt install tableplus
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry><entry><title type="html">NFT 개발하기(Klaytn)</title><link href="http://localhost:4000/klaytn/Klaytn_NFT/" rel="alternate" type="text/html" title="NFT 개발하기(Klaytn)" /><published>2022-02-08T00:00:00+09:00</published><updated>2022-02-08T00:00:00+09:00</updated><id>http://localhost:4000/klaytn/Klaytn_NFT</id><content type="html" xml:base="http://localhost:4000/klaytn/Klaytn_NFT/"><![CDATA[<h1 id="클레이튼-개발환경에서-nft-개발">클레이튼 개발환경에서 NFT 개발</h1>
-<h2 id="1-컴파일">1. 컴파일</h2>
-
-<p>먼저 <a href="https://ide.klaytn.com/">Klayrn IDE</a>에 접속하여 새로운 프로젝트를 만들고 파일을 생성한 후 컴파일 한다.</p>
-
-<p><img src="https://images.velog.io/images/rbghks2102/post/b859e906-07fe-45a9-843d-db2042be06f1/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-02-08%2018-47-29.png" alt="" /></p>
-<blockquote>
-  <p>프로젝트 이름은 BreadNFT라고 지었으며 파일이름은 Bread.sol로 만들었다.</p>
-</blockquote>
-
-<p>그 후 KIP-17을 사용할 것이기 때문에 ERC721부분을 KIP17로 수정한다</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>contract MyNFTs is KIP17Full, Ownable {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIds;
-
-    // ERC721을 KIP17Full로 수정합니다.
-    constructor() public KIP17Full("MyNFTs", "MNFT") {}
-
-    function mintNFT(string memory tokenURI)
-        public
-        onlyOwner
-        returns (uint256)
-    {
-        _tokenIds.increment();
-
-        uint256 newItemId = _tokenIds.current();
-        _mint(msg.sender, newItemId);
-        _setTokenURI(newItemId, tokenURI);
-
-        return newItemId;
-    }
-}
-</code></pre></div></div>
-
-<blockquote>
-  <p>클레이튼 개발환경에서 NFT를 개발하기 위해서는 이더리움 개발환경에서 NFT를 개발할때 ERC-721을 이용하여 스마트 컨트렉트를 만들었던 것처럼 KIP-17을 사용해야 된다.</p>
-</blockquote>
-
-<p>코드를 모두 작성하였으면 Solidity Compiler을 클릭하여 컴파일 진행한다.(Klaytn NFT Code 사용)</p>
-
-<p><img src="https://images.velog.io/images/rbghks2102/post/2d9bdbea-d800-41f0-aa31-a7f16ce11a18/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202022-02-08%2018-57-05.png" alt="" /></p>
-
-<blockquote>
-  <p>컴파일러 버전은 0.5.6+commit.b259423e을 사용하고 언어는 솔리디티를 선택한다.</p>
-</blockquote>
-
-<h2 id="2-배포">2. 배포</h2>
-
-<p>컴파일이 완료되면 Klaytn IDE 왼쪽창에 Deploy &amp; run transactions를 클릭하여 배포를 진행 한다. 배포가 완료되면 콘솔창을 통해 확인할 수 있다.</p>
-
-<p><img src="https://images.velog.io/images/rbghks2102/post/7abd768d-cd51-454a-b7db-e237bc1f7f0d/ezgif.com-gif-maker%20(3).gif" alt="" /></p>
-<blockquote>
-  <p>테스트 환경(Baobab)에서 배포를 할 것이기 때문에 환경을 Baobab으로 바꿔주고 ACCOUNT 부분에  배포할때 사용할 카이카스 계정의 공개키를 입력한다.</p>
-</blockquote>
-
-<h2 id="3-nft확인">3. NFT확인</h2>
-<p>mintNFT에 임의의 수를 입력하고 함수 ownerOf를 실행하면 배포된 컨트랙트와 NFT 발행이 잘 이뤄졌는지 확인할 수 있다.</p>
-
-<p><img src="https://images.velog.io/images/rbghks2102/post/a8a3fbb1-cfd5-4d54-bb50-d148f3a1a450/ezgif.com-gif-maker%20(2).gif" alt="" /></p>
-
-<blockquote>
-  <ul>
-    <li>클레이튼 NFT 배포 주소 : 0xbd6b1378203c5641b11be2a1e5d5b32322f310e8</li>
-    <li>클레이튼 스코프 주소 : https://baobab.scope.klaytn.com/account/0xbD6b1378203c5641b11BE2a1E5D5B32322F310E8?tabId=txList</li>
-  </ul>
-</blockquote>
-
-<h2 id="4-개발회고">4. 개발회고</h2>
-<h3 id="목적">목적</h3>
-<p>이더리움 개발환경이 아닌 클레이튼 개발환경에서 NFT 개발</p>
-<h3 id="keep">Keep</h3>
-<p>클레이튼 개발환경에서 NFT를 개발하며 NFT가 무엇인지 다시 한번 상기시킬 수 있어서 좋았으며, 이더리움이 다른 플랫폼 블록체인을 사용하여 NFT를 개발한다는 것이 의미있었다.</p>
-<h3 id="problem">Problem</h3>
-<p>배운 내용 거기서 멈춰 버렸다. 좀 더 나아가 다른것을 시도하지 못했으며 내가 알고 있는 다른것들과 같이 사용하지 못했다.</p>
-
-<h3 id="try">Try</h3>
-<p>단순히 NFT 발행이 아니라 디지털 아트나 음악 같은 디지털 파일에 소유권 증명을 할 수 있는 NFT발행을 해보고 싶다.</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Klaytn" /><category term="Klaytn" /></entry></feed>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry></feed>

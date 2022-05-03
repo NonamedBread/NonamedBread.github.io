@@ -59,9 +59,15 @@ var store = [{
         "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/",
         "teaser": null
       },{
-        "title": "암호와 & 합의 알고리즘",
+        "title": "암호화 & 합의 알고리즘",
         "excerpt":"암호화 기술과 보안 블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다 블록체인 보안적 특징 기존 데이터베이스와 차이점 무결성 기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의...","categories": ["Blockchain_theory"],
         "tags": ["Blockchain_theory"],
         "url": "/blockchain_theory/Encryption_consensus_algorithm/",
+        "teaser": null
+      },{
+        "title": "노드 & API",
+        "excerpt":"블록체인에서의 노드 전 세계적으로 존재하는 서버들을 노드(Node)라고 한다. 여기서 블록체인의 노드는 트리 구조로 구성되어 있다 기능과 필요에 따라 종류와 형태가 구별되며, 노드는 트랜잭션을 제안하고 검증을 할 수 있으며, 합의를 이루고, 블록체인을 보호하기 위해 채굴(Mining)을 수행 프라이빗 블록체인(Private blockchain) 또는 하이퍼레저 패브릭의 멤버쉽 서비스 같은 폐쇄형 블록체인 네트워크에서는 계정 역할의 노드(Node)가...","categories": ["Blockchain_theory"],
+        "tags": ["Blockchain_theory"],
+        "url": "/blockchain_theory/Node&API/",
         "teaser": null
       }]

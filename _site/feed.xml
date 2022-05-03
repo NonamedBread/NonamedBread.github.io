@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-26T20:44:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">암호와 &amp;amp; 합의 알고리즘</title><link href="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/" rel="alternate" type="text/html" title="암호와 &amp;amp; 합의 알고리즘" /><published>2022-04-26T00:00:00+09:00</published><updated>2022-04-26T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/"><![CDATA[<h1 id="암호화-기술과-보안">암호화 기술과 보안</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-03T20:43:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">노드 &amp;amp; API</title><link href="http://localhost:4000/blockchain_theory/Node&API/" rel="alternate" type="text/html" title="노드 &amp;amp; API" /><published>2022-05-03T00:00:00+09:00</published><updated>2022-05-03T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/Node&amp;API</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/Node&amp;API/"><![CDATA[<h2 id="블록체인에서의-노드">블록체인에서의 노드</h2>
+
+<p>전 세계적으로 존재하는 서버들을 노드(Node)라고 한다.
+여기서 블록체인의 노드는 트리 구조로 구성되어 있다
+기능과 필요에 따라 종류와 형태가 구별되며, 노드는 트랜잭션을 제안하고 검증을 할 수 있으며, 합의를 이루고, 블록체인을 보호하기 위해 채굴(Mining)을 수행</p>
+
+<blockquote>
+  <p>프라이빗 블록체인(Private blockchain) 또는 하이퍼레저 패브릭의 멤버쉽 서비스 같은 폐쇄형 블록체인 네트워크에서는 계정 역할의 노드(Node)가 꼭 필요하다.</p>
+</blockquote>
+
+<h2 id="노드의-종류">노드의 종류</h2>
+
+<ul>
+  <li>지갑(wallet)</li>
+  <li>풀 노드(Full node)</li>
+  <li>라이트 노드(Light node)</li>
+  <li>SPV(Simple Payment Verification)</li>
+  <li>마스터 노드(Master node)</li>
+  <li>채굴 노드(Mining node)</li>
+  <li>랜덤노드(Random node)</li>
+  <li>엔드포인트 노드(Endpoint node) (구)레인저 노드(Ranger node)</li>
+  <li>합의 노드(CN; Consensus nodes)</li>
+  <li>슈퍼 노드(Super node) or 대표 노드(Representative node)</li>
+  <li>히스토리 노드(History node)</li>
+</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">암호화 &amp;amp; 합의 알고리즘</title><link href="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/" rel="alternate" type="text/html" title="암호화 &amp;amp; 합의 알고리즘" /><published>2022-04-26T00:00:00+09:00</published><updated>2022-04-26T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/Encryption_consensus_algorithm/"><![CDATA[<h1 id="암호화-기술과-보안">암호화 기술과 보안</h1>
 
 <p>블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다</p>
 
@@ -22,8 +46,12 @@
   <li>거래 투명성
 퍼블릭 블록체인의 경우 네트워크에 접속해 트랜잭션의 기록을 확인할 수 있다.</li>
   <li>감시 가능성
-Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는 수정할 수 없다.</li>
-</ol>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">데이터 입출력 구현 31~40</title><link href="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/" rel="alternate" type="text/html" title="데이터 입출력 구현 31~40" /><published>2022-04-25T00:00:00+09:00</published><updated>2022-04-25T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/"><![CDATA[]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">요구사항 확인 오답노트</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="alternate" type="text/html" title="요구사항 확인 오답노트" /><published>2022-04-23T00:00:00+09:00</published><updated>2022-04-23T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/"><![CDATA[<h1 id="문제">문제</h1>
+Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는 수정할 수 없다. 만약 트랜잭션에 변경이 일어나면 머클 해시 값이 변경되어 위변조 시도를 바로 발견할 수 있다.</li>
+</ol>
+
+<h2 id="해시-함수">해시 함수</h2>
+
+<p>해싱(Hashing)</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">데이터 입출력 구현 31~40</title><link href="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/" rel="alternate" type="text/html" title="데이터 입출력 구현 31~40" /><published>2022-04-25T00:00:00+09:00</published><updated>2022-04-25T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/"><![CDATA[]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">요구사항 확인 오답노트</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="alternate" type="text/html" title="요구사항 확인 오답노트" /><published>2022-04-23T00:00:00+09:00</published><updated>2022-04-23T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/"><![CDATA[<h1 id="문제">문제</h1>
 
 <h2 id="1">1</h2>
 <ul>
@@ -2189,50 +2217,4 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
 
 <h2 id="다른-데이터베이스로-테이블-이동">다른 데이터베이스로 테이블 이동</h2>
 <pre><code class="language-SQL">RENAME TABLE current_db.table_name TO other_db.table_name;
-</code></pre>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry><entry><title type="html">MySQL 세팅</title><link href="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/" rel="alternate" type="text/html" title="MySQL 세팅" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85</id><content type="html" xml:base="http://localhost:4000/mysql/MySQL%EC%84%B8%ED%8C%85/"><![CDATA[<h1 id="mysql-설치">MySQL 설치</h1>
-
-<h2 id="ubuntu">Ubuntu</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get upadte
-sudo apt-get install mysql-server
-</code></pre></div></div>
-
-<h2 id="macos">macOS</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install mysql
-brew info mysql
-</code></pre></div></div>
-
-<h2 id="mysql-접속">MySQL 접속</h2>
-<h3 id="비밀번호-비어있는-경우">비밀번호 비어있는 경우</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root
-</code></pre></div></div>
-<h3 id="비밀번호-설정한-경우">비밀번호 설정한 경우</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
-</code></pre></div></div>
-<h3 id="비밀번호-변경">비밀번호 변경</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPassword'; 
-</code></pre></div></div>
-<blockquote>
-  <p><a href="https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server">비밀번호 변경 참고</a></p>
-</blockquote>
-
-<h2 id="sql-gui-support-tool">SQL GUI Support Tool</h2>
-<ul>
-  <li><a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a></li>
-  <li>Sequel Pro (OSX 전용)</li>
-  <li><a href="https://tableplus.com/">Table Plus</a> (추천)</li>
-  <li>DBeaver</li>
-  <li>DataGrip</li>
-</ul>
-
-<h3 id="table-plus-설치">Table Plus 설치</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ubuntu 20.04
-# Add TablePlus gpg key
-wget -qO - http://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add -
-
-# Add TablePlus repo
-sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/20 tableplus main"
-
-# Install
-sudo apt update
-sudo apt install tableplus
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry></feed>
+</code></pre>]]></content><author><name>Lee Kyuhwan</name></author><category term="MySQL" /><category term="MySQL" /></entry></feed>

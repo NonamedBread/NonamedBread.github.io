@@ -59,6 +59,12 @@ var store = [{
         "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8400/",
         "teaser": null
       },{
+        "title": "2.데이터 입출력 구현 41~50",
+        "excerpt":"41. 관계형 데이터베이스의 제약 조건 - 키(Key) 키의 종류를 기억, 각 키에 대한 개념 키(Key) 데이터베이스에서 조건에 만족하는 튜플을 찾거나 순서대로 정렬할 때 기준이 되는 속성 키의 종류 후보키(Candidate Key) 기본키(Primary Key) 대체키(Alternate Key) 슈퍼키(Super Key) 외래키(Foreign Key) 후보키(Candidate Key) 속성들 중에서 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합 유일성(Unique)과...","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8401/",
+        "teaser": null
+      },{
         "title": "암호화 & 합의 알고리즘",
         "excerpt":"암호화 기술과 보안 블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다 블록체인 보안적 특징 기존 데이터베이스와 차이점 무결성 기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의...","categories": ["Blockchain_theory"],
         "tags": ["Blockchain_theory"],

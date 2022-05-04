@@ -1,0 +1,982 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>2.데이터 입출력 구현 41~50 - NonamedBread</title>
+<meta name="description" content="An amazing website.">
+
+
+  <meta name="author" content="Lee Kyuhwan">
+  
+  <meta property="article:author" content="Lee Kyuhwan">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="NonamedBread">
+<meta property="og:title" content="2.데이터 입출력 구현 41~50">
+<meta property="og:url" content="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8401/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-04-25T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-04-25T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8401/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "NonamedBread",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="NonamedBread Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main_dark.css">
+
+<!-- darkmode css -->
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"> -->
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+
+
+<!-- end custom head snippets -->
+
+</head>
+
+<body
+  class="layout--single">
+  <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+  
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          NonamedBread
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://NonamedBread.github.io" >Home</a>
+          </li><li class="masthead__menu-item">
+            <a href="/categories/" >Category</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://abrupt-jump-f72.notion.site/Lee-kyuhwan-943e3f950b214a5b802c6b3d305c3300" >About Me</a>
+          </li></ul>
+        
+        <!-- 다크 모드 토글 버튼 -->
+        
+        <input id="toggle_dark_theme" class="mh_toogle" type="checkbox">
+        <label for="toggle_dark_theme" class="material-icons-sharp mh_toggle_btn"></label>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="initial-content">
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/93482597/166445400-d1b7932f-8977-4634-8440-af54fef961cd.jpg" alt="Lee Kyuhwan" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Lee Kyuhwan</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>The day is long and the week is short.<br />하루하루 꾸준히 :) <br />@@블로그 이사중@@</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Gyeonggi, South Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+            <li><a href="https://velog.io/@rbghks2102" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Blog</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/NonamedBread" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+    
+        <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">13</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Blockchain</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/Klaytn" class="">Klaytn (1)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/Blockchain_theory" class="">Blockchain theory (2)</a></li>
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Serve, DB</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                        <li><a href="/categories/MySQL" class="">MySQL (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">etc</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/정처기실기" class="">정처기 실기 (8)</a></li>
+                    
+                
+                    
+                
+            </ul>
+       
+      </li>
+  </ul>
+</nav>
+      
+      
+  </div>
+  
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="2.데이터 입출력 구현 41~50">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-04-25T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-25T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8401/" class="u-url" itemprop="url">2.데이터 입출력 구현 41~50
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#41-관계형-데이터베이스의-제약-조건---키key">41. 관계형 데이터베이스의 제약 조건 - 키(Key)</a><ul><li><a href="#키key">키(Key)</a></li><li><a href="#후보키candidate-key">후보키(Candidate Key)</a></li><li><a href="#기본키primary-key">기본키(Primary Key)</a></li><li><a href="#대체키alternate-key">대체키(Alternate Key)</a></li><li><a href="#슈퍼키super-key">슈퍼키(Super Key)</a></li><li><a href="#외래키foreign-key">외래키(Foreign Key)</a></li></ul></li><li><a href="#42-관계형-데이터베이스의-제약-조건---무결성integrity">42. 관계형 데이터베이스의 제약 조건 - 무결성(Integrity)</a><ul><li><a href="#무결성integrity">무결성(Integrity)</a></li><li><a href="#무결성의-종류">무결성의 종류</a></li><li><a href="#데이터-무결성-강화">데이터 무결성 강화</a></li></ul></li><li><a href="#43-관계대수-및-관계해석">43. 관계대수 및 관계해석</a><ul><li><a href="#관계대수">관계대수</a></li><li><a href="#순수-관계-연산자">순수 관계 연산자</a></li><li><a href="#일반-집합-연산자">일반 집합 연산자</a></li><li><a href="#관계해석relational-calculus">관계해석(Relational Calculus)</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="41-관계형-데이터베이스의-제약-조건---키key">41. 관계형 데이터베이스의 제약 조건 - 키(Key)</h1>
+
+<blockquote>
+  <p>키의 종류를 기억, 각 키에 대한 개념</p>
+</blockquote>
+
+<h2 id="키key">키(Key)</h2>
+
+<ul>
+  <li>
+    <p>데이터베이스에서 조건에 만족하는 튜플을 찾거나 순서대로 정렬할 때 기준이 되는 속성</p>
+  </li>
+  <li>
+    <p>키의 종류</p>
+    <ul>
+      <li>후보키(Candidate Key)</li>
+      <li>기본키(Primary Key)</li>
+      <li>대체키(Alternate Key)</li>
+      <li>슈퍼키(Super Key)</li>
+      <li>외래키(Foreign Key)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="후보키candidate-key">후보키(Candidate Key)</h2>
+
+<ul>
+  <li>속성들 중에서 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합</li>
+  <li>유일성(Unique)과 최소성(Minimality)를 모두 만족해야 된다</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>유일성(Unique)</td>
+      <td>하나의 키 값으로 하나의 튜플만을 유일하게 식별할 수 있어야 함</td>
+    </tr>
+    <tr>
+      <td>최소성(Minimality)</td>
+      <td>키를 구성하는 속성 하나를 제거하면 유일하게 식별할 수 없도록 꼭 필요한 최소의 속성으로 구성되어야 함</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="기본키primary-key">기본키(Primary Key)</h2>
+
+<ul>
+  <li>후보키 중에서 특별이 선정된 주키(Main Key)</li>
+</ul>
+
+<h2 id="대체키alternate-key">대체키(Alternate Key)</h2>
+
+<ul>
+  <li>후보키가 둘 이상일 때 기본키를 제외한 나머지 후보키</li>
+</ul>
+
+<h2 id="슈퍼키super-key">슈퍼키(Super Key)</h2>
+
+<ul>
+  <li>릴레이션 내에 있는 속성들의 집합으로 구성된 키</li>
+</ul>
+
+<h2 id="외래키foreign-key">외래키(Foreign Key)</h2>
+
+<ul>
+  <li>다른 릴레이션의 기본키를 참조하는 속성 또는 속성들의 집합</li>
+</ul>
+
+<h1 id="42-관계형-데이터베이스의-제약-조건---무결성integrity">42. 관계형 데이터베이스의 제약 조건 - 무결성(Integrity)</h1>
+
+<h2 id="무결성integrity">무결성(Integrity)</h2>
+
+<ul>
+  <li>데이터베이스에 저장된 데이터 값과 현실 세계의 실제값이 일치하는 정확성</li>
+</ul>
+
+<h2 id="무결성의-종류">무결성의 종류</h2>
+
+<blockquote>
+  <p>개체 무결성과 참조 무결성 개념 숙지</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>종류</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>개체 무결성</td>
+      <td>기본 테이블의 기본키를 구성하는 어떤 속성도 Null 값이나 중복값을 가질 수 없다는 규정</td>
+    </tr>
+    <tr>
+      <td>참조 무결성</td>
+      <td>외래키 값은 Null이거나 참조 릴레이션의 기본키 값과 동일해야 함</td>
+    </tr>
+    <tr>
+      <td>도메인 무결성</td>
+      <td>주어진 속성 값이 정의된 도메인에 속한 값이어야 한다는 규정</td>
+    </tr>
+    <tr>
+      <td>사용자 정의 무결성</td>
+      <td>속성 값들이 사용자가 정의한 제약조건에 만족되어야 한다는 규정</td>
+    </tr>
+    <tr>
+      <td>NULL 무결성</td>
+      <td>릴레이션의 특정 속성 값이 NULL이 될 수 없도록 하는 규정</td>
+    </tr>
+    <tr>
+      <td>고유 무결성</td>
+      <td>릴레이션의 특정 속성에 대해 각 튜플이 갖는 속성값들이 서로 달라야 한다는 규정</td>
+    </tr>
+    <tr>
+      <td>키 무결성</td>
+      <td>하나의 릴레이션에는 적어도 하나의 키가 존재해야 한다는 규정</td>
+    </tr>
+    <tr>
+      <td>관계 무결성</td>
+      <td>릴레이션에 어느 한 튜플의 삽입 가능 여부 또는 한 릴레이션과 다른 릴레이션의 튜플들 사이의 관계에 대한 적절성 여부를 지정</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="데이터-무결성-강화">데이터 무결성 강화</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>애플리케이션</td>
+      <td>데이터 생성, 수정, 삭제 시 무결성 조건을 검증하는 코드를 프로그램 내에 추가함</td>
+    </tr>
+    <tr>
+      <td>데이터베이스 트리거</td>
+      <td>트리거 이벤트에 무결성 조건을 실행하는 절차형 SQL을 추가함</td>
+    </tr>
+    <tr>
+      <td>제약 조건</td>
+      <td>데이터베이스에 제약 조건을 설정하여 무결성을 유지</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>애데제</p>
+</blockquote>
+
+<h1 id="43-관계대수-및-관계해석">43. 관계대수 및 관계해석</h1>
+
+<h2 id="관계대수">관계대수</h2>
+
+<ul>
+  <li>원하는 정보와 그 정보를 검색하기 위해서 어떻게 유도하는가를 기술하는 절차적인 언어</li>
+</ul>
+
+<h2 id="순수-관계-연산자">순수 관계 연산자</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>종류</th>
+      <th>특징</th>
+      <th>기호</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Select</td>
+      <td>릴레이션에 존재하는 튜플 중에서 선택 조건을 만족하는 튜플의 부분집합을 구하여 새로운 릴레이션을 만드는 연산</td>
+      <td>σ(시그마)</td>
+    </tr>
+    <tr>
+      <td>Project</td>
+      <td>주어진 릴레이션에서 속성 리스트(Attribute List)에 제시된 속성 값만을 추출하여 새로운 릴레이션을 만드는 연산</td>
+      <td>π(파이)</td>
+    </tr>
+    <tr>
+      <td>Join</td>
+      <td>공통 속성을 중심으로 두 개의 릴레이션을 하나로 합쳐서 새로운 릴레이션을 만드는 연산</td>
+      <td>⋈</td>
+    </tr>
+    <tr>
+      <td>Division</td>
+      <td>X⊃Y인 두개의 릴레이션 R(X)와 S(Y)가 있을 때, R의 속성이 S의 속성값을 모두 가진 튜플에서 S가 가진 속성을 제외한 속성만을 구하는 연산</td>
+      <td>÷</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>셀프조디</p>
+</blockquote>
+
+<h2 id="일반-집합-연산자">일반 집합 연산자</h2>
+
+<ul>
+  <li>수학적 집합 이론에서 사용하는 연산자</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>연산자</th>
+      <th>기능 및 수학적 표현</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>합집합 UNION ∪</td>
+      <td>두 릴레이션에 존재하는 튜플의 합집합을 구하되, 결과로 생성된 릴레이션에서 중복되는 튜블은 제거되는 연산</td>
+    </tr>
+    <tr>
+      <td>교집합 INTERSECTION ∩</td>
+      <td>두 릴레이션에 존재하는 튜플의 교집합을 구하는 연산</td>
+    </tr>
+    <tr>
+      <td>차집합 DIFFERENCE －</td>
+      <td>두 릴레이션에 존재하는 튜플의 차집합을 구하는 연산</td>
+    </tr>
+    <tr>
+      <td>교차곱 CARTESIAn PRODUCT ×</td>
+      <td>두 릴레이션에 있는 튜플들의 순서쌍을 구하는 연산</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="관계해석relational-calculus">관계해석(Relational Calculus)</h2>
+
+<ul>
+  <li>관계 데이터의 연산을 표현하는 방법</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#eip-ps" class="page__taxonomy-item p-category" rel="tag">EIP_PS</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#eip-ps" class="page__taxonomy-item p-category" rel="tag">EIP_PS</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-04-25">April 25, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=2.%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%9E%85%EC%B6%9C%EB%A0%A5+%EA%B5%AC%ED%98%84+41~50%20http%3A%2F%2Flocalhost%3A4000%2Feip_ps%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%25EC%259E%2585%25EC%25B6%259C%25EB%25A0%25A5%25EA%25B5%25AC%25ED%2598%258401%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Feip_ps%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%25EC%259E%2585%25EC%25B6%259C%25EB%25A0%25A5%25EA%25B5%25AC%25ED%2598%258401%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Feip_ps%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%25EC%259E%2585%25EC%25B6%259C%25EB%25A0%25A5%25EA%25B5%25AC%25ED%2598%258401%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8400/" class="pagination--pager" title="2.데이터 입출력 구현 31~40
+">Previous</a>
+    
+    
+      <a href="/blockchain_theory/Encryption_consensus_algorithm/" class="pagination--pager" title="암호화 &amp; 합의 알고리즘
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blockchain_theory/Node&API/" rel="permalink">노드 &amp; API
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blockchain_theory/Encryption_consensus_algorithm/" rel="permalink">암호화 &amp; 합의 알고리즘
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8400/" rel="permalink">2.데이터 입출력 구현 31~40
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="permalink">1.요구사항 확인 오답노트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+  </div>
+
+  
+
+  <div id="footer" class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+      <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 NonamedBread. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+    </footer>
+  </div>
+
+  
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/custom/dark-theme.js"></script>
+  
+
+
+
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+  <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: '#FFFAFA',
+      textColor: '696969'
+    })</script>
+</body>
+
+</html>

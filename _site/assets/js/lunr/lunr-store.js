@@ -17,46 +17,46 @@ var store = [{
         "url": "/mysql/MySQL%EC%84%B8%ED%8C%85/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 1~5",
+        "title": "1.요구사항 확인 1~5",
         "excerpt":"1. 소프트웨어 생명 주기 소프트웨어 생명 주기(Software Life Cycle) 소프트웨어를 개발하기 위한 과정을 각 단계별로 나눈 것 대표 모형 폭포수 모형 프로토타입 모형 나선형 모형 애자일 모형 폭포수 모형(Waterfall Model, 원형 모형) 각 단계를 확실히 매듭짓고 다음 단계를 진행하는 개발 방법론 전통적인 소프트웨어 생명 주기 모형 프로토타입 모형(Prototype Model, 원형...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B800/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 6~10",
+        "title": "1.요구사항 확인 6~10",
         "excerpt":"6. 요구사항 정의 요구사항의 개념을 정리해 두는것이 좋음 요구사항 소프트웨어가 어떤 문제를 해결하기 위해 제공하는 서비스에 대한 설명과 운영되는데 필요한 제약 조건 요구사항의 유형 기능 요구사항(Functional requirements) 비기능 요구사항(Non-functional requirements) 사용자 요구사항(User requirements) 시스템 요구사항(System requirements) 기능 요구사항(Functional requirements) 기능이나 수행과 관련된 요구사항 비기능 요구사항(Non-functional requirements) 품질이나 제약사항과 관련된 요구사항...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B801/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 11~15",
+        "title": "1.요구사항 확인 11~15",
         "excerpt":"11. UML - 관계(Relationship) 관계(Relationships) 사물과 사물 사이의 연관성을 표현하는 것 관계의 종류 연관 관계 집합 관계 포함 관계 일반화 관계 의존 관계 실체화 관계 개별적인 개념과 표현 방법을 확실히 숙지 연관(Association) 관계 2개 이상의 사물이 서로 관련되어 있는 관계 실선으로 연결하여 표현 방향성은 화살표로 표현 양방향 관게는 실선으로만 연결...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B802/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 16~20",
+        "title": "1.요구사항 확인 16~20",
         "excerpt":"16. 시퀀스(Sequence) 다이어그램 구성 요소 액터(Actor) : 시스템으로부터 서비스를 요청하는 외부 요소로, 사람이나 외부 시스템을 의미 객체(Object) : 메시지를 주고받는 주체 생명선(Lifeline) : 객체가 메모리에 존재하는 기간으로, 객체 아래쪽에 점선을 그어 표현// 객체 소멸이 표시된 기간까지 존재 실행 상자(Active Box, 활성 상자) : 객체가 메시지를 주고 받으며 구동되고 있음을 표현...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B803/",
         "teaser": null
       },{
-        "title": "정처기 실기 요구사항 확인 21~30",
+        "title": "1.요구사항 확인 21~30",
         "excerpt":"21. S/W 공학의 발전적 추세 소프트웨어 재사용(Software Reuse) 이미 개발되어 인정받은 소프트웨어를 다른 소프트웨어 개발이나 유지에 사용 소프트웨어 재사용 방법 합성 중심(Composition-Based) : 전자 칩과 같은 소프트웨어 부품, 즉 블록을 만들어서 끼워 맞춰 소프트웨어를 완성시키는 방법, 블록 구성 방법이라고도 함 생성 중심(Generation-Based) : 추상화 형태로 써진 명세를 구체화하여 프로그램을 만드는...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B804/",
         "teaser": null
       },{
-        "title": "요구사항 확인 오답노트",
+        "title": "1.요구사항 확인 오답노트",
         "excerpt":"문제 1 프로토타입 모형(Prototype Model)에 대해 간략히 서술 2 소프트웨어 개발 방법론의 바탕이 되는 것으로, 소프트웨어를 개발하기 위한 설계, 운용, 유지보수 등의 과정을 단게별로 나눈것 3 고객의 요구사항 변화에 유연하게 대응할 수 있도록 일정한 주기를 반복하며 개발 4 수시로 발생하는 고객의 요구사항에 유연하게 대응하기 위해 고객의 참여와 개발 과정의 반복을...","categories": ["EIP_PS"],
         "tags": ["EIP_PS","정처기 오답노트"],
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/",
         "teaser": null
       },{
-        "title": "데이터 입출력 구현 31~40",
-        "excerpt":" ","categories": ["EIP_PS"],
+        "title": "2.데이터 입출력 구현 31~40",
+        "excerpt":"31. 데이터 전환 데이터 전환 현재 운영 중인 시스템의 데이터를 추출하고 이를 변환한 후 새로운 개발 시스템에서 사용할 수 있도록 적재하는 과정 데이터 전환 계획서 데이터 전환에 필요한 모든 계획을 기록하는 문서 32. 데이터 검증 데이터 검증 원천 시스템의 데이터를 목적 시스템의 데이터로 전환하는 과정이 정상적으로 수행 되었는지 여르를 확인하는...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
-        "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%84/",
+        "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8400/",
         "teaser": null
       },{
         "title": "암호화 & 합의 알고리즘",

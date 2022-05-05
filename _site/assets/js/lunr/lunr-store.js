@@ -76,4 +76,10 @@ var store = [{
         "tags": ["Blockchain_theory"],
         "url": "/blockchain_theory/Node&API/",
         "teaser": null
+      },{
+        "title": "8.SQL응용 118~",
+        "excerpt":"118. SQL - DDL DDL(Data Define Language, 데이터 정의어) DB를 구축하거나 수정할 목적 DDL의 3가지 유형 명령어 기능 CREATE SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의 ALTER TABLE예 떄한 쩡의를 뼌꼉 DROP SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제 크알드 CREATE SCHEMA 스키마를 정의하는 명령문 표기 형식 CREATE SCHEMA 스키마명 AUTHORIZATION 사용자_id;...","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
+        "teaser": null
       }]

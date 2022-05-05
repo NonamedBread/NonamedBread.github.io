@@ -1,0 +1,108 @@
+I"�
+<h1 id="118-sql---ddl">118. SQL - DDL</h1>
+
+<h2 id="ddldata-define-language-데이터-정의어">DDL(Data Define Language, 데이터 정의어)</h2>
+
+<ul>
+  <li>
+    <p>DB를 구축하거나 수정할 목적</p>
+  </li>
+  <li>
+    <p>DDL의 3가지 유형</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>명령어</th>
+      <th>기능</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CREATE</td>
+      <td>SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의</td>
+    </tr>
+    <tr>
+      <td>ALTER</td>
+      <td>TABLE예 떄한 쩡의를 뼌꼉</td>
+    </tr>
+    <tr>
+      <td>DROP</td>
+      <td>SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="create-schema">CREATE SCHEMA</h2>
+
+<ul>
+  <li>
+    <p>스키마를 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE SCHEMA 스키마명 AUTHORIZATION 사용자_id;
+</code></pre>
+
+<h2 id="create-domain">CREATE DOMAIN</h2>
+
+<ul>
+  <li>
+    <p>도메인을 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE DOMAIN 도메인명 [AS] 데이터_타입
+       [DEFAULT 기본값]
+       [CONSTRAINT 제약조건명 CHECK (범위값)];
+</code></pre>
+<h2 id="create-table">CREATE TABLE</h2>
+
+<ul>
+  <li>
+    <p>테이블을 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE TABLE 테이블 명
+             (속성명 데이터_타입 [DEFAULT 기본값] [NOT NULL], ...)
+             [, PRIMARY KEY(기본키_속성명, ...)]
+             [. UNIQUE(대체키_속성명, ..)]
+             [, FOREIGN KEY(외래키_속성명, ...)]
+                    REFERENCES 참조테이블(기본키_속성명, ...)
+                    [ON DELETE 옵션]
+                    [ON UPDATE 옵션]
+             [, CONSTRAINT  제약조건명] [CHECK (조건식)];
+</code></pre>
+
+<ul>
+  <li>
+    <p>PRIMARY KEY : 기본키로 사용할 속성을 지정</p>
+  </li>
+  <li>
+    <p>UNIQUE : 대체키로 사용할 소겅을 지정, 중복된 값 가질수 없음</p>
+  </li>
+  <li>FOREIGN KEY ~ REFERENCES: 외래키로 사용할 속성을 지정
+    <ul>
+      <li>ON DELETE 옵션 : 참조 테이블의 튜플이 삭제되었을 때 기본 테이블에 취해야 할 사항을 지정</li>
+      <li>ON UPDATE 옵션 : 참조 테이블의 참조 속성 값이 변경되었을 때 기본 테이블에 취해야 할 사항을 지정</li>
+    </ul>
+  </li>
+  <li>CONSTRAINT : 제약 조건의 이름을 지정</li>
+  <li>CHECK : 속성 값에 대한 제약 조건을 정의</li>
+</ul>
+
+<h2 id="create-view">CREATE VIEW</h2>
+
+:ET

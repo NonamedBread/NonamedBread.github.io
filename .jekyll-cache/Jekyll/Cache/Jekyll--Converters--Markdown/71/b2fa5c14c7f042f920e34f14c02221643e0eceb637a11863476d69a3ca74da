@@ -1,0 +1,193 @@
+I"(<h1 id="118-sql---ddl">118. SQL - DDL</h1>
+
+<h2 id="ddldata-define-language-데이터-정의어">DDL(Data Define Language, 데이터 정의어)</h2>
+
+<ul>
+  <li>
+    <p>DB를 구축하거나 수정할 목적</p>
+  </li>
+  <li>
+    <p>DDL의 3가지 유형</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>명령어</th>
+      <th>기능</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CREATE</td>
+      <td>SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의</td>
+    </tr>
+    <tr>
+      <td>ALTER</td>
+      <td>TABLE예 떄한 쩡의를 뼌꼉</td>
+    </tr>
+    <tr>
+      <td>DROP</td>
+      <td>SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>크알드</p>
+  <h2 id="create-schema">CREATE SCHEMA</h2>
+</blockquote>
+
+<ul>
+  <li>
+    <p>스키마를 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE SCHEMA 스키마명 AUTHORIZATION 사용자_id;
+</code></pre>
+
+<h2 id="create-domain">CREATE DOMAIN</h2>
+
+<ul>
+  <li>
+    <p>도메인을 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE DOMAIN 도메인명 [AS] 데이터_타입
+       [DEFAULT 기본값]
+       [CONSTRAINT 제약조건명 CHECK (범위값)];
+</code></pre>
+<h2 id="create-table">CREATE TABLE</h2>
+
+<ul>
+  <li>
+    <p>테이블을 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기 형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE TABLE 테이블 명
+             (속성명 데이터_타입 [DEFAULT 기본값] [NOT NULL], ...)
+             [, PRIMARY KEY(기본키_속성명, ...)]
+             [. UNIQUE(대체키_속성명, ..)]
+             [, FOREIGN KEY(외래키_속성명, ...)]
+                    REFERENCES 참조테이블(기본키_속성명, ...)
+                    [ON DELETE 옵션]
+                    [ON UPDATE 옵션]
+             [, CONSTRAINT  제약조건명] [CHECK (조건식)];
+</code></pre>
+
+<ul>
+  <li>
+    <p>PRIMARY KEY : 기본키로 사용할 속성을 지정</p>
+  </li>
+  <li>
+    <p>UNIQUE : 대체키로 사용할 소겅을 지정, 중복된 값 가질수 없음</p>
+  </li>
+  <li>FOREIGN KEY ~ REFERENCES: 외래키로 사용할 속성을 지정
+    <ul>
+      <li>ON DELETE 옵션 : 참조 테이블의 튜플이 삭제되었을 때 기본 테이블에 취해야 할 사항을 지정</li>
+      <li>ON UPDATE 옵션 : 참조 테이블의 참조 속성 값이 변경되었을 때 기본 테이블에 취해야 할 사항을 지정</li>
+    </ul>
+  </li>
+  <li>CONSTRAINT : 제약 조건의 이름을 지정</li>
+  <li>CHECK : 속성 값에 대한 제약 조건을 정의</li>
+</ul>
+
+<h2 id="create-view">CREATE VIEW</h2>
+
+<ul>
+  <li>
+    <p>뷰(View)를 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE VIEW 뷰명[(속성명[. 속성명, ...])]
+AS SELECT문;
+</code></pre>
+
+<h2 id="create-index">CREATE INDEX</h2>
+
+<ul>
+  <li>
+    <p>인덱스를 정의하는 명령문</p>
+  </li>
+  <li>
+    <p>표기형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">CREATE[UNIQUE] INDEX 인덱스명
+ON 테이블명(속성명 [ASC | DESC] [속성명 [ASC | DESC]])
+[CLUSTER];
+</code></pre>
+
+<ul>
+  <li>UNIQUE
+    <ul>
+      <li>사용된 경우 : 중복 값이 없는 속성으로 인덱스를 생성</li>
+      <li>생략된 경우 : 중복 값을 허용하는 속성으로 인덱스를 생성</li>
+    </ul>
+  </li>
+  <li>정렬 여부 지정
+    <ul>
+      <li>ASC : 오름차순 정렬</li>
+      <li>DESC : 내림차순 정렬</li>
+      <li>생략된 경우 : 오름차순으로 정렬됨</li>
+    </ul>
+  </li>
+  <li>CLUSTER : 사용하면 인덱스가 클러스터드 인덱스로 설정됨</li>
+</ul>
+
+<h2 id="alter-table">ALTER TABLE</h2>
+
+<ul>
+  <li>
+    <p>테이블에 대한 정의를 변경하는 명령문</p>
+  </li>
+  <li>
+    <p>표기형식</p>
+  </li>
+</ul>
+
+<pre><code class="language-SQL">ALTER TABLE 테이블명 ADD 속성명 데이터_타입 [DEFAULT '기본값'];
+ALTER TABLE 테이블명 ALTER 속성명 [SET DEFAULT '기본값'];
+ALTER TABLE 테이블명 DROP COLUMN 속성명 [CASCADE];
+
+- ADD : 새로운 속성(열)을 추가할 때 사용
+- ALTER : 특성 속성의 Default 값을 변경할 때 사용
+- DROP COLUMN : 특성 속성을 삭제할 떄 사용
+</code></pre>
+
+<h2 id="drop">DROP</h2>
+
+<ul>
+  <li>
+    <p>스키마, 도메인, 기본 테이블, 뷰 테이블, 인덱스, 제약 조건 등을 제거</p>
+  </li>
+  <li>
+    <p>표기형식</p>
+    <pre><code class="language-SQL">DROP SCHEMA 스키마명 [CASCADE | RESTRICT];
+DROP DOMAIN 도메인명 [CASCADE | RESTRICT];
+DROP TABLE 테이블명 [CASCADE | RESTRICT];
+DROP VIEW 뷰명 [CASCADE | RESTRICT];
+DROP INDEX 인덱스명 [CASCADE | RESTRICT];
+DROP CONSTRAINT 제약조건명;
+</code></pre>
+  </li>
+</ul>
+:ET

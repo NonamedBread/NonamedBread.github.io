@@ -82,4 +82,10 @@ var store = [{
         "tags": ["EIP_PS"],
         "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
         "teaser": null
+      },{
+        "title": "WSL2 Jekyll 세팅",
+        "excerpt":"WSL2 Jekyll 세팅 WSL2 Ubuntu Installation via Bash on Windows 10를 확인해 보면 WSL 환경 설정 밥법이 나와있다. WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다 Ruby 사전준비 $ sudo apt -y install make build-essential ruby ruby-dev $ gem install jekyll bundler gem update Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem...","categories": ["WSL2"],
+        "tags": ["WSL2","Blog"],
+        "url": "/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/",
+        "teaser": null
       }]

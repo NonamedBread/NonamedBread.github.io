@@ -1,0 +1,21 @@
+I"�<h1 id="wsl2-jekyll-세팅">WSL2 Jekyll 세팅</h1>
+
+<h2 id="wsl2-ubuntu">WSL2 Ubuntu</h2>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">Installation via Bash on Windows 10</a>를 확인해 보면 WSL 환경 설정 밥법이 나와있다.</p>
+
+<p>WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다</p>
+
+<h2 id="ruby-사전준비">Ruby 사전준비</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt -y install make build-essential ruby ruby-dev
+$ gem install jekyll bundler
+</code></pre></div></div>
+
+<h2 id="gem-update">gem update</h2>
+
+<p>Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem 모듈을 추가 설치한다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+gem update</code> 실행 이후 나오는 오류 메시지에 따라 라이브러리를 추가 설치해 준다.</p>
+:ET

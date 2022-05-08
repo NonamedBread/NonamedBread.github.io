@@ -1,0 +1,9 @@
+I"}<h1 id="wsl2-jekyll-세팅">WSL2 Jekyll 세팅</h1>
+
+<h2 id="wsl2-ubuntu">WSL2 Ubuntu</h2>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">Installation via Bash on Windows 10</a>를 확인해 보면 WSL 환경 설정 밥법이 나와있다.</p>
+
+<p>WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다</p>
+
+:ET

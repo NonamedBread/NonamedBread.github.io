@@ -1,0 +1,7 @@
+I"�<h1 id="windows에-wsl2설치">Windows에 WSL2설치</h1>
+
+<h2 id="windows에-버전-확인">Windows에 버전 확인</h2>
+
+<p>Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다.</p>
+<image src="https://user-images.githubusercontent.com/93482597/167349639-1fe45331-204a-47fe-826f-00f1fee12744.png"></image>
+:ET

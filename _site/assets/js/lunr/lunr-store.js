@@ -83,9 +83,27 @@ var store = [{
         "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
         "teaser": null
       },{
+        "title": "삼각형 판별하기",
+        "excerpt":"세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다. function solution(a, b, c){ let answer = 'YES', max; let sum = a + b + c; if(a&gt;b) max=a; else max = b; if(c&gt;max) max = c; if...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "세 수 중 최솟값",
+        "excerpt":"조건문을 이용해 세 변수의 크기를 비교하여 문제 풀이    function solution(a, b, c){                 let answer;                 if (a &lt; b) answer = a;                 else answer = b;                 if (c &lt; answer) answer = c;                 return answer;             }  ","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/",
+        "teaser": null
+      },{
         "title": "WSL2 Jekyll 세팅",
         "excerpt":"WSL2 Jekyll 세팅 WSL2 Ubuntu Installation via Bash on Windows 10를 확인해 보면 WSL 환경 설정 밥법이 나와있다. WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다 Ruby 사전준비 $ sudo apt -y install make build-essential ruby ruby-dev $ gem install jekyll bundler gem update Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem...","categories": ["WSL2"],
-        "tags": ["WSL2","Blog"],
+        "tags": ["WSL2","Blog","Jekyll"],
         "url": "/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/",
+        "teaser": null
+      },{
+        "title": "WSL2 Ubuntu 설치",
+        "excerpt":"Windows에 WSL2설치 Windows에 버전 확인 Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다. 버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다. DISM으로 WSL 기능 활성화 Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다 DISM(배포 이미지 서비스 및 관리) 명령어로...","categories": ["WSL2"],
+        "tags": ["WSL2","Ubuntu"],
+        "url": "/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/",
         "teaser": null
       }]

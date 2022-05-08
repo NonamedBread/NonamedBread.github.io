@@ -1,0 +1,54 @@
+I"�<h1 id="windows에-wsl2설치">Windows에 WSL2설치</h1>
+
+<h2 id="windows에-버전-확인">Windows에 버전 확인</h2>
+
+<p>Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다.</p>
+
+<image src="https://user-images.githubusercontent.com/93482597/167349639-1fe45331-204a-47fe-826f-00f1fee12744.png"></image>
+<image src="https://user-images.githubusercontent.com/93482597/167349815-2b78137e-969f-4853-843c-cfe8b7146eb7.png"> </image>
+
+<p>버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다.</p>
+
+<h2 id="dism으로-wsl-기능-활성화">DISM으로 WSL 기능 활성화</h2>
+
+<p>Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다</p>
+
+<p>DISM(배포 이미지 서비스 및 관리) 명령어로 Microsoft-Windows-Subsystem-Linux 기능을 활성화</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div></div>
+
+<p>DISM 명령어로 VirtualMachinePlatform 기능을 활성화 한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre></div></div>
+
+<p>이후 재부팅 한다.</p>
+
+<h2 id="wsl2-설치">WSL2 설치</h2>
+
+<p>아래 링크에서 WSL2를 설치</p>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/install#step-4---download-the-linux-kernel-update-package">WSL 설치 | Microsoft Docs</a>
+<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL2 Linux 커널 업데이트 패키지</a></p>
+
+<p>터미널을 열고 WSL 버전을 2로 변경한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
+</code></pre></div></div>
+
+<h2 id="ubuntu-설치">Ubuntu 설치</h2>
+
+<p><a href="https://aka.ms/wslstore">Microsft Store</a>에서 Ubuntu 배포판을 설치</p>
+
+<p>설치 이 후 우분투 사용자 이름과 패스워드를 지정한다.</p>
+
+<p>이후 터미널에서</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl -l -v
+</code></pre></div></div>
+<p>를 입력하여 버전을 확인한다</p>
+
+<h2 id="참고">참고</h2>
+<p><a href="https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</a>
+<a href="https://psychoria.tistory.com/734">https://psychoria.tistory.com/734</a></p>
+:ET

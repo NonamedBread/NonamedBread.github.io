@@ -1,0 +1,11 @@
+I"t<p>조건문을 이용해 세 변수의 크기를 비교하여 문제 풀이</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
+                <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+                <span class="k">else</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">c</span> <span class="o">&lt;</span> <span class="nx">answer</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            <span class="p">}</span>
+</code></pre></div></div>
+:ET

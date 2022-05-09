@@ -96,7 +96,7 @@ var store = [{
         "teaser": null
       },{
         "title": "WSL2 Jekyll 세팅",
-        "excerpt":"WSL2 Jekyll 세팅 WSL2 Ubuntu Installation via Bash on Windows 10를 확인해 보면 WSL 환경 설정 밥법이 나와있다. WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다 Ruby 사전준비 $ sudo apt -y install make build-essential ruby ruby-dev $ gem install jekyll bundler gem update Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem...","categories": ["WSL2"],
+        "excerpt":"WSL2 Jekyll 세팅 WSL2 Ubuntu Installation via Bash on Windows 10를 확인해 보면 WSL 환경 설정 밥법이 나와있다. WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다 Jekll on Windows Ruby 사전준비 레포지토리 목록 및 패키지를 업데이트 sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y $ sudo apt -y install make...","categories": ["WSL2"],
         "tags": ["WSL2","Blog","Jekyll"],
         "url": "/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/",
         "teaser": null
@@ -105,5 +105,11 @@ var store = [{
         "excerpt":"Windows에 WSL2설치 Windows에 버전 확인 Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다. 버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다. DISM으로 WSL 기능 활성화 Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다 DISM(배포 이미지 서비스 및 관리) 명령어로...","categories": ["WSL2"],
         "tags": ["WSL2","Ubuntu"],
         "url": "/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/",
+        "teaser": null
+      },{
+        "title": "WSL2 Git & VScode",
+        "excerpt":"Git WSL_git_docs 참고 Ubuntu 터머널에서 sudo apt-get install git 입력후 설치 혹은 Windows Git에서 설치 git config --global user.name \"Your Name\" git config --global user.email \"youremail@domain.com\" 을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다 VScode WSL_VScode_docs 참고 Ubuntu 업데이트 sudo apt-get update Wget wget(웹 서버에서 콘텐츠를 검색하기...","categories": ["WSL2"],
+        "tags": ["WSL2","Blog","Git","VScode"],
+        "url": "/wsl2/WSL2_git/",
         "teaser": null
       }]

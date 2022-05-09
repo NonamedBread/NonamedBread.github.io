@@ -1,0 +1,40 @@
+I"�<h1 id="git">Git</h1>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-git">WSL_git_docs</a> 참고</p>
+
+<p>Ubuntu 터머널에서</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
+<p>입력후 설치</p>
+
+<p>혹은 <a href="https://git-scm.com/download/win">Windows Git</a>에서 설치</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+</code></pre></div></div>
+
+<p>을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다</p>
+
+<h1 id="vscode">VScode</h1>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-vscode">WSL_VScode_docs</a> 참고</p>
+
+<h2 id="ubuntu-업데이트">Ubuntu 업데이트</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+</code></pre></div></div>
+
+<h2 id="wget">Wget</h2>
+
+<p>wget(웹 서버에서 콘텐츠를 검색하기 위해) 및 ca 인증서(SSL 기반 애플리케이션이 SSL 연결의 신뢰성을 확인할 수 있도록 허용)를 추가</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install wget ca-certificates
+</code></pre></div></div>
+<p>git clone한 repository에서</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
+</code></pre></div></div>
+
+<p>를 입력 하면 설치 후 VScode가 실행 된다</p>
+:ET

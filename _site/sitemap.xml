@@ -57,14 +57,10 @@
 <lastmod>2022-05-05T00:00:00+09:00</lastmod>
 </url>
 <url>
-<<<<<<< HEAD
 <loc>http://localhost:4000/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/</loc>
 <lastmod>2022-05-06T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/project/blockchainExplorer00/</loc>
-<lastmod>2022-05-15T00:00:00+09:00</lastmod>
-=======
 <loc>http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/</loc>
 <lastmod>2022-05-09T00:00:00+09:00</lastmod>
 </url>
@@ -85,8 +81,11 @@
 <lastmod>2022-05-09T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/project/blockchainExplorer00/</loc>
+<lastmod>2022-05-15T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories/ALGORITHM</loc>
->>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
 </url>
 <url>
 <loc>http://localhost:4000/categories/Blockchain_theory</loc>
@@ -101,11 +100,10 @@
 <loc>http://localhost:4000/categories/MySQL</loc>
 </url>
 <url>
-<<<<<<< HEAD
 <loc>http://localhost:4000/categories/Project</loc>
-=======
+</url>
+<url>
 <loc>http://localhost:4000/categories/WSL2</loc>
->>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
@@ -128,11 +126,11 @@
 <url>
 <loc>http://localhost:4000/page4/</loc>
 </url>
-<<<<<<< HEAD
-=======
+<url>
+<loc>http://localhost:4000/page5/</loc>
+</url>
 <url>
 <loc>http://localhost:4000/ALGORITHM.html</loc>
-<lastmod>2022-05-09T06:38:04+09:00</lastmod>
+<lastmod>2022-05-15T23:46:56+09:00</lastmod>
 </url>
->>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
 </urlset>

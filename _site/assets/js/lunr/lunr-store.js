@@ -83,18 +83,12 @@ var store = [{
         "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
         "teaser": null
       },{
-<<<<<<< HEAD
         "title": "수제비 실기 출제예상 문제 정리",
         "excerpt":"대체 불가능 토큰(Non-fungible token; NFT) : 블록체인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰(token) 메타버스(Metaverse) : 초월을 의미하는 단어와 세계, 우주를 의미하는 단어를 합성한 신조어로 현실을 디지털 기반의 가상 세계로 확장해 가상 공간에서 모든 활동을 할 수 있게 만드는 시스템 OUI(Organic User Interface) Facade (pattern) : 복잡한 시스템에 대하여...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/",
         "teaser": null
       },{
-        "title": "Blockchain Explorer",
-        "excerpt":"  ","categories": ["Project"],
-        "tags": ["Project","Blockchain"],
-        "url": "/project/blockchainExplorer00/",
-=======
         "title": "삼각형 판별하기",
         "excerpt":"세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다. function solution(a, b, c){ let answer = 'YES', max; let sum = a + b + c; if(a&gt;b) max=a; else max = b; if(c&gt;max) max = c; if...","categories": ["ALGORITHM"],
         "tags": ["ALGORITHM","Inflearn"],
@@ -123,6 +117,11 @@ var store = [{
         "excerpt":"Git WSL_git_docs 참고 Ubuntu 터머널에서 sudo apt-get install git 입력후 설치 혹은 Windows Git에서 설치 git config --global user.name \"Your Name\" git config --global user.email \"youremail@domain.com\" 을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다 VScode WSL_VScode_docs 참고 Ubuntu 업데이트 sudo apt-get update Wget wget(웹 서버에서 콘텐츠를 검색하기...","categories": ["WSL2"],
         "tags": ["WSL2","Blog","Git","VScode"],
         "url": "/wsl2/WSL2_git/",
->>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
+        "teaser": null
+      },{
+        "title": "Blockchain Explorer",
+        "excerpt":"  ","categories": ["Project"],
+        "tags": ["Project","Blockchain"],
+        "url": "/project/blockchainExplorer00/",
         "teaser": null
       }]

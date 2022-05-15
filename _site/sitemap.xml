@@ -57,6 +57,14 @@
 <lastmod>2022-05-05T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/</loc>
+<lastmod>2022-05-06T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/project/blockchainExplorer00/</loc>
+<lastmod>2022-05-15T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories/Blockchain_theory</loc>
 </url>
 <url>
@@ -67,6 +75,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/MySQL</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/Project</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
@@ -85,5 +96,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/page3/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page4/</loc>
 </url>
 </urlset>

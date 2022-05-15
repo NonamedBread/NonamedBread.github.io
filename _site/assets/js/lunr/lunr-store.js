@@ -82,4 +82,16 @@ var store = [{
         "tags": ["EIP_PS"],
         "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
         "teaser": null
+      },{
+        "title": "수제비 실기 출제예상 문제 정리",
+        "excerpt":"대체 불가능 토큰(Non-fungible token; NFT) : 블록체인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰(token) 메타버스(Metaverse) : 초월을 의미하는 단어와 세계, 우주를 의미하는 단어를 합성한 신조어로 현실을 디지털 기반의 가상 세계로 확장해 가상 공간에서 모든 활동을 할 수 있게 만드는 시스템 OUI(Organic User Interface) Facade (pattern) : 복잡한 시스템에 대하여...","categories": ["EIP_PS"],
+        "tags": ["EIP_PS"],
+        "url": "/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/",
+        "teaser": null
+      },{
+        "title": "Blockchain Explorer",
+        "excerpt":"  ","categories": ["Project"],
+        "tags": ["Project","Blockchain"],
+        "url": "/project/blockchainExplorer00/",
+        "teaser": null
       }]

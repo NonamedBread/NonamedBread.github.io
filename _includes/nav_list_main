@@ -43,15 +43,32 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        
         <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
+<<<<<<< HEAD
                     {% if category[0] == "Project" %}
                         <li><a href="/categories/Project" class="">Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
+=======
+                    {% if category[0] == "ALGORITHM" %}
+                        <li><a href="/categories/ALGORITHM" class="">ALGORITHM ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+               <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "WSL2" %}
+                        <li><a href="/categories/WSL2" class="">WSL2 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+             <ul>
+>>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
                         <li><a href="/categories/blog" class="">Blog ({{category[1].size}})</a></li>

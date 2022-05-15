@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-15T23:45:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">Blockchain Explorer</title><link href="http://localhost:4000/project/blockchainExplorer00/" rel="alternate" type="text/html" title="Blockchain Explorer" /><published>2022-05-15T00:00:00+09:00</published><updated>2022-05-15T00:00:00+09:00</updated><id>http://localhost:4000/project/blockchainExplorer00</id><content type="html" xml:base="http://localhost:4000/project/blockchainExplorer00/"><![CDATA[<image src="https://user-images.githubusercontent.com/93482597/168478733-f6457155-2107-4a45-900b-fe63be2df64f.gif" />]]></content><author><name>Lee Kyuhwan</name></author><category term="Project" /><category term="Project" /><category term="Blockchain" /></entry><entry><title type="html">수제비 실기 출제예상 문제 정리</title><link href="http://localhost:4000/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="수제비 실기 출제예상 문제 정리" /><published>2022-05-06T00:00:00+09:00</published><updated>2022-05-06T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%88%98%EC%A0%9C%EB%B9%84%EC%A0%95%EB%A6%AC/"><![CDATA[<ul>
   <li>
     <p>대체 불가능 토큰(Non-fungible token; NFT) : 블록체인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰(token)</p>
@@ -33,6 +34,187 @@
     <p>연산(Operation) : 데이터 모델의</p>
   </li>
 </ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">8.SQL응용 118~</title><link href="http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900/" rel="alternate" type="text/html" title="8.SQL응용 118~" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900</id><content type="html" xml:base="http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900/"><![CDATA[<h1 id="118-sql---ddl">118. SQL - DDL</h1>
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-09T16:58:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">삼각형 판별하기</title><link href="http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="삼각형 판별하기" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/"><![CDATA[<p>세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 
+제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
+                <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">YES</span><span class="dl">'</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+                <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span> <span class="o">+</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">)</span> <span class="nx">max</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span>
+                <span class="k">else</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">c</span><span class="o">&gt;</span><span class="nx">max</span><span class="p">)</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">((</span><span class="nx">sum</span><span class="o">-</span><span class="nx">max</span><span class="p">)</span><span class="o">&lt;=</span> <span class="nx">max</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">NO</span><span class="dl">"</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">));</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">17</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">세 수 중 최솟값</title><link href="http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/" rel="alternate" type="text/html" title="세 수 중 최솟값" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/"><![CDATA[<p>조건문을 이용해 세 변수의 크기를 비교하여 문제 풀이</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
+                <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+                <span class="k">else</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">c</span> <span class="o">&lt;</span> <span class="nx">answer</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            <span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">WSL2 Jekyll 세팅</title><link href="http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="WSL2 Jekyll 세팅" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/"><![CDATA[<h1 id="wsl2-jekyll-세팅">WSL2 Jekyll 세팅</h1>
+
+<h2 id="wsl2-ubuntu">WSL2 Ubuntu</h2>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">Installation via Bash on Windows 10</a>를 확인해 보면 WSL 환경 설정 밥법이 나와있다.</p>
+
+<p>WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다</p>
+
+<p><a href="https://jekyllrb.com/docs/installation/windows/">Jekll on Windows</a></p>
+
+<h2 id="ruby-사전준비">Ruby 사전준비</h2>
+
+<p>레포지토리 목록 및 패키지를 업데이트</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt -y install make build-essential ruby ruby-dev
+$ gem install jekyll bundler
+</code></pre></div></div>
+
+<h2 id="gem-update">gem update</h2>
+
+<p>Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem 모듈을 추가 설치한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem update
+</code></pre></div></div>
+<p>실행 이후 나오는 오류 메시지에 따라 라이브러리를 추가 설치해 준다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem update
+....생략
+$ sudo apt install libxml2
+$ sudo apt install libssl-dev
+u sudo apt install zlib1g-dev  
+</code></pre></div></div>
+
+<blockquote>
+  <p>gem update 이후 오류메시지가 없어 추가적인 라이브러리 설치는 진행하지 않았다.</p>
+</blockquote>
+
+<h2 id="bundle-update">bundle update</h2>
+
+<p>실행하면 Gemfile정의된 모듈을 체크하고 없으면 오류 메세지를 보여준다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle update
+....생략
+$ gem install jekyll-gist
+$ gem install jekyll-sitemap
+$ gem install jekyll-paginate
+% gem install nokogiri
+$ gem install jemoji
+</code></pre></div></div>
+
+<blockquote>
+  <p>bundle update 이후 오류메시지가 없어 추가적인 모듈 설치는 진행하지 않았다.</p>
+</blockquote>
+
+<h2 id="jekyll-버전-확인">Jekyll 버전 확인</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll -v
+jekyll 4.2.2
+</code></pre></div></div>
+
+<h2 id="참고">참고</h2>
+
+<p><a href="https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html">https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html</a>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Jekyll" /></entry><entry><title type="html">WSL2 Ubuntu 설치</title><link href="http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="WSL2 Ubuntu 설치" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/"><![CDATA[<h1 id="windows에-wsl2설치">Windows에 WSL2설치</h1>
+
+<h2 id="windows에-버전-확인">Windows에 버전 확인</h2>
+
+<p>Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다.</p>
+
+<image src="https://user-images.githubusercontent.com/93482597/167349639-1fe45331-204a-47fe-826f-00f1fee12744.png"></image>
+<image src="https://user-images.githubusercontent.com/93482597/167349815-2b78137e-969f-4853-843c-cfe8b7146eb7.png"> </image>
+
+<p>버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다.</p>
+
+<h2 id="dism으로-wsl-기능-활성화">DISM으로 WSL 기능 활성화</h2>
+
+<p>Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다</p>
+
+<p>DISM(배포 이미지 서비스 및 관리) 명령어로 Microsoft-Windows-Subsystem-Linux 기능을 활성화</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div></div>
+
+<p>DISM 명령어로 VirtualMachinePlatform 기능을 활성화 한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre></div></div>
+
+<p>이후 재부팅 한다.</p>
+
+<h2 id="wsl2-설치">WSL2 설치</h2>
+
+<p>아래 링크에서 WSL2를 설치</p>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/install#step-4---download-the-linux-kernel-update-package">WSL 설치 | Microsoft Docs</a>
+<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL2 Linux 커널 업데이트 패키지</a></p>
+
+<p>터미널을 열고 WSL 버전을 2로 변경한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
+</code></pre></div></div>
+
+<h2 id="ubuntu-설치">Ubuntu 설치</h2>
+
+<p><a href="https://aka.ms/wslstore">Microsft Store</a>에서 Ubuntu 배포판을 설치</p>
+
+<p>설치 이 후 우분투 사용자 이름과 패스워드를 지정한다.</p>
+
+<p>이후 터미널에서</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl -l -v
+</code></pre></div></div>
+<p>를 입력하여 버전을 확인한다</p>
+
+<h2 id="참고">참고</h2>
+<p><a href="https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</a>
+<a href="https://psychoria.tistory.com/734">https://psychoria.tistory.com/734</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Ubuntu" /></entry><entry><title type="html">WSL2 Git &amp;amp; VScode</title><link href="http://localhost:4000/wsl2/WSL2_git/" rel="alternate" type="text/html" title="WSL2 Git &amp;amp; VScode" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_git</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_git/"><![CDATA[<h1 id="git">Git</h1>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-git">WSL_git_docs</a> 참고</p>
+
+<p>Ubuntu 터머널에서</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
+<p>입력후 설치</p>
+
+<p>혹은 <a href="https://git-scm.com/download/win">Windows Git</a>에서 설치</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+</code></pre></div></div>
+
+<p>을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다</p>
+
+<h1 id="vscode">VScode</h1>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-vscode">WSL_VScode_docs</a> 참고</p>
+
+<h2 id="ubuntu-업데이트">Ubuntu 업데이트</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+</code></pre></div></div>
+
+<h2 id="wget">Wget</h2>
+
+<p>wget(웹 서버에서 콘텐츠를 검색하기 위해) 및 ca 인증서(SSL 기반 애플리케이션이 SSL 연결의 신뢰성을 확인할 수 있도록 허용)를 추가</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install wget ca-certificates
+</code></pre></div></div>
+<p>git clone한 repository에서</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
+</code></pre></div></div>
+
+<p>를 입력 하면 설치 후 VScode가 실행 된다</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Git" /><category term="VScode" /></entry><entry><title type="html">8.SQL응용 118~</title><link href="http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900/" rel="alternate" type="text/html" title="8.SQL응용 118~" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900</id><content type="html" xml:base="http://localhost:4000/eip_ps/SQL%EC%9D%91%EC%9A%A900/"><![CDATA[<h1 id="118-sql---ddl">118. SQL - DDL</h1>
+>>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
 
 <h2 id="ddldata-define-language-데이터-정의어">DDL(Data Define Language, 데이터 정의어)</h2>
 
@@ -1485,6 +1667,7 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
   <li>관계 데이터의 연산을 표현하는 방법</li>
 </ul>
 
+<<<<<<< HEAD
 <h1 id="44-이상함수적-종속">44. 이상/함수적 종속</h1>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry><entry><title type="html">1.요구사항 확인 오답노트</title><link href="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" rel="alternate" type="text/html" title="1.요구사항 확인 오답노트" /><published>2022-04-23T00:00:00+09:00</published><updated>2022-04-23T00:00:00+09:00</updated><id>http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8</id><content type="html" xml:base="http://localhost:4000/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/"><![CDATA[<h1 id="문제">문제</h1>
 
 <h2 id="1">1</h2>
@@ -2363,3 +2546,6 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
     </ul>
   </li>
 </ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry></feed>
+=======
+<h1 id="44-이상함수적-종속">44. 이상/함수적 종속</h1>]]></content><author><name>Lee Kyuhwan</name></author><category term="EIP_PS" /><category term="EIP_PS" /></entry></feed>
+>>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a

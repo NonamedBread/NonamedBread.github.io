@@ -83,6 +83,7 @@ var store = [{
         "url": "/eip_ps/SQL%EC%9D%91%EC%9A%A900/",
         "teaser": null
       },{
+<<<<<<< HEAD
         "title": "수제비 실기 출제예상 문제 정리",
         "excerpt":"대체 불가능 토큰(Non-fungible token; NFT) : 블록체인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰(token) 메타버스(Metaverse) : 초월을 의미하는 단어와 세계, 우주를 의미하는 단어를 합성한 신조어로 현실을 디지털 기반의 가상 세계로 확장해 가상 공간에서 모든 활동을 할 수 있게 만드는 시스템 OUI(Organic User Interface) Facade (pattern) : 복잡한 시스템에 대하여...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
@@ -93,5 +94,35 @@ var store = [{
         "excerpt":"  ","categories": ["Project"],
         "tags": ["Project","Blockchain"],
         "url": "/project/blockchainExplorer00/",
+=======
+        "title": "삼각형 판별하기",
+        "excerpt":"세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다. function solution(a, b, c){ let answer = 'YES', max; let sum = a + b + c; if(a&gt;b) max=a; else max = b; if(c&gt;max) max = c; if...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "세 수 중 최솟값",
+        "excerpt":"조건문을 이용해 세 변수의 크기를 비교하여 문제 풀이    function solution(a, b, c){                 let answer;                 if (a &lt; b) answer = a;                 else answer = b;                 if (c &lt; answer) answer = c;                 return answer;             }  ","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/",
+        "teaser": null
+      },{
+        "title": "WSL2 Jekyll 세팅",
+        "excerpt":"WSL2 Jekyll 세팅 WSL2 Ubuntu Installation via Bash on Windows 10를 확인해 보면 WSL 환경 설정 밥법이 나와있다. WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다 Jekll on Windows Ruby 사전준비 레포지토리 목록 및 패키지를 업데이트 sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y $ sudo apt -y install make...","categories": ["WSL2"],
+        "tags": ["WSL2","Blog","Jekyll"],
+        "url": "/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/",
+        "teaser": null
+      },{
+        "title": "WSL2 Ubuntu 설치",
+        "excerpt":"Windows에 WSL2설치 Windows에 버전 확인 Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다. 버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다. DISM으로 WSL 기능 활성화 Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다 DISM(배포 이미지 서비스 및 관리) 명령어로...","categories": ["WSL2"],
+        "tags": ["WSL2","Ubuntu"],
+        "url": "/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/",
+        "teaser": null
+      },{
+        "title": "WSL2 Git & VScode",
+        "excerpt":"Git WSL_git_docs 참고 Ubuntu 터머널에서 sudo apt-get install git 입력후 설치 혹은 Windows Git에서 설치 git config --global user.name \"Your Name\" git config --global user.email \"youremail@domain.com\" 을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다 VScode WSL_VScode_docs 참고 Ubuntu 업데이트 sudo apt-get update Wget wget(웹 서버에서 콘텐츠를 검색하기...","categories": ["WSL2"],
+        "tags": ["WSL2","Blog","Git","VScode"],
+        "url": "/wsl2/WSL2_git/",
+>>>>>>> 213e40fc2ada476a02eca7c01c338c4959a1af8a
         "teaser": null
       }]

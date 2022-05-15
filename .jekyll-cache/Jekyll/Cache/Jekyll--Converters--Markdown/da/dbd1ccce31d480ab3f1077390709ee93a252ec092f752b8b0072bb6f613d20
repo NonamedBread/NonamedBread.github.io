@@ -1,0 +1,16 @@
+I"�<p>세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 
+제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
+                <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">YES</span><span class="dl">'</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+                <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span> <span class="o">+</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">)</span> <span class="nx">max</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span>
+                <span class="k">else</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">c</span><span class="o">&gt;</span><span class="nx">max</span><span class="p">)</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">((</span><span class="nx">sum</span><span class="o">-</span><span class="nx">max</span><span class="p">)</span><span class="o">&lt;=</span> <span class="nx">max</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">NO</span><span class="dl">"</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">));</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">17</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

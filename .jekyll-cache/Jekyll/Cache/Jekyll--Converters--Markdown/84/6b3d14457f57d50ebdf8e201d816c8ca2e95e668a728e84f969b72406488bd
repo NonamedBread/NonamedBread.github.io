@@ -1,0 +1,25 @@
+I"O	<ul>
+  <li>
+    <p>7개의 수가 주어지면 그 숫자 중 가장 작은 수</p>
+  </li>
+  <li>
+    <p>자바스크립트에는 수의 최대 한도 이상으로 값을 저장해 값이 손실되는 것을 방지하기 위해서 두가지의 상수가 존재한다. 첫번째는 MAX_SAFE_INTEGER이고, 두번째로는 MAX_VALUE</p>
+    <ul>
+      <li>MAX_SAFE_INTEGER : 더 큰 수를 변수에 집어 넣어도 저장은 되지만 정확하게 보관할 수 없다</li>
+      <li>integer : 값의 실제 한도를 나타낸다. 그 한도를 넘으면 값이 완전히 파손되거나 Infinity로 취급되 버린다.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span><span class="p">,</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_SAFE_INTEGER</span><span class="p">;</span> <span class="c1">// min = arr[0]</span>
+            
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">min</span><span class="p">)</span> <span class="nx">min</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+            <span class="p">}</span>
+
+            <span class="nx">answer</span> <span class="o">=</span> <span class="nx">min</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+:ET

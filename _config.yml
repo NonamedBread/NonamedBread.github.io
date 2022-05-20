@@ -111,7 +111,7 @@ analytics:
 author:
   avatar           : "https://user-images.githubusercontent.com/93482597/166445400-d1b7932f-8977-4634-8440-af54fef961cd.jpg"
   name             : "Lee Kyuhwan"
-  bio              : "The day is long and the week is short.<br>하루하루 꾸준히 :) <br>@@블로그 이사중@@"
+  bio              : "The day is long and the week is short."
   location         : "Gyeonggi, South Korea"
   email            : 
   links:
@@ -120,7 +120,7 @@ author:
       #url: mailto:lgh778923@gmail.com
     - label: "Blog"
       icon: "fas fa-fw fa-link"
-      url: "https://velog.io/@rbghks2102"
+      # url: "https://velog.io/@rbghks2102"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"

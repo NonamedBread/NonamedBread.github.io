@@ -124,4 +124,28 @@ var store = [{
         "tags": ["Project","Blockchain"],
         "url": "/project/blockchainExplorer00/",
         "teaser": null
+      },{
+        "title": "연필 개수",
+        "excerpt":"        연필 1다스는 12자루 학생 1인당 1자루씩 나누어 준다고 할때 필요한 다스 수       Math.floor() : 소수점 이하를 버림   Math.ceil() : 소수점 이하를 올림   Math.round() : 소수점 이하를 반올림    function solution(a){                 let answer = Math.ceil(a/12);                                  return answer;             }  ","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/",
+        "teaser": null
+      },{
+        "title": "최솟값 구하기",
+        "excerpt":"7개의 수가 주어지면 그 숫자 중 가장 작은 수 자바스크립트에는 수의 최대 한도 이상으로 값을 저장해 값이 손실되는 것을 방지하기 위해서 두가지의 상수가 존재한다. 첫번째는 MAX_SAFE_INTEGER이고, 두번째로는 MAX_VALUE MAX_SAFE_INTEGER : 더 큰 수를 변수에 집어 넣어도 저장은 되지만 정확하게 보관할 수 없다 integer : 값의 실제 한도를 나타낸다. 그 한도를...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "암호화폐의 기초",
+        "excerpt":"암호화폐의 화페적 기능 화폐의 기능을 하기 위해서는 교환의 매개체, 가치척도의 기능, 가치 저장의 기능이 있어야 한다 그렇다면 암호화폐는 화페의 기능을 충족 하는가?? 비트코인으로 예를 들자면 엘살바도르에서 법정화폐로 쓰이거나 채굴을 통해 불안정하지만 기능을 한다고 생각한다 이러한 불안정한 암호화폐의 기능을 보안하기 위한 다양한 알트코인들이 다수 등장하고 있다. 자료구조로써의 블록체인 블록체인의 핵심은 인터넷...","categories": ["Blockchain_theory"],
+        "tags": ["Blockchain_theory"],
+        "url": "/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EA%B8%B0%EC%B4%88/",
+        "teaser": null
+      },{
+        "title": "내장함수로 배열 최솟값, 최댓값",
+        "excerpt":"Math.min 인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌 function solution(arr){ let answer = Math.min(...arr); // console.log(Math.max(...arr)); return answer; } let arr = {5, 7, 1, 3, 2, 9, 11}; console.log(solution(arr)); Math.min.apply 첫번째 인자로 객체(this) 두번째 인자로 배열을 넘긴다. ```javascript function...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/Math.min/",
+        "teaser": null
       }]

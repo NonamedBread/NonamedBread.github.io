@@ -114,13 +114,13 @@ var store = [{
         "teaser": null
       },{
         "title": "WSL2 Git & VScode",
-        "excerpt":"Git WSL_git_docs 참고 Ubuntu 터머널에서 sudo apt-get install git 입력후 설치 혹은 Windows Git에서 설치 git config --global user.name \"Your Name\" git config --global user.email \"youremail@domain.com\" 을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다 VScode WSL_VScode_docs 참고 Ubuntu 업데이트 sudo apt-get update Wget wget(웹 서버에서 콘텐츠를 검색하기...","categories": ["WSL2"],
+        "excerpt":"Git WSL_git_docs 참고 Ubuntu 터미널에서 sudo apt-get install git 입력후 설치 혹은 Windows Git에서 설치 git config --global user.name \"Your Name\" git config --global user.email \"youremail@domain.com\" 을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다 VScode WSL_VScode_docs 참고 Ubuntu 업데이트 sudo apt-get update Wget wget(웹 서버에서 콘텐츠를 검색하기...","categories": ["WSL2"],
         "tags": ["WSL2","Blog","Git","VScode"],
         "url": "/wsl2/WSL2_git/",
         "teaser": null
       },{
         "title": "Blockchain Explorer",
-        "excerpt":"  ","categories": ["Project"],
+        "excerpt":"결과 시연영상 깃헙 https://github.com/NonamedBread/BTC2nd-04 Etherscan 이번 프로젝트는 이더스캔이라는 이더리움 익스플로러를 벤치마킹 하여 진행하는 웹 프로젝트 이다. What is Etherscan? 이더리움 블록체인에서 일어나고 있는 모든 활동과 정보를 쉽게 검색할 수 있는 사이트이다. 이더스캔에서는 이더리움의 블록 생성 내역, 트랜잭션 조회, 지갑 정보 조회 등 블록체인에서 일어나고 있는 모든 활동과 정보를 쉽게 검색할...","categories": ["Project"],
         "tags": ["Project","Blockchain"],
         "url": "/project/blockchainExplorer00/",
         "teaser": null
@@ -144,7 +144,7 @@ var store = [{
         "teaser": null
       },{
         "title": "내장함수로 배열 최솟값, 최댓값",
-        "excerpt":"Math.min 인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌 function solution(arr){ let answer = Math.min(...arr); // console.log(Math.max(...arr)); return answer; } let arr = {5, 7, 1, 3, 2, 9, 11}; console.log(solution(arr)); Math.min.apply 첫번째 인자로 객체(this) 두번째 인자로 배열을 넘긴다. ```javascript function...","categories": ["ALGORITHM"],
+        "excerpt":"Math.min 인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌 function solution(arr){ let answer = Math.min(...arr); // console.log(Math.max(...arr)); return answer; } let arr = {5, 7, 1, 3, 2, 9, 11}; console.log(solution(arr)); Math.min.apply 첫번째 인자로 객체(this) 두번째 인자로 배열을 넘긴다. function solution(arr){...","categories": ["ALGORITHM"],
         "tags": ["ALGORITHM","Inflearn"],
         "url": "/algorithm/Math.min/",
         "teaser": null

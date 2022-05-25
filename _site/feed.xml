@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-25T21:16:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">내장함수로 배열 최솟값, 최댓값</title><link href="http://localhost:4000/algorithm/Math.min/" rel="alternate" type="text/html" title="내장함수로 배열 최솟값, 최댓값" /><published>2022-05-20T00:00:00+09:00</published><updated>2022-05-20T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/Math.min</id><content type="html" xml:base="http://localhost:4000/algorithm/Math.min/"><![CDATA[<h1 id="mathmin">Math.min</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-25T21:18:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">내장함수로 배열 최솟값, 최댓값</title><link href="http://localhost:4000/algorithm/Math.min/" rel="alternate" type="text/html" title="내장함수로 배열 최솟값, 최댓값" /><published>2022-05-20T00:00:00+09:00</published><updated>2022-05-20T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/Math.min</id><content type="html" xml:base="http://localhost:4000/algorithm/Math.min/"><![CDATA[<h1 id="mathmin">Math.min</h1>
 
 <ul>
   <li>인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌</li>
@@ -266,7 +266,7 @@ function Getblock() {
 
 <p>Address 컴포넌트는 지갑에 있는 모든 내역을 보여주기 때문에 보여줘야 할 정보가 많기 때문에 react-js-pagination라이브러리를 사용하여 pagination을 구현하였다.</p>
 
-<pre><code class="language-Javascript">  const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이에 13개씩 보여줌)
+<pre><code class="language-Javascript">  const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이지에 13개씩 보여줌)
   const indexOfLastPost = page * postPerPage ; // 마지막 리스트 = 현재 페이지 * 페이지당 리스트
   const indexOfFirstPost = indexOfLastPost - postPerPage ; // 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트
   const currentPosts = getAddress.slice(indexOfFirstPost, indexOfLastPost) // 현재 페이지에 보여줄 리스트

@@ -694,7 +694,7 @@ function Getblock() {
 
 <p>Address 컴포넌트는 지갑에 있는 모든 내역을 보여주기 때문에 보여줘야 할 정보가 많기 때문에 react-js-pagination라이브러리를 사용하여 pagination을 구현하였다.</p>
 
-<pre><code class="language-Javascript">  const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이에 13개씩 보여줌)
+<pre><code class="language-Javascript">  const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이지에 13개씩 보여줌)
   const indexOfLastPost = page * postPerPage ; // 마지막 리스트 = 현재 페이지 * 페이지당 리스트
   const indexOfFirstPost = indexOfLastPost - postPerPage ; // 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트
   const currentPosts = getAddress.slice(indexOfFirstPost, indexOfLastPost) // 현재 페이지에 보여줄 리스트

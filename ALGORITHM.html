@@ -10,17 +10,23 @@
 
 <body>
     <script>
-        function solution(n) {
-           let answer = Math.ceil(n/12);
-           return answer;
-            
+        function solution(day, arr) {
+            let answer = 0;
+           for(i of arr)
+           {
+               if(i % 10 === day)
+               {
+                   answer++;
+               }
+            }
+            return answer;
+        
         }
 
+        let arr =[25, 23, 11, 47, 53, 17, 33]
+        console.log(solution(3, arr));
         
-        console.log(solution(25));
-        console.log(solution(178));
-
-    </script>
+        </script>
 </body>
 
 </html>

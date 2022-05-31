@@ -53,6 +53,12 @@ var store = [{
         "url": "/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/",
         "teaser": null
       },{
+        "title": "블록체인과 암호화폐",
+        "excerpt":"암호화폐의 화페적 기능 화폐의 기능을 하기 위해서는 교환의 매개체, 가치척도의 기능, 가치 저장의 기능이 있어야 한다 그렇다면 암호화폐는 화페의 기능을 충족 하는가?? 비트코인으로 예를 들자면 엘살바도르에서 법정화폐로 쓰이거나 채굴을 통해 불안정하지만 기능을 한다고 생각한다 이러한 불안정한 암호화폐의 기능을 보안하기 위한 다양한 알트코인들이 다수 등장하고 있다. 자료구조로써의 블록체인 블록체인의 핵심은 인터넷상에...","categories": ["Blockchain_theory"],
+        "tags": ["Blockchain_theory"],
+        "url": "/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/",
+        "teaser": null
+      },{
         "title": "2.데이터 입출력 구현 31~40",
         "excerpt":"31. 데이터 전환 데이터 전환 현재 운영 중인 시스템의 데이터를 추출하고 이를 변환한 후 새로운 개발 시스템에서 사용할 수 있도록 적재하는 과정 데이터 전환 계획서 데이터 전환에 필요한 모든 계획을 기록하는 문서 32. 데이터 검증 데이터 검증 원천 시스템의 데이터를 목적 시스템의 데이터로 전환하는 과정이 정상적으로 수행 되었는지 여르를 확인하는...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
@@ -63,12 +69,6 @@ var store = [{
         "excerpt":"41. 관계형 데이터베이스의 제약 조건 - 키(Key) 키의 종류를 기억, 각 키에 대한 개념 키(Key) 데이터베이스에서 조건에 만족하는 튜플을 찾거나 순서대로 정렬할 때 기준이 되는 속성 키의 종류 후보키(Candidate Key) 기본키(Primary Key) 대체키(Alternate Key) 슈퍼키(Super Key) 외래키(Foreign Key) 후보키(Candidate Key) 속성들 중에서 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합 유일성(Unique)과...","categories": ["EIP_PS"],
         "tags": ["EIP_PS"],
         "url": "/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8401/",
-        "teaser": null
-      },{
-        "title": "암호화 & 합의 알고리즘",
-        "excerpt":"암호화 기술과 보안 블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 보안성으로 인해 현재 금융업에서 다양한 분야에 빠르게 적용되고 있다 블록체인 보안적 특징 기존 데이터베이스와 차이점 무결성 기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의...","categories": ["Blockchain_theory"],
-        "tags": ["Blockchain_theory"],
-        "url": "/blockchain_theory/Encryption_consensus_algorithm/",
         "teaser": null
       },{
         "title": "노드 & API",
@@ -137,15 +137,21 @@ var store = [{
         "url": "/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/",
         "teaser": null
       },{
-        "title": "암호화폐의 기초",
-        "excerpt":"암호화폐의 화페적 기능 화폐의 기능을 하기 위해서는 교환의 매개체, 가치척도의 기능, 가치 저장의 기능이 있어야 한다 그렇다면 암호화폐는 화페의 기능을 충족 하는가?? 비트코인으로 예를 들자면 엘살바도르에서 법정화폐로 쓰이거나 채굴을 통해 불안정하지만 기능을 한다고 생각한다 이러한 불안정한 암호화폐의 기능을 보안하기 위한 다양한 알트코인들이 다수 등장하고 있다. 자료구조로써의 블록체인 블록체인의 핵심은 인터넷상에...","categories": ["Blockchain_theory"],
-        "tags": ["Blockchain_theory"],
-        "url": "/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EA%B8%B0%EC%B4%88/",
-        "teaser": null
-      },{
         "title": "내장함수로 배열 최솟값, 최댓값",
-        "excerpt":"Math.min 인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌 function solution(arr){ let answer = Math.min(...arr); // console.log(Math.max(...arr)); return answer; } let arr = {5, 7, 1, 3, 2, 9, 11}; console.log(solution(arr)); Math.min.apply 첫번째 인자로 객체(this) 두번째 인자로 배열을 넘긴다. function solution(arr){...","categories": ["ALGORITHM"],
+        "excerpt":"Math.min 인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 전개 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌 function solution(arr){ let answer = Math.min(...arr); // console.log(Math.max(...arr)); return answer; } let arr = {5, 7, 1, 3, 2, 9, 11}; console.log(solution(arr)); Math.min.apply 첫번째 인자로 객체(this) 두번째 인자로 배열을 넘긴다. function solution(arr){...","categories": ["ALGORITHM"],
         "tags": ["ALGORITHM","Inflearn"],
         "url": "/algorithm/Math.min/",
+        "teaser": null
+      },{
+        "title": "암호화와 합의 알고리즘",
+        "excerpt":"암호화 기술과 보안 블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 블록체인에 적용되는 암호화 기술에는 해시 함수, 전자 서명, 공개키 암호화 알고리즘 등이 있으며 블록체인 플랫폼에는 51% 공격, 이중 지불 문제(Double Spending) 등 블록체인의 취약점을 노리는 다양한 공격 방식이 있다. 기존 시스템과 블록체인 보안적 특징 기존 데이터베이스와 블록체인의...","categories": ["Blockchain_theory"],
+        "tags": ["Blockchain_theory"],
+        "url": "/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/",
+        "teaser": null
+      },{
+        "title": "홀수",
+        "excerpt":"홀수 배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제 for …of 명령문 반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of function solution(arr) { let answer = []; let sum = 0; let min = Number.MAX_SAFE_INTEGER; for(let i of...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%ED%99%80%EC%88%98/",
         "teaser": null
       }]

@@ -1,0 +1,897 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>블록체인과 암호화폐 - NonamedBread</title>
+<meta name="description" content="An amazing website.">
+
+
+  <meta name="author" content="Lee Kyuhwan">
+  
+  <meta property="article:author" content="Lee Kyuhwan">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="NonamedBread">
+<meta property="og:title" content="블록체인과 암호화폐">
+<meta property="og:url" content="http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-04-25T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-04-25T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "NonamedBread",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="NonamedBread Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main_dark.css">
+
+<!-- darkmode css -->
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"> -->
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+
+
+<!-- end custom head snippets -->
+
+</head>
+
+<body
+  class="layout--single">
+  <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+  
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          NonamedBread
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://NonamedBread.github.io" >Home</a>
+          </li><li class="masthead__menu-item">
+            <a href="/categories/" >Category</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://abrupt-jump-f72.notion.site/Lee-kyuhwan-943e3f950b214a5b802c6b3d305c3300" >About Me</a>
+          </li></ul>
+        
+        <!-- 다크 모드 토글 버튼 -->
+        
+        <input id="toggle_dark_theme" class="mh_toogle" type="checkbox">
+        <label for="toggle_dark_theme" class="material-icons-sharp mh_toggle_btn"></label>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="initial-content">
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/93482597/166445400-d1b7932f-8977-4634-8440-af54fef961cd.jpg" alt="Lee Kyuhwan" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Lee Kyuhwan</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>The day is long and the week is short.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Gyeonggi, South Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/NonamedBread" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+    
+        <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">26</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Blockchain</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/Klaytn" class="">Klaytn (1)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/Blockchain_theory" class="">Blockchain theory (3)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Server, DB</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                        <li><a href="/categories/MySQL" class="">MySQL (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+        <span class="nav__sub-title">etc</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/Project" class="">Project (1)</a></li>
+                    
+                
+            </ul>
+
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/ALGORITHM" class="">ALGORITHM (6)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+
+               <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/WSL2" class="">WSL2 (3)</a></li>
+                    
+                
+                    
+                
+            </ul>
+             <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/정처기실기" class="">정처기 실기 (10)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+       
+      </li>
+  </ul>
+</nav>
+      
+      
+  </div>
+  
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="블록체인과 암호화폐">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-04-25T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-25T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/" class="u-url" itemprop="url">블록체인과 암호화폐
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#암호화폐의-화페적-기능">암호화폐의 화페적 기능</a></li><li><a href="#자료구조로써의-블록체인">자료구조로써의 블록체인</a></li><li><a href="#블록block-체인chain이란">블록(Block), 체인(Chain)이란?</a><ul><li><a href="#블록block">블록(Block)</a></li><li><a href="#체인chain">체인(Chain)</a></li></ul></li><li><a href="#블록생성">블록생성</a></li><li><a href="#분산원장과-블록체인">분산원장과 블록체인</a><ul><li><a href="#분산원장과-블록체인의-차이점">분산원장과 블록체인의 차이점</a></li></ul></li><li><a href="#분산원장기술dlt-distributed-ledger-technology">분산원장기술(DLT; Distributed ledger technology)</a><ul><li><a href="#중앙집중원장centralized-ledger의-취약점">중앙집중원장(Centralized ledger)의 취약점</a></li><li><a href="#분산원장기술의-장점">분산원장기술의 장점</a></li></ul></li><li><a href="#요약">요약</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="암호화폐의-화페적-기능">암호화폐의 화페적 기능</h1>
+
+<p>화폐의 기능을 하기 위해서는 교환의 매개체, 가치척도의 기능, 가치 저장의 기능이 있어야 한다 그렇다면 암호화폐는 화페의 기능을 충족 하는가?? 비트코인으로 예를 들자면 엘살바도르에서 법정화폐로 쓰이거나 채굴을 통해 불안정하지만 기능을 한다고 생각한다 이러한 불안정한 암호화폐의 기능을 보안하기 위한 다양한 알트코인들이 다수 등장하고 있다.</p>
+
+<h1 id="자료구조로써의-블록체인">자료구조로써의 블록체인</h1>
+
+<p>블록체인의 핵심은 인터넷상에 있는 사람들과 동일한 데이터를 가지는 것이라고 한다. 이러한 블록체인의 특징으로는 크게 3가지가 있다.</p>
+<ul>
+  <li>누구나 데이터를 추가할 수 있다.</li>
+  <li>데이터는 한 번 추가하면, 수정하거나 삭제가 불가능</li>
+  <li>중앙화되지 않고 블록체인 네트워크에 있는 모든 사람들이 함께 관리</li>
+</ul>
+
+<h1 id="블록block-체인chain이란">블록(Block), 체인(Chain)이란?</h1>
+
+<h2 id="블록block">블록(Block)</h2>
+<p>블록은 데이터를 저장하는 공간이다. 자산에 대한 정보, 개인 정보등을 암호화헤 담는 등 다양한 유형의 정보를 담을 수 있다.</p>
+
+<ul>
+  <li>비트코인은 거래 기록을 블록에 저장한다. 블록체인에서는 이 거래 기록을 “트랜잭션”이라고 한다.</li>
+</ul>
+
+<h2 id="체인chain">체인(Chain)</h2>
+<p>블록 하나에 모든 거래 기록을 담는다면 블록의 크기가 너무 커지기 때문에 블록체인 네트워크에 참여한 사용자가 하나의 블록에 일정한 갯수의 트랜잭션을 넣어 네트워크를 공유하게 된다. 그리고 새로운 블록에는 이전 블록을 지칭하는 데이터를 함께 넣어 이전 블록을 가리키는데 이러한 모양을 체인처럼 생격다고 하여 블록체인이라고 부른다.</p>
+
+<h1 id="블록생성">블록생성</h1>
+
+<p>새로운 트랜잭션이 생기면 블록체인에서 다양한 검증 절차를 수행하게 된다. 유효성 검사가 끝난 후에는 트랜잭션이 블록에 담기고 해당 블록이 체인에 추가 된다. 즉 채굴(Mining)이란 트랜잭션을 모아서 하나의 블록으로 만드는 과정이다.</p>
+
+<h1 id="분산원장과-블록체인">분산원장과 블록체인</h1>
+
+<p>원장은 거래 내역의 집합이며, 블록체인은 원장을 저장하는 데이터베이스 유형중 하나이다. 중앙 집중식 데이터베이스와 달리 분산 원장(distributed ledger)은 분산되어 있으며, 데이터를 여러 위치에 두거나, 여러 사용자들이 나눠서 가지고 있는 데이터베이스 유형이다. 블록체인은 특정 기술들이 추가된 분산 원장의 한 종류라고 할 수 있다.</p>
+
+<h2 id="분산원장과-블록체인의-차이점">분산원장과 블록체인의 차이점</h2>
+
+<ol>
+  <li>블록 구조
+블록체인은 일반적으로 블록 형태로 데이터가 저장된다.</li>
+  <li>순서
+블록체인 기술은 모든 블록이 직전 블록을 가리키며 순서대로 배열되어 있다.</li>
+  <li>블록체인 메커니즘
+블록체인에서는 블록을 생성할 노드를 정하기 위해 Pow, PoS와 같은 메커니즘을 사용한다.</li>
+  <li>토큰
+블록체인에서는 블록을 생성하기 위해 자원을 소모한 노드에게 보상을 주기 위해 코인을 제공한다.</li>
+</ol>
+
+<h1 id="분산원장기술dlt-distributed-ledger-technology">분산원장기술(DLT; Distributed ledger technology)</h1>
+
+<p>분산원장(distributed ledger)은 거래 정보를 기록한 원장을 분산화된 네트워크에 참여한 차염자들이 공동으로 기록 및 관리하는 기술</p>
+
+<h2 id="중앙집중원장centralized-ledger의-취약점">중앙집중원장(Centralized ledger)의 취약점</h2>
+
+<ol>
+  <li>비용문제 : 제3자인 중앙집중형 관리시스템은 거래자들 사이에서 과도한 관리, 중개수수료를 청구하는 경우</li>
+  <li>시간문제 : 은행의 경우 은행들의 데이터베이스를 통해 거래를 확인하고 청산하기까지 중앙은행과 금융결제원 등 많은 중간다리가 포함되어 있다. 외환거래의 경우 3일 정도 더 걸리는 경우도 있다.</li>
+  <li>보안문제 : 중앙집중형 데이터베이스를 이용하게 되면 해커들의 공격대상은 하나로 집중되게 된다.</li>
+</ol>
+
+<h2 id="분산원장기술의-장점">분산원장기술의 장점</h2>
+
+<ol>
+  <li>인증과 증명의 효율성</li>
+  <li>시스템 안정성</li>
+  <li>보안성</li>
+  <li>투명성</li>
+</ol>
+
+<h1 id="요약">요약</h1>
+
+<p>블록체인이란 분산원장의 한 종류 이며 트랜잭션을 저장하는 블록과 블록끼리 연결하는 체인이 있다. 이러한 기술 덕분에 인증과 증명의 효율성, 시스템 안정성, 보안성, 투명성등의 장점이 있다.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#blockchain-theory" class="page__taxonomy-item p-category" rel="tag">Blockchain_theory</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blockchain-theory" class="page__taxonomy-item p-category" rel="tag">Blockchain_theory</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-04-25">April 25, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC+%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20http%3A%2F%2Flocalhost%3A4000%2Fblockchain_theory%2F%25EB%25B8%2594%25EB%25A1%259D%25EC%25B2%25B4%25EC%259D%25B8%25EA%25B3%25BC%25EC%2595%2594%25ED%2598%25B8%25ED%2599%2594%25ED%258F%2590%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblockchain_theory%2F%25EB%25B8%2594%25EB%25A1%259D%25EC%25B2%25B4%25EC%259D%25B8%25EA%25B3%25BC%25EC%2595%2594%25ED%2598%25B8%25ED%2599%2594%25ED%258F%2590%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblockchain_theory%2F%25EB%25B8%2594%25EB%25A1%259D%25EC%25B2%25B4%25EC%259D%25B8%25EA%25B3%25BC%25EC%2595%2594%25ED%2598%25B8%25ED%2599%2594%25ED%258F%2590%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/eip_ps/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%ED%99%95%EC%9D%B8_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" class="pagination--pager" title="1.요구사항 확인 오답노트
+">Previous</a>
+    
+    
+      <a href="/eip_ps/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B5%AC%ED%98%8400/" class="pagination--pager" title="2.데이터 입출력 구현 31~40
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%ED%99%80%EC%88%98/" rel="permalink">홀수
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="permalink">암호화와 합의 알고리즘
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/Math.min/" rel="permalink">내장함수로 배열 최솟값, 최댓값
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="permalink">최솟값 구하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+  </div>
+
+  
+
+  <div id="footer" class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+      <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 NonamedBread. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+    </footer>
+  </div>
+
+  
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/custom/dark-theme.js"></script>
+  
+
+
+
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+  <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: '#FFFAFA',
+      textColor: '696969'
+    })</script>
+</body>
+
+</html>

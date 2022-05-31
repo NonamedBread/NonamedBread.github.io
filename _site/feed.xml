@@ -1,7 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-26T18:59:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">내장함수로 배열 최솟값, 최댓값</title><link href="http://localhost:4000/algorithm/Math.min/" rel="alternate" type="text/html" title="내장함수로 배열 최솟값, 최댓값" /><published>2022-05-20T00:00:00+09:00</published><updated>2022-05-20T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/Math.min</id><content type="html" xml:base="http://localhost:4000/algorithm/Math.min/"><![CDATA[<h1 id="mathmin">Math.min</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-31T18:33:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">홀수</title><link href="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/" rel="alternate" type="text/html" title="홀수" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%ED%99%80%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/"><![CDATA[<h1 id="홀수">홀수</h1>
+
+<p>배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제</p>
+
+<h1 id="for-of-명령문">for …of 명령문</h1>
+
+<p>반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+           
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="p">[];</span>
+          <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_SAFE_INTEGER</span><span class="p">;</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span>
+          <span class="p">{</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">%</span><span class="mi">2</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span>
+              <span class="p">{</span>
+                <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">&lt;</span> <span class="nx">min</span><span class="p">)</span> <span class="nx">min</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+            <span class="p">}</span>
+               
+            <span class="p">}</span>
+            <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">sum</span><span class="p">);</span>
+            <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">min</span><span class="p">);</span>
+            
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+
+        <span class="p">}</span>
+
+        <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">85</span><span class="p">]</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">암호화와 합의 알고리즘</title><link href="http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="암호화와 합의 알고리즘" /><published>2022-05-26T00:00:00+09:00</published><updated>2022-05-26T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80%20%ED%95%A9%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"><![CDATA[<h1 id="암호화-기술과-보안">암호화 기술과 보안</h1>
+
+<p>블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 블록체인에 적용되는 암호화 기술에는 해시 함수, 전자 서명, 공개키 암호화 알고리즘 등이 있으며 블록체인 플랫폼에는 51% 공격, 이중 지불 문제(Double Spending) 등 블록체인의 취약점을 노리는 다양한 공격 방식이 있다.</p>
+
+<h1 id="기존-시스템과-블록체인-보안적-특징">기존 시스템과 블록체인 보안적 특징</h1>
+
+<h2 id="기존-데이터베이스와-블록체인의-보안적-문제와-차이점">기존 데이터베이스와 블록체인의 보안적 문제와 차이점</h2>
+
+<h3 id="무결성">무결성</h3>
+
+<p>기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의 무결성은 보장된다.</p>
+
+<h3 id="비가역성">비가역성</h3>
+
+<p>블록체인 기술은 중앙 통제 방식이 아닌 분산 데이터 저장 방식시이 때문에 단일 공격 지점이 없어 데이터 위변조 위험이 차단된다.</p>
+
+<h2 id="보안적-특징">보안적 특징</h2>
+
+<ol>
+  <li>데이터 무결성
+합의 알고리즘을 통해 데이터의 정확성과 일관성을 유지(무결성)</li>
+  <li>거래 투명성
+퍼블릭 블록체인의 경우 네트워크에 접속해 트랜잭션의 기록을 확인할 수 있다.</li>
+  <li>감시 가능성
+Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는 수정할 수 없다. 만약 트랜잭션에 변경이 일어나면 머클 해시 값이 변경되어 위변조 시도를 바로 발견할 수 있다.</li>
+</ol>
+
+<h2 id="해시-함수">해시 함수</h2>
+
+<p>해싱(Hashing)</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">내장함수로 배열 최솟값, 최댓값</title><link href="http://localhost:4000/algorithm/Math.min/" rel="alternate" type="text/html" title="내장함수로 배열 최솟값, 최댓값" /><published>2022-05-20T00:00:00+09:00</published><updated>2022-05-20T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/Math.min</id><content type="html" xml:base="http://localhost:4000/algorithm/Math.min/"><![CDATA[<h1 id="mathmin">Math.min</h1>
 
 <ul>
-  <li>인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 정계 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌</li>
+  <li>인자로 넘겨줘야지 객체로 넘겨주면 안됨 …같은 전개 연산자를 사용해야 된다 arr[0], arr[1] , … arr[6]이런 식으로 펼쳐줌</li>
 </ul>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">){</span>
@@ -27,76 +89,7 @@
 
 <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">};</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">암호화폐의 기초</title><link href="http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EA%B8%B0%EC%B4%88/" rel="alternate" type="text/html" title="암호화폐의 기초" /><published>2022-05-17T00:00:00+09:00</published><updated>2022-05-17T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EA%B8%B0%EC%B4%88</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EA%B3%BC%EA%B8%B0%EC%B4%88/"><![CDATA[<h1 id="암호화폐의-화페적-기능">암호화폐의 화페적 기능</h1>
-
-<p>화폐의 기능을 하기 위해서는 교환의 매개체, 가치척도의 기능, 가치 저장의 기능이 있어야 한다 그렇다면 암호화폐는 화페의 기능을 충족 하는가?? 비트코인으로 예를 들자면 엘살바도르에서 법정화폐로 쓰이거나 채굴을 통해 불안정하지만 기능을 한다고 생각한다 이러한 불안정한 암호화폐의 기능을 보안하기 위한 다양한 알트코인들이 다수 등장하고 있다.</p>
-
-<h1 id="자료구조로써의-블록체인">자료구조로써의 블록체인</h1>
-
-<p>블록체인의 핵심은 인터넷상에 있는 사람들과 동일한 데이터를 가지는 것이라고 한다. 이러한 블록체인의 특징으로는 크게 3가지가 있다.</p>
-<ul>
-  <li>누구나 데이터를 추가할 수 있다.</li>
-  <li>데이터는 한 번 추가하면, 수정하거나 삭제가 불가능</li>
-  <li>중앙화되지 않고 블록체인 네트워크에 있는 모든 사람들이 함께 관리</li>
-</ul>
-
-<h1 id="블록block-체인chain이란">블록(Block), 체인(Chain)이란?</h1>
-
-<h2 id="블록block">블록(Block)</h2>
-<p>블록은 데이터를 저장하는 공간이다. 자산에 대한 정보, 개인 정보등을 암호화헤 담는 등 다양한 유형의 정보를 담을 수 있다.</p>
-
-<ul>
-  <li>비트코인은 거래 기록을 블록에 저장한다. 블록체인에서는 이 거래 기록을 “트랜잭션”이라고 한다.</li>
-</ul>
-
-<h2 id="체인chain">체인(Chain)</h2>
-<p>블록 하나에 모든 거래 기록을 담는다면 블록의 크기가 너무 커지기 때문에 블록체인 네트워크에 참여한 사용자가 하나의 블록에 일정한 갯수의 트랜잭션을 넣어 네트워크를 공유하게 된다. 그리고 새로운 블록에는 이전 블록을 지칭하는 데이터를 함께 넣어 이전 블록을 가리키는데 이러한 모양을 체인처럼 생격다고 하여 블록체인이라고 부른다.</p>
-
-<h1 id="블록생성">블록생성</h1>
-
-<p>새로운 트랜잭션이 생기면 블록체인에서 다양한 검증 절차를 수행하게 된다. 유효성 검사가 끝난 후에는 트랜잭션이 블록에 담기고 해당 블록이 체인에 추가 된다. 즉 채굴(Mining)이란 트랜잭션을 모아서 하나의 블록으로 만드는 과정이다.</p>
-
-<h1 id="분산원장과-블록체인">분산원장과 블록체인</h1>
-
-<p>원장은 거래 내역의 집합이며, 블록체인은 원장을 저장하는 데이터베이스 유형중 하나이다. 중앙 집중식 데이터베이스와 달리 분산 원장(distributed ledger)은 분산되어 있으며, 데이터를 여러 위치에 두거나, 여러 사용자들이 나눠서 가지고 있는 데이터베이스 유형이다. 블록체인은 특정 기술들이 추가된 분산 원장의 한 종류라고 할 수 있다.</p>
-
-<h2 id="분산원장과-블록체인의-차이점">분산원장과 블록체인의 차이점</h2>
-
-<ol>
-  <li>블록 구조
-블록체인은 일반적으로 블록 형태로 데이터가 저장된다.</li>
-  <li>순서
-블록체인 기술은 모든 블록이 직전 블록을 가리키며 순서대로 배열되어 있다.</li>
-  <li>블록체인 메커니즘
-블록체인에서는 블록을 생성할 노드를 정하기 위해 Pow, PoS와 같은 메커니즘을 사용한다.</li>
-  <li>토큰
-블록체인에서는 블록을 생성하기 위해 자원을 소모한 노드에게 보상을 주기 위해 코인을 제공한다.</li>
-</ol>
-
-<h1 id="분산원장기술dlt-distributed-ledger-technology">분산원장기술(DLT; Distributed ledger technology)</h1>
-
-<p>분산원장(distributed ledger)은 거래 정보를 기록한 원장을 분산화된 네트워크에 참여한 차염자들이 공동으로 기록 및 관리하는 기술</p>
-
-<h2 id="중앙집중원장centralized-ledger의-취약점">중앙집중원장(Centralized ledger)의 취약점</h2>
-
-<ol>
-  <li>비용문제 : 제3자인 중앙집중형 관리시스템은 거래자들 사이에서 과도한 관리, 중개수수료를 청구하는 경우</li>
-  <li>시간문제 : 은행의 경우 은행들의 데이터베이스를 통해 거래를 확인하고 청산하기까지 중앙은행과 금융결제원 등 많은 중간다리가 포함되어 있다. 외환거래의 경우 3일 정도 더 걸리는 경우도 있다.</li>
-  <li>보안문제 : 중앙집중형 데이터베이스를 이용하게 되면 해커들의 공격대상은 하나로 집중되게 된다.</li>
-</ol>
-
-<h2 id="분산원장기술의-장점">분산원장기술의 장점</h2>
-
-<ol>
-  <li>인증과 증명의 효율성</li>
-  <li>시스템 안정성</li>
-  <li>보안성</li>
-  <li>투명성</li>
-</ol>
-
-<h1 id="요약">요약</h1>
-
-<p>블록체인이란 분산원장의 한 종류 이며 트랜잭션을 저장하는 블록과 블록끼리 연결하는 체인이 있다. 이러한 기술 덕분에 인증과 증명의 효율성, 시스템 안정성, 보안성, 투명성등의 장점이 있다.</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry><entry><title type="html">연필 개수</title><link href="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="연필 개수" /><published>2022-05-16T00:00:00+09:00</published><updated>2022-05-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%97%B0%ED%95%84%20%EA%B0%9C%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/"><![CDATA[<ul>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">연필 개수</title><link href="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="연필 개수" /><published>2022-05-16T00:00:00+09:00</published><updated>2022-05-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%97%B0%ED%95%84%20%EA%B0%9C%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/"><![CDATA[<ul>
   <li>
     <p>연필 1다스는 12자루 학생 1인당 1자루씩 나누어 준다고 할때 필요한 다스 수</p>
   </li>
@@ -341,7 +334,7 @@ function Getblock() {
 <h1 id="회고">회고</h1>
 
 <ul>
-  <li>글을 쓰면서 코드를 둘러보니 컴포넌트간 객체를 넘겨주는 부분에서 엔드포인트를 객체로 넘겨 주었으면 환경에 따라서 엔드포인트를 변경 할 때(Swagger, Local) 좀 더 개발할 수 있었을것 같다는 생각이 들었다.</li>
+  <li>글을 쓰면서 코드를 둘러보니 컴포넌트간 객체를 넘겨주는 부분에서 엔드포인트를 객체로 넘겨 주었으면 환경에 따라서 엔드포인트를 변경 할 때(Swagger, Local) 좀 더 편하게 개발할 수 있었을것 같다는 생각이 들었다.</li>
   <li>API통신할 때 JSON 배열에 null 값이 있으면 slice 할때 오류가 발생하는 부분과 Pagination 부분은 잘 기억해 둬야 겠다</li>
   <li>메인 페이지에서 최신 정보를 더 볼 수 있는 버튼과 서치바를 버튼으로 구현 했는데 이부분은 리팩토링을 통해 다시 구현해 보면 좋을것 같다.</li>
   <li>프로젝트가 시작하자 마자 한분이 하차 하셔서 혼자 프론트를 진행하여 백엔드 부분을 해보지 못한것은 아쉬웠다 후에 API제작하여 연동하여 보면 좋을것 같다.</li>
@@ -483,42 +476,4 @@ jekyll 4.2.2
 
 <h2 id="참고">참고</h2>
 <p><a href="https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</a>
-<a href="https://psychoria.tistory.com/734">https://psychoria.tistory.com/734</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Ubuntu" /></entry><entry><title type="html">WSL2 Git &amp;amp; VScode</title><link href="http://localhost:4000/wsl2/WSL2_git/" rel="alternate" type="text/html" title="WSL2 Git &amp;amp; VScode" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_git</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_git/"><![CDATA[<h1 id="git">Git</h1>
-
-<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-git">WSL_git_docs</a> 참고</p>
-
-<p>Ubuntu 터미널에서</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
-</code></pre></div></div>
-<p>입력후 설치</p>
-
-<p>혹은 <a href="https://git-scm.com/download/win">Windows Git</a>에서 설치</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "Your Name"
-git config --global user.email "youremail@domain.com"
-</code></pre></div></div>
-
-<p>을 입력하여 네입과 이메일 입력 제대로 입력하지 않으면 잔디가 심어지지 않는다</p>
-
-<h1 id="vscode">VScode</h1>
-
-<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-vscode">WSL_VScode_docs</a> 참고</p>
-
-<h2 id="ubuntu-업데이트">Ubuntu 업데이트</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
-</code></pre></div></div>
-
-<h2 id="wget">Wget</h2>
-
-<p>wget(웹 서버에서 콘텐츠를 검색하기 위해) 및 ca 인증서(SSL 기반 애플리케이션이 SSL 연결의 신뢰성을 확인할 수 있도록 허용)를 추가</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install wget ca-certificates
-</code></pre></div></div>
-<p>git clone한 repository에서</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
-</code></pre></div></div>
-
-<p>를 입력 하면 설치 후 VScode가 실행 된다</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Git" /><category term="VScode" /></entry></feed>
+<a href="https://psychoria.tistory.com/734">https://psychoria.tistory.com/734</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Ubuntu" /></entry></feed>

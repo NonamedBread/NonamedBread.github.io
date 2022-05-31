@@ -149,8 +149,14 @@ var store = [{
         "url": "/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/",
         "teaser": null
       },{
+        "title": "일곱 난쟁이",
+        "excerpt":"일곱 난쟁이 전체 인덱스의 합에서 두개의 인덱스의 합을 뺏을떄 100이 되게 하는 두개의 인덱스를 찾는 문제 reduce 배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 하나의 결과값을 반환합니다. MDN : reduce slice, spilice 차이 slice 어떤 배열의 begin부터 end까지(end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환합니다. 원본 배열은 바뀌지...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/",
+        "teaser": null
+      },{
         "title": "홀수",
-        "excerpt":"홀수 배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제 for …of 명령문 반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of function solution(arr) { let answer = []; let sum = 0; let min = Number.MAX_SAFE_INTEGER; for(let i of...","categories": ["ALGORITHM"],
+        "excerpt":"홀수 배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제 for …of 명령문 반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성 MDN : for…of function solution(arr) { let answer = []; let sum = 0; let min = Number.MAX_SAFE_INTEGER; for(let...","categories": ["ALGORITHM"],
         "tags": ["ALGORITHM","Inflearn"],
         "url": "/algorithm/%ED%99%80%EC%88%98/",
         "teaser": null

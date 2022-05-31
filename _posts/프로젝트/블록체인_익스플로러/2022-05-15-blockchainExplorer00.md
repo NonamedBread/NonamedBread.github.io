@@ -40,7 +40,7 @@ last_modified_at: 2022-05-15
 
 <image src = "https://user-images.githubusercontent.com/93482597/170177010-e23144de-cd1b-4f72-8a88-cfb3f6a1789c.png"/>
 
-```Javascript
+```javascript
 function App() {
 
   return (
@@ -63,7 +63,7 @@ function App() {
 
 메인페이지 화면 구성은 헤더부분과 검색창과 최신 정보를 보여주는 두개의 컴포넌트로 구성하였다 여기서 검색창, 최신 블록정보와 트랜잭션을 확인하는 컴포넌트를 각각 구성하여 하나의 컴포넌트로 구성하였다.
 
-```Javascript
+```javascript
 function Front(){
 
     return(
@@ -92,7 +92,7 @@ Latest 페이지는 이더리움 블록체인에서 일어나고 있는 최신 �
 
 >Latest Tx 페이지 구현을 하는 도중에 slice 오류가 나서 문제를 핸들링 하는데 시간이 오래 거렸는데 API를 통해 들어오는 데이터를 확인해 보니 From 부분에 컨트렉트 지갑이 있어 Null값이 들어오고 있었다 이부분을 따로 처리해 줬더니 해결이 됐다.
 
-```Javascript
+```javascript
 function Block() {
 
   const [latestBlocks, setLatestBlocks] = useState([]);
@@ -125,7 +125,7 @@ function Block() {
 
 Search bar에서는 Block Hash, Tx Hash, Address를 입력하여 검색하면 해당 상세내용과 지갑 정보를 조회할 수 있도록 구현 하였다.
 
-```Javascript
+```javascript
 // 해당 값을 입력하고 버튼을 선택하면 해당 컴포넌트로 바뀌게 구현
               ...
 <MenuItem>
@@ -163,7 +163,7 @@ getBlock 컴포넌트는 메인 화면에서 Block Number를 클릭하면 해당
 
 > getTransaction 컴포넌트도 같은 방식을 사용하였다.
 
-```Javascript
+```javascript
 
               ...
 
@@ -193,7 +193,7 @@ function Getblock() {
 
 Address 컴포넌트는 지갑에 있는 모든 내역을 보여주기 때문에 보여줘야 할 정보가 많기 때문에 react-js-pagination라이브러리를 사용하여 pagination을 구현하였다.
 
-```Javascript
+```javascript
   const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이지에 13개씩 보여줌)
   const indexOfLastPost = page * postPerPage ; // 마지막 리스트 = 현재 페이지 * 페이지당 리스트
   const indexOfFirstPost = indexOfLastPost - postPerPage ; // 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트

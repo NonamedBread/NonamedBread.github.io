@@ -1,0 +1,48 @@
+I"�<h1 id="mysql-설치">MySQL 설치</h1>
+
+<h2 id="ubuntu">Ubuntu</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get upadte
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>mysql-server
+</code></pre></div></div>
+
+<h2 id="macos">macOS</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>mysql
+brew info mysql
+</code></pre></div></div>
+
+<h2 id="mysql-접속">MySQL 접속</h2>
+<h3 id="비밀번호-비어있는-경우">비밀번호 비어있는 경우</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-u</span> root
+</code></pre></div></div>
+<h3 id="비밀번호-설정한-경우">비밀번호 설정한 경우</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
+</code></pre></div></div>
+<h3 id="비밀번호-변경">비밀번호 변경</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPassword'; 
+</code></pre></div></div>
+<blockquote>
+  <p><a href="https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server">비밀번호 변경 참고</a></p>
+</blockquote>
+
+<h2 id="sql-gui-support-tool">SQL GUI Support Tool</h2>
+<ul>
+  <li><a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a></li>
+  <li>Sequel Pro (OSX 전용)</li>
+  <li><a href="https://tableplus.com/">Table Plus</a> (추천)</li>
+  <li>DBeaver</li>
+  <li>DataGrip</li>
+</ul>
+
+<h3 id="table-plus-설치">Table Plus 설치</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ubuntu 20.04
+# Add TablePlus gpg key
+wget -qO - http://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add -
+
+# Add TablePlus repo
+sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/20 tableplus main"
+
+# Install
+sudo apt update
+sudo apt install tableplus
+</code></pre></div></div>
+:ET

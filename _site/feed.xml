@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-31T18:33:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">홀수</title><link href="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/" rel="alternate" type="text/html" title="홀수" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%ED%99%80%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/"><![CDATA[<h1 id="홀수">홀수</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-31T23:32:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">일곱 난쟁이</title><link href="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/" rel="alternate" type="text/html" title="일곱 난쟁이" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1%20%EB%82%9C%EC%9F%81%EC%9D%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/"><![CDATA[<h1 id="일곱-난쟁이">일곱 난쟁이</h1>
+
+<p>전체 인덱스의 합에서 두개의 인덱스의 합을 뺏을떄 100이 되게 하는 두개의 인덱스를 찾는 문제</p>
+
+<h1 id="reduce">reduce</h1>
+<p>배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 하나의 결과값을 반환합니다.</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">MDN : reduce</a></p>
+
+<h1 id="slice-spilice-차이">slice, spilice 차이</h1>
+
+<h2 id="slice">slice</h2>
+
+<p>어떤 배열의 begin부터 end까지(end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환합니다. 원본 배열은 바뀌지 않는다.</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">MDN : slice</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">([</span><span class="nx">begin</span><span class="p">[,</span> <span class="nx">end</span><span class="p">]])</span>
+
+<span class="c1">// ex</span>
+<span class="kd">const</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">ant</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bison</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">camel</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">duck</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">elephant</span><span class="dl">'</span><span class="p">];</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
+<span class="c1">// expected output: Array ["camel", "duck", "elephant"]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+<span class="c1">// expected output: Array ["camel", "duck"]</span>
+</code></pre></div></div>
+
+<h2 id="splice">splice</h2>
+
+<p>배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경합니다.
+<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">MDN : splice</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">array</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">start</span><span class="p">[,</span> <span class="nx">deleteCount</span><span class="p">[,</span> <span class="nx">item1</span><span class="p">[,</span> <span class="nx">item2</span><span class="p">[,</span> <span class="p">...]]]])</span>
+</code></pre></div></div>
+<p>deleteCounte : 제거할 요소의 수 0이면 어떤 요소도 제거하지 않는다.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//ex</span>
+<span class="kd">const</span> <span class="nx">months</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Jan</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">March</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">April</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">June</span><span class="dl">'</span><span class="p">];</span>
+<span class="nx">months</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Feb</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// inserts at index 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">months</span><span class="p">);</span>
+<span class="c1">// expected output: Array ["Jan", "Feb", "March", "April", "June"]</span>
+
+<span class="nx">months</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="dl">'</span><span class="s1">May</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// replaces 1 element at index 4</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">months</span><span class="p">);</span>
+<span class="c1">// expected output: Array ["Jan", "Feb", "March", "April", "May"]</span>
+
+</code></pre></div></div>
+
+<h1 id="풀이">풀이</h1>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">;</span>
+            <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+            
+           <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+           <span class="p">{</span>
+               
+               <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span><span class="o">+</span><span class="mi">1</span> <span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span>
+               <span class="p">{</span>
+                  
+                  <span class="k">if</span><span class="p">((</span><span class="nx">sum</span><span class="o">-</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">+</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]))</span><span class="o">===</span><span class="mi">100</span><span class="p">)</span>
+                  <span class="p">{</span>
+                      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+                      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        
+        <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">7</span> <span class="p">,</span><span class="mi">23</span> <span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">홀수</title><link href="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/" rel="alternate" type="text/html" title="홀수" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%ED%99%80%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/"><![CDATA[<h1 id="홀수">홀수</h1>
 
 <p>배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제</p>
 
@@ -6,7 +81,7 @@
 
 <p>반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성</p>
 
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of</a></p>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">MDN : for…of</a></p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
            
@@ -151,23 +226,23 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
 
 <image src="https://user-images.githubusercontent.com/93482597/170177010-e23144de-cd1b-4f72-8a88-cfb3f6a1789c.png" />
 
-<pre><code class="language-Javascript">function App() {
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
 
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;Header /&gt;  // 헤더 컴포넌트
-      &lt;Routes &gt;
-        &lt;Route path="/" element={&lt;Front/&gt;} /&gt;  // 메인화면
-        &lt;Route path="/getBlock" element={&lt;Getblock/&gt;}/&gt;  // 블럭정보
-        &lt;Route path="/getTransaction" element={&lt;GetTransaction/&gt;}/&gt;  // 트랜잭션 정보
-        &lt;Route path="/address" element={&lt;Address/&gt;}/&gt; // 지갑주소 검색
-        &lt;Route path="/blockHash" element={&lt;BlockHash/&gt;}/&gt;  // 블록 해쉬 검색
-        &lt;Route path="/transactionHash" element={&lt;TransactionHash/&gt;}/&gt; // 트랜잭션 해쉬 검색
-      &lt;/Routes&gt;
-    &lt;/BrowserRouter&gt;
-  );
-}
-</code></pre>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">BrowserRouter</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Header</span> <span class="o">/&gt;</span>  <span class="c1">// 헤더 컴포넌트</span>
+      <span class="o">&lt;</span><span class="nx">Routes</span> <span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Front</span><span class="o">/&gt;</span><span class="p">}</span> <span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">메인화면</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getBlock</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Getblock</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">블럭정보</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getTransaction</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">GetTransaction</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">트랜잭션</span> <span class="nx">정보</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/address</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Address</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt; /</span><span class="o">/</span> <span class="nx">지갑주소</span> <span class="nx">검색</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/blockHash</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">BlockHash</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">블록</span> <span class="nx">해쉬</span> <span class="nx">검색</span>
+        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/transactionHash</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">TransactionHash</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt; /</span><span class="o">/</span> <span class="nx">트랜잭션</span> <span class="nx">해쉬</span> <span class="nx">검색</span>
+      <span class="o">&lt;</span><span class="sr">/Routes</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/BrowserRouter</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <blockquote>
   <p>컴포넌트 구성</p>
@@ -175,25 +250,25 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
 
 <p>메인페이지 화면 구성은 헤더부분과 검색창과 최신 정보를 보여주는 두개의 컴포넌트로 구성하였다 여기서 검색창, 최신 블록정보와 트랜잭션을 확인하는 컴포넌트를 각각 구성하여 하나의 컴포넌트로 구성하였다.</p>
 
-<pre><code class="language-Javascript">function Front(){
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Front</span><span class="p">(){</span>
 
-    return(
-      &lt;&gt;
-      &lt;Searchbar/&gt;  // 서치바 컴포넌트
-        &lt;div className='front-container'&gt;
-          &lt;div className='container'&gt;
-              &lt;Block /&gt;  //LatestBlock 컴포넌트
-          &lt;/div&gt;
-          &lt;div className='container'&gt;
-              &lt;Transaction/&gt;  // LatestTransaction 컴포넌트
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/&gt;
-    )
-}
+    <span class="k">return</span><span class="p">(</span>
+      <span class="o">&lt;&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Searchbar</span><span class="o">/&gt;</span>  <span class="c1">// 서치바 컴포넌트</span>
+        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">front-container</span><span class="dl">'</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">container</span><span class="dl">'</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="nx">Block</span> <span class="o">/&gt;</span>  <span class="c1">//LatestBlock 컴포넌트</span>
+          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">container</span><span class="dl">'</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="nx">Transaction</span><span class="o">/&gt;</span>  <span class="c1">// LatestTransaction 컴포넌트</span>
+          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
 
-export default Front;
-</code></pre>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Front</span><span class="p">;</span>
+</code></pre></div></div>
 <blockquote>
   <p>메인페이지 구성</p>
 </blockquote>
@@ -207,31 +282,31 @@ export default Front;
   <p>Latest Tx 페이지 구현을 하는 도중에 slice 오류가 나서 문제를 핸들링 하는데 시간이 오래 거렸는데 API를 통해 들어오는 데이터를 확인해 보니 From 부분에 컨트렉트 지갑이 있어 Null값이 들어오고 있었다 이부분을 따로 처리해 줬더니 해결이 됐다.</p>
 </blockquote>
 
-<pre><code class="language-Javascript">function Block() {
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Block</span><span class="p">()</span> <span class="p">{</span>
 
-  const [latestBlocks, setLatestBlocks] = useState([]);
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">latestBlocks</span><span class="p">,</span> <span class="nx">setLatestBlocks</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
 
-  useEffect(() =&gt; {
-    axios
-      .get("http://218.147.82.106:20000/getLastestBlocks?count=7")
-      .then((response) =&gt; {
-        setLatestBlocks(response.data);
-      });
-  }, []);
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">axios</span>
+      <span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://218.147.82.106:20000/getLastestBlocks?count=7</span><span class="dl">"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">setLatestBlocks</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+      <span class="p">});</span>
+  <span class="p">},</span> <span class="p">[]);</span>
 
-                    ...
- {latestBlocks.map((e) =&gt; (
-        &lt;div className="block-category"&gt;
-          &lt;div className="blockNumber"&gt;
-            &lt;Link to="/getBlock" state={e.Number}&gt;{e.Number}&lt;/Link&gt;//링크를 사용하여 블록넘버 객체를 넘김
-          &lt;/div&gt;
-          &lt;div className="blockMiner"&gt;
-            {e.Miner.slice(0, 7) + "..." + e.Miner.slice(-3)}
-          &lt;/div&gt;
+                    <span class="p">...</span>
+ <span class="p">{</span><span class="nx">latestBlocks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">block-category</span><span class="dl">"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">blockNumber</span><span class="dl">"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getBlock</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nb">Number</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nb">Number</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Link&gt;/</span><span class="o">/</span><span class="nx">링크를</span> <span class="nx">사용하여</span> <span class="nx">블록넘버</span> <span class="nx">객체를</span> <span class="nx">넘김</span>
+          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">blockMiner</span><span class="dl">"</span><span class="o">&gt;</span>
+            <span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nx">Miner</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">...</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Miner</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)}</span>
+          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+                <span class="p">...</span>
 
-                ...
-
-</code></pre>
+</code></pre></div></div>
 
 <blockquote>
   <p>Latest Block 컴포넌트</p>
@@ -241,29 +316,29 @@ export default Front;
 
 <p>Search bar에서는 Block Hash, Tx Hash, Address를 입력하여 검색하면 해당 상세내용과 지갑 정보를 조회할 수 있도록 구현 하였다.</p>
 
-<pre><code class="language-Javascript">// 해당 값을 입력하고 버튼을 선택하면 해당 컴포넌트로 바뀌게 구현
-              ...
-&lt;MenuItem&gt;
-  &lt;Link to="/address" state={searchText}&gt;
-    Address   
-  &lt;/Link&gt;
-&lt;/MenuItem&gt;
-
-&lt;MenuItem&gt;
-  &lt;Link to="/blockHash" state={searchText}&gt;
-    Block Hash
-  &lt;/Link&gt;
-&lt;/MenuItem&gt;
-
-&lt;MenuItem&gt;
-  &lt;Link to="/transactionHash" state={searchText}&gt;
-    Tx Hash
-  &lt;/Link&gt;
-&lt;/MenuItem&gt;
-
-             ...
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 해당 값을 입력하고 버튼을 선택하면 해당 컴포넌트로 바뀌게 구현</span>
+              <span class="p">...</span>
+<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/address</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
+    <span class="nx">Address</span>   
+  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
+</span>
+<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/blockHash</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
+    <span class="nx">Block</span> <span class="nx">Hash</span>
+  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
+</span>
+<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/transactionHash</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
+    <span class="nx">Tx</span> <span class="nx">Hash</span>
+  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
+</span>
+             <span class="p">...</span>
           
-</code></pre>
+</code></pre></div></div>
 
 <h1 id="get-page">Get page</h1>
 
@@ -279,28 +354,28 @@ export default Front;
   <p>getTransaction 컴포넌트도 같은 방식을 사용하였다.</p>
 </blockquote>
 
-<pre><code class="language-Javascript">
-              ...
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+              <span class="p">...</span>
 
-function Getblock() {
-  const blockNum = useLocation();  // 블록넘버 객체를 받음
+<span class="kd">function</span> <span class="nx">Getblock</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">blockNum</span> <span class="o">=</span> <span class="nx">useLocation</span><span class="p">();</span>  <span class="c1">// 블록넘버 객체를 받음</span>
 
-  const [getBlock, setGetBlock] = useState([]);
-  const [getDifficulty, setGetDifficulty] = useState("");
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">getBlock</span><span class="p">,</span> <span class="nx">setGetBlock</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">getDifficulty</span><span class="p">,</span> <span class="nx">setGetDifficulty</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">""</span><span class="p">);</span>
 
-   // 객체를 사용하요 엔드포인트 지정
-  const url = "http://218.147.82.106:20000/getBlock?number=" + blockNum.state; 
-  // const url = "http://218.147.82.106:20000/getBlock?number=12259937"
-  useEffect(() =&gt; {
-    axios.get(url).then((response) =&gt; {
-      setGetBlock(response.data[0]);
-    });
-  }, []);
+   <span class="c1">// 객체를 사용하요 엔드포인트 지정</span>
+  <span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://218.147.82.106:20000/getBlock?number=</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">blockNum</span><span class="p">.</span><span class="nx">state</span><span class="p">;</span> 
+  <span class="c1">// const url = "http://218.147.82.106:20000/getBlock?number=12259937"</span>
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">setGetBlock</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="p">});</span>
+  <span class="p">},</span> <span class="p">[]);</span>
 
-              ...
+              <span class="p">...</span>
 
 
-</code></pre>
+</code></pre></div></div>
 
 <h1 id="search-page">Search page</h1>
 
@@ -308,26 +383,26 @@ function Getblock() {
 
 <p>Address 컴포넌트는 지갑에 있는 모든 내역을 보여주기 때문에 보여줘야 할 정보가 많기 때문에 react-js-pagination라이브러리를 사용하여 pagination을 구현하였다.</p>
 
-<pre><code class="language-Javascript">  const [postPerPage] = useState(13) //페이지당 리스트 수 (한 페이지에 13개씩 보여줌)
-  const indexOfLastPost = page * postPerPage ; // 마지막 리스트 = 현재 페이지 * 페이지당 리스트
-  const indexOfFirstPost = indexOfLastPost - postPerPage ; // 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트
-  const currentPosts = getAddress.slice(indexOfFirstPost, indexOfLastPost) // 현재 페이지에 보여줄 리스트
-  const totalcount = getAddress.length / postPerPage ; // 페이지 수 = 총 리스트 수 / 페이지당 리스트 
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="p">[</span><span class="nx">postPerPage</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="c1">//페이지당 리스트 수 (한 페이지에 13개씩 보여줌)</span>
+  <span class="kd">const</span> <span class="nx">indexOfLastPost</span> <span class="o">=</span> <span class="nx">page</span> <span class="o">*</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 마지막 리스트 = 현재 페이지 * 페이지당 리스트</span>
+  <span class="kd">const</span> <span class="nx">indexOfFirstPost</span> <span class="o">=</span> <span class="nx">indexOfLastPost</span> <span class="o">-</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트</span>
+  <span class="kd">const</span> <span class="nx">currentPosts</span> <span class="o">=</span> <span class="nx">getAddress</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">indexOfFirstPost</span><span class="p">,</span> <span class="nx">indexOfLastPost</span><span class="p">)</span> <span class="c1">// 현재 페이지에 보여줄 리스트</span>
+  <span class="kd">const</span> <span class="nx">totalcount</span> <span class="o">=</span> <span class="nx">getAddress</span><span class="p">.</span><span class="nx">length</span> <span class="o">/</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 페이지 수 = 총 리스트 수 / 페이지당 리스트 </span>
 
-  ...
+  <span class="p">...</span>
 
-    &lt;Pagination
-            activePage={page}  // 현재 페이지
-            itemsCountPerPage={1}
-            totalItemsCount={totalcount}
-            pageRangeDisplayed={10}
-            prevPageText={"‹"}
-            nextPageText={"›"}
-            onChange={handlePageChange}
-    /&gt;
-
-  ...
-</code></pre>
+    <span class="o">&lt;</span><span class="nx">Pagination</span>
+            <span class="nx">activePage</span><span class="o">=</span><span class="p">{</span><span class="nx">page</span><span class="p">}</span>  <span class="c1">// 현재 페이지</span>
+            <span class="nx">itemsCountPerPage</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span>
+            <span class="nx">totalItemsCount</span><span class="o">=</span><span class="p">{</span><span class="nx">totalcount</span><span class="p">}</span>
+            <span class="nx">pageRangeDisplayed</span><span class="o">=</span><span class="p">{</span><span class="mi">10</span><span class="p">}</span>
+            <span class="nx">prevPageText</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">‹</span><span class="dl">"</span><span class="p">}</span>
+            <span class="nx">nextPageText</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">›</span><span class="dl">"</span><span class="p">}</span>
+            <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handlePageChange</span><span class="p">}</span>
+    <span class="sr">/</span><span class="err">&gt;
+</span>
+  <span class="p">...</span>
+</code></pre></div></div>
 
 <p>blockHash, transactionHash 컴포넌트 들은 위에서 설명한 다른 컴포넌트와 구조가 비슷하다.</p>
 
@@ -424,56 +499,4 @@ jekyll 4.2.2
 <h2 id="참고">참고</h2>
 
 <p><a href="https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html">https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html</a>
-<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Jekyll" /></entry><entry><title type="html">WSL2 Ubuntu 설치</title><link href="http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="WSL2 Ubuntu 설치" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_Ubuntu%EC%84%A4%EC%B9%98/"><![CDATA[<h1 id="windows에-wsl2설치">Windows에 WSL2설치</h1>
-
-<h2 id="windows에-버전-확인">Windows에 버전 확인</h2>
-
-<p>Window에 WSL2를 설치할려면 20H1 이상 버전이어야 하기 때문에 Windows + S를 누른 후 PC정보를 검색하여 버전을 확인한다.</p>
-
-<image src="https://user-images.githubusercontent.com/93482597/167349639-1fe45331-204a-47fe-826f-00f1fee12744.png"></image>
-<image src="https://user-images.githubusercontent.com/93482597/167349815-2b78137e-969f-4853-843c-cfe8b7146eb7.png"> </image>
-
-<p>버전이 낮다면 최신 버전으로 업데이트후에 진행하면 된다.</p>
-
-<h2 id="dism으로-wsl-기능-활성화">DISM으로 WSL 기능 활성화</h2>
-
-<p>Windows + S 키로 Windows Terminal 이나 PowerShell을 검색한후 관리자로 실행한다</p>
-
-<p>DISM(배포 이미지 서비스 및 관리) 명령어로 Microsoft-Windows-Subsystem-Linux 기능을 활성화</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</code></pre></div></div>
-
-<p>DISM 명령어로 VirtualMachinePlatform 기능을 활성화 한다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</code></pre></div></div>
-
-<p>이후 재부팅 한다.</p>
-
-<h2 id="wsl2-설치">WSL2 설치</h2>
-
-<p>아래 링크에서 WSL2를 설치</p>
-
-<p><a href="https://docs.microsoft.com/ko-kr/windows/wsl/install#step-4---download-the-linux-kernel-update-package">WSL 설치 | Microsoft Docs</a>
-<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">WSL2 Linux 커널 업데이트 패키지</a></p>
-
-<p>터미널을 열고 WSL 버전을 2로 변경한다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
-</code></pre></div></div>
-
-<h2 id="ubuntu-설치">Ubuntu 설치</h2>
-
-<p><a href="https://aka.ms/wslstore">Microsft Store</a>에서 Ubuntu 배포판을 설치</p>
-
-<p>설치 이 후 우분투 사용자 이름과 패스워드를 지정한다.</p>
-
-<p>이후 터미널에서</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl -l -v
-</code></pre></div></div>
-<p>를 입력하여 버전을 확인한다</p>
-
-<h2 id="참고">참고</h2>
-<p><a href="https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#windows-10%EC%97%90-wsl2-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95</a>
-<a href="https://psychoria.tistory.com/734">https://psychoria.tistory.com/734</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Ubuntu" /></entry></feed>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Jekyll" /></entry></feed>

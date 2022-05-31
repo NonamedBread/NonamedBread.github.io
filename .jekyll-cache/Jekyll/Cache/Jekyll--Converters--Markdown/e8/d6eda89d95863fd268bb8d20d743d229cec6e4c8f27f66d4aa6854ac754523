@@ -1,0 +1,26 @@
+I"æ<pre><code class="language-Javascript">function solution(arr) {
+            let answer = arr;
+            let sum = arr.reduce((a,b) =&gt; a+b, 0);
+            console.log('arr',arr)
+            
+           for(let i= 0 ; i&lt; arr.length-1 ; i++)
+           {
+               
+               for(let j = i+1 ; j &lt; arr.length; j++)
+               {
+                  
+                  if((sum-(arr[i]+arr[j]))===100)
+                  {
+                      arr.splice(j, 1);
+                      arr.splice(i, 1);
+                    }
+                }
+            }
+            return answer;
+            
+        }
+        
+        let arr =[20, 7 ,23 , 19, 10, 15, 25, 8, 13]
+        console.log("sol",solution(arr));
+</code></pre>
+:ET

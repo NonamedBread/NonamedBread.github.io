@@ -1,4 +1,157 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-31T23:32:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">일곱 난쟁이</title><link href="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/" rel="alternate" type="text/html" title="일곱 난쟁이" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1%20%EB%82%9C%EC%9F%81%EC%9D%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/"><![CDATA[<h1 id="일곱-난쟁이">일곱 난쟁이</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-02T23:01:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">가장 긴 문자열</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="가장 긴 문자열" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="가장-긴-문자열">가장 긴 문자열</h1>
+<p>문자의 길이를 객체와 비교한 후 객체에 저장된 숫자보다 크다면 answer에 문자를 저장하고 반환.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+            <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MIN_SAFE_INTEGER</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">max</span> <span class="o">&lt;</span> <span class="nx">i</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">max</span> <span class="o">=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+                    <span class="nx">answer</span> <span class="o">=</span> <span class="nx">i</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">teacher</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">time</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">student</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">beautiful</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">good</span><span class="dl">'</span><span class="p">]</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">대문자 찾기</title><link href="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%B0%BE%EA%B8%B0/" rel="alternate" type="text/html" title="대문자 찾기" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%20%EC%B0%BE%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%B0%BE%EA%B8%B0/"><![CDATA[<h1 id="대문자-찾기">대문자 찾기</h1>
+
+<h2 id="for문">for문</h2>
+<p>원래 문자와 toUpperCase를 이용해 변환한 문자가 같으면 answer의 갯수를 증가시킨 뒤 반환한다.
+<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">MDN : toUpperCase</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span> <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">KoreaTimeGood</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h2 id="ascii코드">ASCII코드</h2>
+
+<p>대문자 ASCII코드는 65~90, 소문자 ASCII코드는 97~122 이라는 점을 이용하여 문제 풀이를 한다.
+charCodeAt을 이용하여 문자를 ASCII코드로 변환후 if문에서 대문자 범위 안에 들어가면 객체의 갯수를 증가시킨 뒤 반환한다</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+              <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">();</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&gt;=</span><span class="mi">65</span> <span class="o">&amp;&amp;</span> <span class="nx">num</span> <span class="o">&lt;=</span><span class="mi">90</span><span class="p">)</span> <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">KoreaTimeGood</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">대문자 통일</title><link href="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/" rel="alternate" type="text/html" title="대문자 통일" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C%20%ED%86%B5%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/"><![CDATA[<h1 id="대문자로-통일">대문자로 통일</h1>
+
+<p>toLowerCase를 사용한 객체와 비교하여 같을 경우 toUpperCase를 사용하여 객체에 저장하여 반환</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span>
+             <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+             <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span>  <span class="nx">i</span>
+          <span class="p">}</span>
+          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">itisTimeTostudy</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">대소문자 변환</title><link href="http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/" rel="alternate" type="text/html" title="대소문자 변환" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B3%80%ED%99%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/"><![CDATA[<h1 id="대소문자-변환">대소문자 변환</h1>
+<p>if문을 사용하여 대문자일 경우 소문자로 변환 그렇지 않을 경우 대문자로 변환</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+            <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+        <span class="p">}</span>
+         <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">StuDY</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">A를 #으로</title><link href="http://localhost:4000/algorithm/A%EB%A5%BC-%EC%9C%BC%EB%A1%9C/" rel="alternate" type="text/html" title="A를 #으로" /><published>2022-06-01T00:00:00+09:00</published><updated>2022-06-01T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/A%EB%A5%BC#%EC%9C%BC%EB%A1%9C</id><content type="html" xml:base="http://localhost:4000/algorithm/A%EB%A5%BC-%EC%9C%BC%EB%A1%9C/"><![CDATA[<h1 id="a를-으로">A를 #으로</h1>
+
+<p>문자열에서 A를 찾아 #으로 바꾸는 문제</p>
+
+<h2 id="for문">for문</h2>
+
+<p>빈 문자 객체에 for문을 이용하여 하나씩 추가하는 방법으로 풀이</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="o">===</span><span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">){</span>
+                    <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+<h2 id="replace">replace</h2>
+
+<p>어떤 패턴에 일치하는 일부 또는 모든 부분이 교체된 새로운 문자열을 반환합니다.
+<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace">MDN : replace</a></p>
+
+<h2 id="g-i">/g, /i</h2>
+<p>/뒤에 g를 붙이면 모든 문자열에서 치환하며 i를 붙이면 대소문자 구분없이 문자열을 치환한다. gi로 동시에 사용도 할 수 있다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+            <span class="nx">answer</span> <span class="o">=</span> <span class="nx">answer</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/A/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">문자 찾기</title><link href="http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0/" rel="alternate" type="text/html" title="문자 찾기" /><published>2022-06-01T00:00:00+09:00</published><updated>2022-06-01T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0/"><![CDATA[<h1 id="문자-찾기">문자 찾기</h1>
+
+<h2 id="for문">for문</h2>
+<p>찾으려는 문자와 같으면 객체의 갯수를 증가 시켜 일치하는 문자의 갯수를 반환한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
+
+</code></pre></div></div>
+<h2 id="split">split</h2>
+
+<p>String 객체를 지정한 구분자를 이용하여 여러 개의 문자열로 나눈후 문자열의 갯수를 반환한다.</p>
+
+<blockquote>
+  <image src="https://user-images.githubusercontent.com/93482597/171571296-74cc3267-5044-4612-8b25-58c8009db4e0.png" />
+
+  <p>구분자를 기준으로 문자열이 생기므로 -1하여 반환한다</p>
+</blockquote>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/split">MDN : split</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">str1</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+            
+            <span class="k">return</span> <span class="nx">answer</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
+
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">일곱 난쟁이</title><link href="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/" rel="alternate" type="text/html" title="일곱 난쟁이" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1%20%EB%82%9C%EC%9F%81%EC%9D%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/"><![CDATA[<h1 id="일곱-난쟁이">일곱 난쟁이</h1>
 
 <p>전체 인덱스의 합에서 두개의 인덱스의 합을 뺏을떄 100이 되게 하는 두개의 인덱스를 찾는 문제</p>
 
@@ -164,339 +317,4 @@ Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는
 
 <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">};</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">연필 개수</title><link href="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="연필 개수" /><published>2022-05-16T00:00:00+09:00</published><updated>2022-05-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%97%B0%ED%95%84%20%EA%B0%9C%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%97%B0%ED%95%84-%EA%B0%9C%EC%88%98/"><![CDATA[<ul>
-  <li>
-    <p>연필 1다스는 12자루 학생 1인당 1자루씩 나누어 준다고 할때 필요한 다스 수</p>
-  </li>
-  <li>Math.floor() : 소수점 이하를 버림</li>
-  <li>Math.ceil() : 소수점 이하를 올림</li>
-  <li>Math.round() : 소수점 이하를 반올림</li>
-</ul>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">){</span>
-                <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">a</span><span class="o">/</span><span class="mi">12</span><span class="p">);</span>
-                
-                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-            <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">최솟값 구하기</title><link href="http://localhost:4000/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="최솟값 구하기" /><published>2022-05-16T00:00:00+09:00</published><updated>2022-05-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%B5%9C%EC%86%9F%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/"><![CDATA[<ul>
-  <li>
-    <p>7개의 수가 주어지면 그 숫자 중 가장 작은 수</p>
-  </li>
-  <li>
-    <p>자바스크립트에는 수의 최대 한도 이상으로 값을 저장해 값이 손실되는 것을 방지하기 위해서 두가지의 상수가 존재한다. 첫번째는 MAX_SAFE_INTEGER이고, 두번째로는 MAX_VALUE</p>
-    <ul>
-      <li>MAX_SAFE_INTEGER : 더 큰 수를 변수에 집어 넣어도 저장은 되지만 정확하게 보관할 수 없다</li>
-      <li>integer : 값의 실제 한도를 나타낸다. 그 한도를 넘으면 값이 완전히 파손되거나 Infinity로 취급되 버린다.</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">let</span> <span class="nx">answer</span><span class="p">,</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_SAFE_INTEGER</span><span class="p">;</span> <span class="c1">// min = arr[0]</span>
-            
-            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-                <span class="k">if</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">min</span><span class="p">)</span> <span class="nx">min</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-            <span class="p">}</span>
-
-            <span class="nx">answer</span> <span class="o">=</span> <span class="nx">min</span><span class="p">;</span>
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-        <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">Blockchain Explorer</title><link href="http://localhost:4000/project/blockchainExplorer00/" rel="alternate" type="text/html" title="Blockchain Explorer" /><published>2022-05-15T00:00:00+09:00</published><updated>2022-05-15T00:00:00+09:00</updated><id>http://localhost:4000/project/blockchainExplorer00</id><content type="html" xml:base="http://localhost:4000/project/blockchainExplorer00/"><![CDATA[<h1 id="결과">결과</h1>
-
-<h2 id="시연영상">시연영상</h2>
-<image src="https://user-images.githubusercontent.com/93482597/168478733-f6457155-2107-4a45-900b-fe63be2df64f.gif" />
-
-<h2 id="깃헙">깃헙</h2>
-
-<p><a href="https://github.com/NonamedBread/BTC2nd-04">https://github.com/NonamedBread/BTC2nd-04</a></p>
-
-<h1 id="etherscan">Etherscan</h1>
-
-<image src="https://user-images.githubusercontent.com/93482597/170171146-2d8e5e4f-cc79-49d5-b992-9a7f5142beac.png" />
-
-<p>이번 프로젝트는 이더스캔이라는 이더리움 익스플로러를 벤치마킹 하여 진행하는 웹 프로젝트 이다.</p>
-
-<h2 id="what-is-etherscan">What is Etherscan?</h2>
-
-<p>이더리움 블록체인에서 일어나고 있는 모든 활동과 정보를 쉽게 검색할 수 있는 사이트이다. 이더스캔에서는 이더리움의 블록 생성 내역, 트랜잭션 조회, 지갑 정보 조회 등 블록체인에서 일어나고 있는 모든 활동과 정보를 쉽게 검색할 수 있다.</p>
-
-<h1 id="ye-seulis-explorer-프로젝트-소개">Ye Seuli`s Explorer 프로젝트 소개</h1>
-
-<h2 id="main-page">Main page</h2>
-
-<image src="https://user-images.githubusercontent.com/93482597/170177010-e23144de-cd1b-4f72-8a88-cfb3f6a1789c.png" />
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">BrowserRouter</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">Header</span> <span class="o">/&gt;</span>  <span class="c1">// 헤더 컴포넌트</span>
-      <span class="o">&lt;</span><span class="nx">Routes</span> <span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Front</span><span class="o">/&gt;</span><span class="p">}</span> <span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">메인화면</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getBlock</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Getblock</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">블럭정보</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getTransaction</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">GetTransaction</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">트랜잭션</span> <span class="nx">정보</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/address</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">Address</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt; /</span><span class="o">/</span> <span class="nx">지갑주소</span> <span class="nx">검색</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/blockHash</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">BlockHash</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt;  /</span><span class="o">/</span> <span class="nx">블록</span> <span class="nx">해쉬</span> <span class="nx">검색</span>
-        <span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="dl">"</span><span class="s2">/transactionHash</span><span class="dl">"</span> <span class="nx">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">TransactionHash</span><span class="o">/&gt;</span><span class="p">}</span><span class="sr">/&gt; /</span><span class="o">/</span> <span class="nx">트랜잭션</span> <span class="nx">해쉬</span> <span class="nx">검색</span>
-      <span class="o">&lt;</span><span class="sr">/Routes</span><span class="err">&gt;
-</span>    <span class="o">&lt;</span><span class="sr">/BrowserRouter</span><span class="err">&gt;
-</span>  <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<blockquote>
-  <p>컴포넌트 구성</p>
-</blockquote>
-
-<p>메인페이지 화면 구성은 헤더부분과 검색창과 최신 정보를 보여주는 두개의 컴포넌트로 구성하였다 여기서 검색창, 최신 블록정보와 트랜잭션을 확인하는 컴포넌트를 각각 구성하여 하나의 컴포넌트로 구성하였다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Front</span><span class="p">(){</span>
-
-    <span class="k">return</span><span class="p">(</span>
-      <span class="o">&lt;&gt;</span>
-      <span class="o">&lt;</span><span class="nx">Searchbar</span><span class="o">/&gt;</span>  <span class="c1">// 서치바 컴포넌트</span>
-        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">front-container</span><span class="dl">'</span><span class="o">&gt;</span>
-          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">container</span><span class="dl">'</span><span class="o">&gt;</span>
-              <span class="o">&lt;</span><span class="nx">Block</span> <span class="o">/&gt;</span>  <span class="c1">//LatestBlock 컴포넌트</span>
-          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">container</span><span class="dl">'</span><span class="o">&gt;</span>
-              <span class="o">&lt;</span><span class="nx">Transaction</span><span class="o">/&gt;</span>  <span class="c1">// LatestTransaction 컴포넌트</span>
-          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
-</span>    <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="nx">Front</span><span class="p">;</span>
-</code></pre></div></div>
-<blockquote>
-  <p>메인페이지 구성</p>
-</blockquote>
-
-<h3 id="latest-page">Latest page</h3>
-
-<p>Latest 페이지는 이더리움 블록체인에서 일어나고 있는 최신 정보를 확인할 수 있는 페이지 이다. Axios를 사용하여 API와 통신하였으며 useState를 사용하여 객체에 저장한 다음 map을 이용하여 JSON 데이터를 UI상에서 보여주었다.
-또한 블록넘버와 트랙잭션 해쉬를 클릭하면 해당 정보를 상세정보를 확인할 수 있도록 Link를 사용하였다.</p>
-
-<blockquote>
-  <p>Latest Tx 페이지 구현을 하는 도중에 slice 오류가 나서 문제를 핸들링 하는데 시간이 오래 거렸는데 API를 통해 들어오는 데이터를 확인해 보니 From 부분에 컨트렉트 지갑이 있어 Null값이 들어오고 있었다 이부분을 따로 처리해 줬더니 해결이 됐다.</p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Block</span><span class="p">()</span> <span class="p">{</span>
-
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">latestBlocks</span><span class="p">,</span> <span class="nx">setLatestBlocks</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
-
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">axios</span>
-      <span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://218.147.82.106:20000/getLastestBlocks?count=7</span><span class="dl">"</span><span class="p">)</span>
-      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nx">setLatestBlocks</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
-      <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[]);</span>
-
-                    <span class="p">...</span>
- <span class="p">{</span><span class="nx">latestBlocks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
-        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">block-category</span><span class="dl">"</span><span class="o">&gt;</span>
-          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">blockNumber</span><span class="dl">"</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/getBlock</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nb">Number</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nb">Number</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Link&gt;/</span><span class="o">/</span><span class="nx">링크를</span> <span class="nx">사용하여</span> <span class="nx">블록넘버</span> <span class="nx">객체를</span> <span class="nx">넘김</span>
-          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">blockMiner</span><span class="dl">"</span><span class="o">&gt;</span>
-            <span class="p">{</span><span class="nx">e</span><span class="p">.</span><span class="nx">Miner</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">...</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Miner</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)}</span>
-          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>
-                <span class="p">...</span>
-
-</code></pre></div></div>
-
-<blockquote>
-  <p>Latest Block 컴포넌트</p>
-</blockquote>
-
-<h3 id="search-bar">Search bar</h3>
-
-<p>Search bar에서는 Block Hash, Tx Hash, Address를 입력하여 검색하면 해당 상세내용과 지갑 정보를 조회할 수 있도록 구현 하였다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 해당 값을 입력하고 버튼을 선택하면 해당 컴포넌트로 바뀌게 구현</span>
-              <span class="p">...</span>
-<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/address</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
-    <span class="nx">Address</span>   
-  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
-</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
-</span>
-<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/blockHash</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
-    <span class="nx">Block</span> <span class="nx">Hash</span>
-  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
-</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
-</span>
-<span class="o">&lt;</span><span class="nx">MenuItem</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">to</span><span class="o">=</span><span class="dl">"</span><span class="s2">/transactionHash</span><span class="dl">"</span> <span class="nx">state</span><span class="o">=</span><span class="p">{</span><span class="nx">searchText</span><span class="p">}</span><span class="o">&gt;</span>
-    <span class="nx">Tx</span> <span class="nx">Hash</span>
-  <span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
-</span><span class="o">&lt;</span><span class="sr">/MenuItem</span><span class="err">&gt;
-</span>
-             <span class="p">...</span>
-          
-</code></pre></div></div>
-
-<h1 id="get-page">Get page</h1>
-
-<p>getBlock, getTransaction page는 메인 페이지에서 Block Number와 Tx Hash값을 클릭하면 해당 상세내용을 알려주는 페이지 이다.</p>
-
-<h2 id="getblock">getBlock</h2>
-
-<image src="https://user-images.githubusercontent.com/93482597/170237971-c948bc12-e435-4142-ba0d-12773ea955c8.png" />
-
-<p>getBlock 컴포넌트는 메인 화면에서 Block Number를 클릭하면 해당 객체를 useLocation을 사용하여 전달받고 그 값을 엔드포인트로 사용하여 API에서 해당 값을 가져오는 페이지 이다.</p>
-
-<blockquote>
-  <p>getTransaction 컴포넌트도 같은 방식을 사용하였다.</p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-              <span class="p">...</span>
-
-<span class="kd">function</span> <span class="nx">Getblock</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="nx">blockNum</span> <span class="o">=</span> <span class="nx">useLocation</span><span class="p">();</span>  <span class="c1">// 블록넘버 객체를 받음</span>
-
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">getBlock</span><span class="p">,</span> <span class="nx">setGetBlock</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">getDifficulty</span><span class="p">,</span> <span class="nx">setGetDifficulty</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">""</span><span class="p">);</span>
-
-   <span class="c1">// 객체를 사용하요 엔드포인트 지정</span>
-  <span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://218.147.82.106:20000/getBlock?number=</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">blockNum</span><span class="p">.</span><span class="nx">state</span><span class="p">;</span> 
-  <span class="c1">// const url = "http://218.147.82.106:20000/getBlock?number=12259937"</span>
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">setGetBlock</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[]);</span>
-
-              <span class="p">...</span>
-
-
-</code></pre></div></div>
-
-<h1 id="search-page">Search page</h1>
-
-<h2 id="address">address</h2>
-
-<p>Address 컴포넌트는 지갑에 있는 모든 내역을 보여주기 때문에 보여줘야 할 정보가 많기 때문에 react-js-pagination라이브러리를 사용하여 pagination을 구현하였다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="p">[</span><span class="nx">postPerPage</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="c1">//페이지당 리스트 수 (한 페이지에 13개씩 보여줌)</span>
-  <span class="kd">const</span> <span class="nx">indexOfLastPost</span> <span class="o">=</span> <span class="nx">page</span> <span class="o">*</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 마지막 리스트 = 현재 페이지 * 페이지당 리스트</span>
-  <span class="kd">const</span> <span class="nx">indexOfFirstPost</span> <span class="o">=</span> <span class="nx">indexOfLastPost</span> <span class="o">-</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 첫번째 리스트 = 마지막 리스트 - 페이지당 리스트</span>
-  <span class="kd">const</span> <span class="nx">currentPosts</span> <span class="o">=</span> <span class="nx">getAddress</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">indexOfFirstPost</span><span class="p">,</span> <span class="nx">indexOfLastPost</span><span class="p">)</span> <span class="c1">// 현재 페이지에 보여줄 리스트</span>
-  <span class="kd">const</span> <span class="nx">totalcount</span> <span class="o">=</span> <span class="nx">getAddress</span><span class="p">.</span><span class="nx">length</span> <span class="o">/</span> <span class="nx">postPerPage</span> <span class="p">;</span> <span class="c1">// 페이지 수 = 총 리스트 수 / 페이지당 리스트 </span>
-
-  <span class="p">...</span>
-
-    <span class="o">&lt;</span><span class="nx">Pagination</span>
-            <span class="nx">activePage</span><span class="o">=</span><span class="p">{</span><span class="nx">page</span><span class="p">}</span>  <span class="c1">// 현재 페이지</span>
-            <span class="nx">itemsCountPerPage</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span>
-            <span class="nx">totalItemsCount</span><span class="o">=</span><span class="p">{</span><span class="nx">totalcount</span><span class="p">}</span>
-            <span class="nx">pageRangeDisplayed</span><span class="o">=</span><span class="p">{</span><span class="mi">10</span><span class="p">}</span>
-            <span class="nx">prevPageText</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">‹</span><span class="dl">"</span><span class="p">}</span>
-            <span class="nx">nextPageText</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">›</span><span class="dl">"</span><span class="p">}</span>
-            <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handlePageChange</span><span class="p">}</span>
-    <span class="sr">/</span><span class="err">&gt;
-</span>
-  <span class="p">...</span>
-</code></pre></div></div>
-
-<p>blockHash, transactionHash 컴포넌트 들은 위에서 설명한 다른 컴포넌트와 구조가 비슷하다.</p>
-
-<h1 id="회고">회고</h1>
-
-<ul>
-  <li>글을 쓰면서 코드를 둘러보니 컴포넌트간 객체를 넘겨주는 부분에서 엔드포인트를 객체로 넘겨 주었으면 환경에 따라서 엔드포인트를 변경 할 때(Swagger, Local) 좀 더 편하게 개발할 수 있었을것 같다는 생각이 들었다.</li>
-  <li>API통신할 때 JSON 배열에 null 값이 있으면 slice 할때 오류가 발생하는 부분과 Pagination 부분은 잘 기억해 둬야 겠다</li>
-  <li>메인 페이지에서 최신 정보를 더 볼 수 있는 버튼과 서치바를 버튼으로 구현 했는데 이부분은 리팩토링을 통해 다시 구현해 보면 좋을것 같다.</li>
-  <li>프로젝트가 시작하자 마자 한분이 하차 하셔서 혼자 프론트를 진행하여 백엔드 부분을 해보지 못한것은 아쉬웠다 후에 API제작하여 연동하여 보면 좋을것 같다.</li>
-</ul>]]></content><author><name>Lee Kyuhwan</name></author><category term="Project" /><category term="Project" /><category term="Blockchain" /></entry><entry><title type="html">삼각형 판별하기</title><link href="http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="삼각형 판별하기" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%82%BC%EA%B0%81%ED%98%95%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/"><![CDATA[<p>세 변의 길이를 가지고 삼각형이 될 수 있는지 판별하는 알고리즘 
-제일 긴 한변의 길이가 나머지 두 변의 길이의 합보다 작거나 같아야 한다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
-                <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">YES</span><span class="dl">'</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
-                <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span> <span class="o">+</span> <span class="nx">c</span><span class="p">;</span>
-                <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">)</span> <span class="nx">max</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span>
-                <span class="k">else</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
-                <span class="k">if</span><span class="p">(</span><span class="nx">c</span><span class="o">&gt;</span><span class="nx">max</span><span class="p">)</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
-                <span class="k">if</span> <span class="p">((</span><span class="nx">sum</span><span class="o">-</span><span class="nx">max</span><span class="p">)</span><span class="o">&lt;=</span> <span class="nx">max</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">NO</span><span class="dl">"</span><span class="p">;</span>
-                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-            <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">세 수 중 최솟값</title><link href="http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/" rel="alternate" type="text/html" title="세 수 중 최솟값" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%84%B8%EC%88%98%EC%A4%91%EC%B5%9C%EC%86%9F%EA%B0%92/"><![CDATA[<p>조건문을 이용해 세 변수의 크기를 비교하여 문제 풀이</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">){</span>
-                <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
-                <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
-                <span class="k">else</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;</span>
-                <span class="k">if</span> <span class="p">(</span><span class="nx">c</span> <span class="o">&lt;</span> <span class="nx">answer</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">c</span><span class="p">;</span>
-                <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-            <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">WSL2 Jekyll 세팅</title><link href="http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="WSL2 Jekyll 세팅" /><published>2022-05-09T00:00:00+09:00</published><updated>2022-05-09T00:00:00+09:00</updated><id>http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98</id><content type="html" xml:base="http://localhost:4000/wsl2/WSL2_Jekyll%EC%84%A4%EC%B9%98/"><![CDATA[<h1 id="wsl2-jekyll-세팅">WSL2 Jekyll 세팅</h1>
-
-<h2 id="wsl2-ubuntu">WSL2 Ubuntu</h2>
-
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">Installation via Bash on Windows 10</a>를 확인해 보면 WSL 환경 설정 밥법이 나와있다.</p>
-
-<p>WSL2 Ubuntu 20.04 LTS에서는 Ruby 2.7을 설치한다</p>
-
-<p><a href="https://jekyllrb.com/docs/installation/windows/">Jekll on Windows</a></p>
-
-<h2 id="ruby-사전준비">Ruby 사전준비</h2>
-
-<p>레포지토리 목록 및 패키지를 업데이트</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt -y install make build-essential ruby ruby-dev
-$ gem install jekyll bundler
-</code></pre></div></div>
-
-<h2 id="gem-update">gem update</h2>
-
-<p>Ruby 설치후 github페이지 디렉토리로 이동해서 Ruby Gem 모듈을 추가 설치한다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem update
-</code></pre></div></div>
-<p>실행 이후 나오는 오류 메시지에 따라 라이브러리를 추가 설치해 준다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem update
-....생략
-$ sudo apt install libxml2
-$ sudo apt install libssl-dev
-u sudo apt install zlib1g-dev  
-</code></pre></div></div>
-
-<blockquote>
-  <p>gem update 이후 오류메시지가 없어 추가적인 라이브러리 설치는 진행하지 않았다.</p>
-</blockquote>
-
-<h2 id="bundle-update">bundle update</h2>
-
-<p>실행하면 Gemfile정의된 모듈을 체크하고 없으면 오류 메세지를 보여준다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle update
-....생략
-$ gem install jekyll-gist
-$ gem install jekyll-sitemap
-$ gem install jekyll-paginate
-% gem install nokogiri
-$ gem install jemoji
-</code></pre></div></div>
-
-<blockquote>
-  <p>bundle update 이후 오류메시지가 없어 추가적인 모듈 설치는 진행하지 않았다.</p>
-</blockquote>
-
-<h2 id="jekyll-버전-확인">Jekyll 버전 확인</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll -v
-jekyll 4.2.2
-</code></pre></div></div>
-
-<h2 id="참고">참고</h2>
-
-<p><a href="https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html">https://butteryoon.github.io/tools/2020/09/11/jekyll_wsl2.html</a>
-<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04</a></p>]]></content><author><name>Lee Kyuhwan</name></author><category term="WSL2" /><category term="WSL2" /><category term="Blog" /><category term="Jekyll" /></entry></feed>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry></feed>

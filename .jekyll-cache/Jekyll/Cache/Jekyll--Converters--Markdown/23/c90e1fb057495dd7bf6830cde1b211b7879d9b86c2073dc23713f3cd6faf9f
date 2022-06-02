@@ -1,0 +1,38 @@
+I"$<h1 id="문자-찾기">문자 찾기</h1>
+
+<h2 id="for문">for문</h2>
+<p>찾으려는 문자와 같으면 객체의 갯수를 증가 시켜 일치하는 문자의 갯수를 반환한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
+
+</code></pre></div></div>
+<h2 id="split">split</h2>
+
+<p>String 객체를 지정한 구분자를 이용하여 여러 개의 문자열로 나눈후 문자열의 갯수를 반환한다.</p>
+
+<blockquote>
+  <image src="https://user-images.githubusercontent.com/93482597/171571296-74cc3267-5044-4612-8b25-58c8009db4e0.png" />
+
+  <p>구분자를 기준으로 문자열이 생기므로 -1하여 반환한다</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">str1</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+            
+            <span class="k">return</span> <span class="nx">answer</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
+
+</code></pre></div></div>
+:ET

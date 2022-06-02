@@ -1,0 +1,41 @@
+I"�<h1 id="a를-으로">A를 #으로</h1>
+
+<p>문자열에서 A를 찾아 #으로 바꾸는 문제</p>
+
+<h2 id="for문">for문</h2>
+
+<p>빈 문자 객체에 for문을 이용하여 하나씩 추가하는 방법으로 풀이</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="o">===</span><span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">){</span>
+                    <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+<h2 id="replace">replace</h2>
+
+<p>어떤 패턴에 일치하는 일부 또는 모든 부분이 교체된 새로운 문자열을 반환합니다.
+<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace">MDN : replace</a></p>
+
+<h2 id="g-i">/g, /i</h2>
+<p>/뒤에 g를 붙이면 모든 문자열에서 치환하며 i를 붙이면 대소문자 구분없이 문자열을 치환한다. gi로 동시에 사용도 할 수 있다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+            <span class="nx">answer</span> <span class="o">=</span> <span class="nx">answer</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/A/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+            
+        <span class="p">}</span>
+        
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

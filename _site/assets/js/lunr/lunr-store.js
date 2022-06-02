@@ -160,4 +160,40 @@ var store = [{
         "tags": ["ALGORITHM","Inflearn"],
         "url": "/algorithm/%ED%99%80%EC%88%98/",
         "teaser": null
+      },{
+        "title": "A를 #으로",
+        "excerpt":"A를 #으로 문자열에서 A를 찾아 #으로 바꾸는 문제 for문 빈 문자 객체에 for문을 이용하여 하나씩 추가하는 방법으로 풀이 function solution(str) { let answer = '' for(let i of str){ if(i==='A'){ answer += '#'; } else answer += i; } return answer; } let str = 'BANANA' console.log(\"sol\",solution(str)); replace 어떤 패턴에...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/A%EB%A5%BC-%EC%9C%BC%EB%A1%9C/",
+        "teaser": null
+      },{
+        "title": "문자 찾기",
+        "excerpt":"문자 찾기 for문 찾으려는 문자와 같으면 객체의 갯수를 증가 시켜 일치하는 문자의 갯수를 반환한다. function solution(str, str1) { let answer = 0; for (let i of str) { if (i === str1) { answer++; } } return answer; } let str = 'COMPUTERPROGRAMMING' console.log(\"sol\", solution(str, 'R')); split String 객체를 지정한...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "가장 긴 문자열",
+        "excerpt":"가장 긴 문자열 문자의 길이를 객체와 비교한 후 객체에 저장된 숫자보다 크다면 answer에 문자를 저장하고 반환. function solution(str) { let answer = '' let max = Number.MIN_SAFE_INTEGER; for (let i of str) { if (max &lt; i.length) { max = i.length; answer = i; } } return answer; } let...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/",
+        "teaser": null
+      },{
+        "title": "대문자 찾기",
+        "excerpt":"대문자 찾기 for문 원래 문자와 toUpperCase를 이용해 변환한 문자가 같으면 answer의 갯수를 증가시킨 뒤 반환한다. MDN : toUpperCase function solution(str) { let answer = 0 for(let i of str){ if(i === i.toUpperCase()) answer++; } return answer; } let str = 'KoreaTimeGood' console.log(\"sol\", solution(str)); ASCII코드 대문자 ASCII코드는 65~90, 소문자 ASCII코드는 97~122...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%B0%BE%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "대문자 통일",
+        "excerpt":"대문자로 통일   toLowerCase를 사용한 객체와 비교하여 같을 경우 toUpperCase를 사용하여 객체에 저장하여 반환    function solution(str) {           let answer = ''           for(let i of str){               if(i === i.toLowerCase())              answer += i.toUpperCase();              else answer +=  i           }           return answer;         }         let str = 'itisTimeTostudy'         console.log(\"sol\", solution(str));  ","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/",
+        "teaser": null
+      },{
+        "title": "대소문자 변환",
+        "excerpt":"대소문자 변환  if문을 사용하여 대문자일 경우 소문자로 변환 그렇지 않을 경우 대문자로 변환   function solution(str) {         let answer = ''         for (let i of str){             if(i === i.toUpperCase()) answer += i.toLowerCase();             else answer += i.toUpperCase();         }          return answer;         }         let str = 'StuDY'         console.log(\"sol\", solution(str));  ","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/",
+        "teaser": null
       }]

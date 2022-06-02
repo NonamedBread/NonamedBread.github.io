@@ -1,0 +1,34 @@
+I"�<h1 id="대문자-찾기">대문자 찾기</h1>
+
+<h2 id="for문">for문</h2>
+<p>원래 문자와 toUpperCase를 이용해 변환한 문자가 같으면 answer의 갯수를 증가시킨 뒤 반환한다.
+<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">MDN : toUpperCase</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span> <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">KoreaTimeGood</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h2 id="ascii코드">ASCII코드</h2>
+
+<p>대문자 ASCII코드는 65~90, 소문자 ASCII코드는 97~122 이라는 점을 이용하여 문제 풀이를 한다.
+charCodeAt을 이용하여 문자를 ASCII코드로 변환후 if문에서 대문자 범위 안에 들어가면 객체의 갯수를 증가시킨 뒤 반환한다</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+              <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">();</span>
+              <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&gt;=</span><span class="mi">65</span> <span class="o">&amp;&amp;</span> <span class="nx">num</span> <span class="o">&lt;=</span><span class="mi">90</span><span class="p">)</span> <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">KoreaTimeGood</span><span class="dl">'</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

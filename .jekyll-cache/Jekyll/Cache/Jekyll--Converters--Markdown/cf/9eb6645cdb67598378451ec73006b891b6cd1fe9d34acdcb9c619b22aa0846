@@ -1,0 +1,14 @@
+I"<h1 id="대소문자-변환">대소문자 변환</h1>
+<p>if문을 사용하여 대문자일 경우 소문자로 변환 그렇지 않을 경우 대문자로 변환</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
+           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+        <span class="p">}</span>
+         <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">teacher</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">student</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">beautiful</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">good</span><span class="dl">"</span><span class="p">]</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

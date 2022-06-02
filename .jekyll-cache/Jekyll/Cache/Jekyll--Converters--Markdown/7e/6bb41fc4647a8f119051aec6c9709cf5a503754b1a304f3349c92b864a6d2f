@@ -1,0 +1,19 @@
+I"�
+<h1 id="가장-긴-문자열">가장 긴 문자열</h1>
+<p>문자의 길이를 객체와 비교한 후 객체에 저장된 숫자보다 크다면 answer에 문자를 저장하고 반환.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
+            <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MIN_SAFE_INTEGER</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">max</span> <span class="o">&lt;</span> <span class="nx">i</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">max</span> <span class="o">=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+                    <span class="nx">answer</span> <span class="o">=</span> <span class="nx">i</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">teacher</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">time</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">student</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">beautiful</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">good</span><span class="dl">'</span><span class="p">]</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

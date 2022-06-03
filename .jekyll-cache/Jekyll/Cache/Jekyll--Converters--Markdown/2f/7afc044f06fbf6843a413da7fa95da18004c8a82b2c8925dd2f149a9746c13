@@ -1,0 +1,70 @@
+I"�<h1 id="jekyll-에서-gatsby로">Jekyll 에서 Gatsby로</h1>
+
+<p>직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이 언제 끝날지는 모르겠으나 천천히 진행해 보겠다.</p>
+
+<h2 id="참고">참고</h2>
+<p><a href="https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard">https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard</a></p>
+<blockquote>
+  <p>인프런에서 Gatsby로 블로그 개발하는 강의가 있어 참고 하였다.</p>
+</blockquote>
+
+<h1 id="개발환경">개발환경</h1>
+
+<ul>
+  <li>WSL2 Ubuntu 20.04 Lts 버전에서 진행했다</li>
+</ul>
+
+<p>리액트를 실행하기 위해서 Node.js와 Yarn을 설치해 주어야 한다. 설치를 빼먹고 안하게 되면 로컬 서버가 실행되지 않으니 설치가 되어 있지 않다면 꼭 설치 하자.</p>
+
+<h2 id="curl-설치">curl 설치</h2>
+
+<p>Ubuntu 명령줄에 <code class="language-plaintext highlighter-rouge">sudo apt-get install curl</code>명령을 사용하여 curl을 설치한다.</p>
+
+<h2 id="nvm-설치">nvm 설치</h2>
+
+<p>curl을 설치한 후에 <code class="language-plaintext highlighter-rouge">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</code>명령을 사용하여 nvm을 설치한다.</p>
+
+<p>설치를 확인하기 위해 <code class="language-plaintext highlighter-rouge">command -v nvm</code>명령을 입력하면 ‘nvm’이 반환되는 것을 확인 한다.</p>
+<blockquote>
+  <p>확인이 안된다면 터미널을 닫았다가 다시 열어서 시도해 보자
+<code class="language-plaintext highlighter-rouge">nvm ls</code> 명령을 사용하여 설치된 노드 버전을 확인하고 최신 lts 버전이 아니라면 제거하고 다시 설치하자.</p>
+</blockquote>
+
+<h2 id="nodejs-설치">Node.js 설치</h2>
+
+<p><code class="language-plaintext highlighter-rouge">nvm install --lts</code>와 <code class="language-plaintext highlighter-rouge">nvm install node</code>명령을 사용하여 Node.js의 현재 버전과 LTS 버전을 모드 설치 한다.
+<code class="language-plaintext highlighter-rouge">nvm ls</code> 명령을 다시 사용하여 방금 설치한 노드 버전을 나열한다.
+<code class="language-plaintext highlighter-rouge">node --version</code> 명령을 사용하여 현재 기본 버전을 확인하고 <code class="language-plaintext highlighter-rouge">npm ---version</code> 명령을 사용하여 npm이 설치되어 있는지 확인한다.</p>
+
+<blockquote>
+  <p>Node.js 버전을 LTS로 전환할려면 프로젝트 디렉토리에서 <code class="language-plaintext highlighter-rouge">nvm use --lts</code>를 입력하면 된다.</p>
+</blockquote>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl">docs : nodejs-on-wsl2 </a></p>
+
+<h2 id="yarn-설치">yarn 설치</h2>
+
+<p>설치 되어있는 yarn 패키지를
+<code class="language-plaintext highlighter-rouge">https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl</code>명령을 사용해 두 패키지 모두 삭제하고
+<code class="language-plaintext highlighter-rouge">sudo npm install --global yarn</code> NPM을 통해 yarn패키지를 설치한다.</p>
+
+<h1 id="gatsby-프로젝트-생성">Gatsby 프로젝트 생성</h1>
+
+<p><code class="language-plaintext highlighter-rouge">npx gatsby-cli new "[프로젝트 명]"</code>명령을 통해 프로젝트를 생성하고 해당 디렉토리로 이동 후 로컬 서버를 실행하여 프로젝트가 잘 생성되었는지 확인한다</p>
+
+<p><code class="language-plaintext highlighter-rouge">gatsby develop</code> 혹은 <code class="language-plaintext highlighter-rouge">npm start</code>
+브라우저에서 localhost:8000에 접속하면</p>
+
+<image src="https://user-images.githubusercontent.com/93482597/171681769-0343cf48-04ea-4390-acfe-ccf940cb358d.png" />
+
+<p>이런 화면이 보이면 성공한 것이다.</p>
+
+<h1 id="디렉토리-구조">디렉토리 구조</h1>
+
+<image src="https://user-images.githubusercontent.com/93482597/171682475-ded59bb1-67c0-48ea-b199-1ea7b4dda9b4.png" />
+
+<p>프로젝트를 생성하자 마자 vsCode로 디렉토리를 확인하면 이러한 구조 인데 개발을 위해 디렉토리 구조를 변경해 줘야 한다.</p>
+
+<p>src 디렉토리내에 모든 파일을 지우고</p>
+
+:ET

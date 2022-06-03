@@ -196,4 +196,10 @@ var store = [{
         "tags": ["ALGORITHM","Inflearn"],
         "url": "/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/",
         "teaser": null
+      },{
+        "title": "Jekyll에서 Gatsby로",
+        "excerpt":"Jekyll 에서 Gatsby로 직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이...","categories": ["Project"],
+        "tags": ["Project","Blockchain"],
+        "url": "/project/GatsbyBlog00/",
+        "teaser": null
       }]

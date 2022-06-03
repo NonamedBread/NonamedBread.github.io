@@ -1,0 +1,914 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Jekyll에서 Gatsby로 - NonamedBread</title>
+<meta name="description" content="An amazing website.">
+
+
+  <meta name="author" content="Lee Kyuhwan">
+  
+  <meta property="article:author" content="Lee Kyuhwan">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="NonamedBread">
+<meta property="og:title" content="Jekyll에서 Gatsby로">
+<meta property="og:url" content="http://localhost:4000/project/GatsbyBlog00/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-06-03T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-06-03T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/project/GatsbyBlog00/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "NonamedBread",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="NonamedBread Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main_dark.css">
+
+<!-- darkmode css -->
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"> -->
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+
+
+<!-- end custom head snippets -->
+
+</head>
+
+<body
+  class="layout--single">
+  <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+  <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+  
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          NonamedBread
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+            <a href="https://NonamedBread.github.io" >Home</a>
+          </li><li class="masthead__menu-item">
+            <a href="/categories/" >Category</a>
+          </li><li class="masthead__menu-item">
+            <a href="https://abrupt-jump-f72.notion.site/Lee-kyuhwan-943e3f950b214a5b802c6b3d305c3300" >About Me</a>
+          </li></ul>
+        
+        <!-- 다크 모드 토글 버튼 -->
+        
+        <input id="toggle_dark_theme" class="mh_toogle" type="checkbox">
+        <label for="toggle_dark_theme" class="material-icons-sharp mh_toggle_btn"></label>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="initial-content">
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/93482597/166445400-d1b7932f-8977-4634-8440-af54fef961cd.jpg" alt="Lee Kyuhwan" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Lee Kyuhwan</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>The day is long and the week is short.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Gyeonggi, South Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/NonamedBread" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+    
+        <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">34</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Blockchain</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/Klaytn" class="">Klaytn (1)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/Blockchain_theory" class="">Blockchain theory (3)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Server, DB</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+                    
+                        <li><a href="/categories/MySQL" class="">MySQL (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+        <span class="nav__sub-title">etc</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/Project" class="">Project (2)</a></li>
+                    
+                
+            </ul>
+
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/ALGORITHM" class="">ALGORITHM (13)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+
+               <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/WSL2" class="">WSL2 (3)</a></li>
+                    
+                
+                    
+                
+            </ul>
+             <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/정처기실기" class="">정처기 실기 (10)</a></li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+       
+      </li>
+  </ul>
+</nav>
+      
+      
+  </div>
+  
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Jekyll에서 Gatsby로">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-06-03T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-03T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/project/GatsbyBlog00/" class="u-url" itemprop="url">Jekyll에서 Gatsby로
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#jekyll-에서-gatsby로">Jekyll 에서 Gatsby로</a><ul><li><a href="#참고">참고</a></li></ul></li><li><a href="#개발환경">개발환경</a><ul><li><a href="#curl-설치">curl 설치</a></li><li><a href="#nvm-설치">nvm 설치</a></li><li><a href="#nodejs-설치">Node.js 설치</a></li><li><a href="#yarn-설치">yarn 설치</a></li></ul></li><li><a href="#gatsby-프로젝트-생성">Gatsby 프로젝트 생성</a></li><li><a href="#디렉토리-구조">디렉토리 구조</a><ul><li><a href="#디렉토리-설명">디렉토리 설명</a><ul><li><a href="#contents">contents</a></li><li><a href="#src">src</a><ul><li><a href="#components">components</a></li><li><a href="#hooks">hooks</a></li><li><a href="#pages">pages</a></li><li><a href="#templates">templates</a></li></ul></li></ul></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="jekyll-에서-gatsby로">Jekyll 에서 Gatsby로</h1>
+
+<p>직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이 언제 끝날지는 모르겠으나 천천히 진행해 보겠다.</p>
+
+<h2 id="참고">참고</h2>
+<p><a href="https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard">https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard</a></p>
+<blockquote>
+  <p>인프런에서 Gatsby로 블로그 개발하는 강의가 있어 참고 하였다.</p>
+</blockquote>
+
+<h1 id="개발환경">개발환경</h1>
+
+<ul>
+  <li>WSL2 Ubuntu 20.04 Lts 버전에서 진행했다</li>
+</ul>
+
+<p>리액트를 실행하기 위해서 Node.js와 Yarn을 설치해 주어야 한다. 설치를 빼먹고 안하게 되면 로컬 서버가 실행되지 않으니 설치가 되어 있지 않다면 꼭 설치 하자.</p>
+
+<h2 id="curl-설치">curl 설치</h2>
+
+<p>Ubuntu 명령줄에 <code class="language-plaintext highlighter-rouge">sudo apt-get install curl</code>명령을 사용하여 curl을 설치한다.</p>
+
+<h2 id="nvm-설치">nvm 설치</h2>
+
+<p>curl을 설치한 후에 <code class="language-plaintext highlighter-rouge">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</code>명령을 사용하여 nvm을 설치한다.</p>
+
+<p>설치를 확인하기 위해 <code class="language-plaintext highlighter-rouge">command -v nvm</code>명령을 입력하면 ‘nvm’이 반환되는 것을 확인 한다.</p>
+<blockquote>
+  <p>확인이 안된다면 터미널을 닫았다가 다시 열어서 시도해 보자
+<code class="language-plaintext highlighter-rouge">nvm ls</code> 명령을 사용하여 설치된 노드 버전을 확인하고 최신 lts 버전이 아니라면 제거하고 다시 설치하자.</p>
+</blockquote>
+
+<h2 id="nodejs-설치">Node.js 설치</h2>
+
+<p><code class="language-plaintext highlighter-rouge">nvm install --lts</code>와 <code class="language-plaintext highlighter-rouge">nvm install node</code>명령을 사용하여 Node.js의 현재 버전과 LTS 버전을 모두 설치 한다.
+<code class="language-plaintext highlighter-rouge">nvm ls</code> 명령을 다시 사용하여 방금 설치한 노드 버전을 나열한다.
+<code class="language-plaintext highlighter-rouge">node --version</code> 명령을 사용하여 현재 기본 버전을 확인하고 <code class="language-plaintext highlighter-rouge">npm ---version</code> 명령을 사용하여 npm이 설치되어 있는지 확인한다.</p>
+
+<blockquote>
+  <p>Node.js 버전을 LTS로 전환할려면 프로젝트 디렉토리에서 <code class="language-plaintext highlighter-rouge">nvm use --lts</code>를 입력하면 된다.</p>
+</blockquote>
+
+<p><a href="https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl">docs : nodejs-on-wsl2 </a></p>
+
+<h2 id="yarn-설치">yarn 설치</h2>
+
+<p>설치 되어있는 yarn 패키지를
+<code class="language-plaintext highlighter-rouge">https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl</code>명령을 사용해 두 패키지 모두 삭제하고
+<code class="language-plaintext highlighter-rouge">sudo npm install --global yarn</code> NPM을 통해 yarn패키지를 설치한다.</p>
+
+<h1 id="gatsby-프로젝트-생성">Gatsby 프로젝트 생성</h1>
+
+<p><code class="language-plaintext highlighter-rouge">npx gatsby-cli new "[프로젝트 명]"</code>명령을 통해 프로젝트를 생성하고 해당 디렉토리로 이동 후 로컬 서버를 실행하여 프로젝트가 잘 생성되었는지 확인한다</p>
+
+<p><code class="language-plaintext highlighter-rouge">gatsby develop</code> 혹은 <code class="language-plaintext highlighter-rouge">npm start</code>후에
+브라우저에서 localhost:8000에 접속하면</p>
+
+<image src="https://user-images.githubusercontent.com/93482597/171681769-0343cf48-04ea-4390-acfe-ccf940cb358d.png" />
+
+<p>이런 화면이 보이면 성공한 것이다.</p>
+
+<h1 id="디렉토리-구조">디렉토리 구조</h1>
+
+<image src="https://user-images.githubusercontent.com/93482597/171682475-ded59bb1-67c0-48ea-b199-1ea7b4dda9b4.png" />
+
+<p>프로젝트를 생성하자 마자 VS Code로 디렉토리를 확인하면 이러한 구조 인데 개발을 위해 디렉토리 구조를 변경해 줘야 한다.</p>
+
+<p>src 디렉토리내에 모든 파일을 지우고</p>
+<image src="https://user-images.githubusercontent.com/93482597/171685809-1c091607-1c6b-41ef-87b7-422484c6070d.png" />
+
+<p>이러한 형태로 디렉토리를 생성해 주고 Root 디렉토리에 contents 디렉토리를 생성하면 된다.</p>
+
+<h2 id="디렉토리-설명">디렉토리 설명</h2>
+
+<h3 id="contents">contents</h3>
+<p>블로그 포스트 관련 파일들을 저장하기 위한 디렉토리</p>
+
+<h3 id="src">src</h3>
+<h4 id="components">components</h4>
+<p>React Component를 저장하기 위한 디렉토리</p>
+<h4 id="hooks">hooks</h4>
+<p>Custom Hooks을 저장하기 위한 디렉토리</p>
+<h4 id="pages">pages</h4>
+<p>페이지의 역할을 하는 컴포넌트를 저장하기 위한 디렉토리 페이의 역할이 아닌 컴포넌트들은 해당 디렉토리에 저장하면 안된다.</p>
+<h4 id="templates">templates</h4>
+<p>게시글 페이지와 같이 페이지의 역할을 하면서 같은 형식의 여러 콘텐츠를 보여주는 컴포넌트를 저장하기 위한 디렉토리</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#blockchain" class="page__taxonomy-item p-category" rel="tag">Blockchain</a><span class="sep">, </span>
+    
+      <a href="/tags/#project" class="page__taxonomy-item p-category" rel="tag">Project</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#project" class="page__taxonomy-item p-category" rel="tag">Project</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-06-03">June 3, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Jekyll%EC%97%90%EC%84%9C+Gatsby%EB%A1%9C%20http%3A%2F%2Flocalhost%3A4000%2Fproject%2FGatsbyBlog00%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fproject%2FGatsbyBlog00%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fproject%2FGatsbyBlog00%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/" class="pagination--pager" title="대소문자 변환
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/" rel="permalink">대소문자 변환
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/" rel="permalink">대문자 통일
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%B0%BE%EA%B8%B0/" rel="permalink">대문자 찾기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="permalink">가장 긴 문자열
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+  </div>
+
+  
+
+  <div id="footer" class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+      <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 NonamedBread. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+    </footer>
+  </div>
+
+  
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/custom/dark-theme.js"></script>
+  
+
+
+
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+  <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: '#FFFAFA',
+      textColor: '696969'
+    })</script>
+</body>
+
+</html>

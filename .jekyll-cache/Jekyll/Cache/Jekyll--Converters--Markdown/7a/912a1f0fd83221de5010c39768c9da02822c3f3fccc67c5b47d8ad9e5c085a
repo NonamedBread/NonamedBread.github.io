@@ -1,0 +1,61 @@
+I"�
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/project/GatsbyBlog00/">Jekyll에서 Gatsby로</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.06.03
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#project" class="page__taxonomy-item-category" rel="tag">Project</a>
+                    
+                    
+                    <a href="/tags/#blog" class="page__taxonomy-item-tag" rel="tag">Blog</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#gatsby" class="page__taxonomy-item-tag" rel="tag">Gatsby</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#project" class="page__taxonomy-item-tag" rel="tag">Project</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/project/blockchainExplorer00/">Blockchain Explorer</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2022.05.15
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#project" class="page__taxonomy-item-category" rel="tag">Project</a>
+                    
+                    
+                    <a href="/tags/#blockchain" class="page__taxonomy-item-tag" rel="tag">Blockchain</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#project" class="page__taxonomy-item-tag" rel="tag">Project</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+:ET

@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-03T09:23:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">Jekyll에서 Gatsby로</title><link href="http://localhost:4000/project/GatsbyBlog00/" rel="alternate" type="text/html" title="Jekyll에서 Gatsby로" /><published>2022-06-03T00:00:00+09:00</published><updated>2022-06-03T00:00:00+09:00</updated><id>http://localhost:4000/project/GatsbyBlog00</id><content type="html" xml:base="http://localhost:4000/project/GatsbyBlog00/"><![CDATA[<h1 id="jekyll-에서-gatsby로">Jekyll 에서 Gatsby로</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-03T19:08:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">가운데 문자 출력</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/" rel="alternate" type="text/html" title="가운데 문자 출력" /><published>2022-06-03T00:00:00+09:00</published><updated>2022-06-03T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EB%AC%B8%EC%9E%90%20%EC%B6%9C%EB%A0%A5</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/"><![CDATA[<h1 id="가운데-문자-출력">가운데 문자 출력</h1>
+<p>문자열의 길이가 홀수일 경우와 짝수일 경우를 나눠서 푸는 문제이다. 처음 문제를 풀때 for문과 if문으로 문제를 해결할려고 했으나 어려워 substring으로 문제를 해결했다. for문으로도 문제를 해결할 수 있을것 같은데 좀 더 도전해 봐야 겠다.</p>
+
+<h2 id="substring">substring</h2>
+
+<p>string 객체의 시작 인덱스로 부터 종료 인덱스 전 까지 문자열의 부분 문자열을 반환합니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str.substring(indexStart[, indexEnd])
+</code></pre></div></div>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/substring">MDN : substring</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+            <span class="kd">let</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// 몫 출력</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mid</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">mid</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">mid</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="dl">'</span><span class="s1">teacher</span><span class="dl">'</span><span class="p">));</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="dl">'</span><span class="s1">good</span><span class="dl">'</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">Jekyll에서 Gatsby로</title><link href="http://localhost:4000/project/GatsbyBlog00/" rel="alternate" type="text/html" title="Jekyll에서 Gatsby로" /><published>2022-06-03T00:00:00+09:00</published><updated>2022-06-03T00:00:00+09:00</updated><id>http://localhost:4000/project/GatsbyBlog00</id><content type="html" xml:base="http://localhost:4000/project/GatsbyBlog00/"><![CDATA[<h1 id="jekyll-에서-gatsby로">Jekyll 에서 Gatsby로</h1>
 
 <p>직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이 언제 끝날지는 모르겠으나 천천히 진행해 보겠다.</p>
 
@@ -83,7 +106,7 @@
 <h4 id="pages">pages</h4>
 <p>페이지의 역할을 하는 컴포넌트를 저장하기 위한 디렉토리 페이의 역할이 아닌 컴포넌트들은 해당 디렉토리에 저장하면 안된다.</p>
 <h4 id="templates">templates</h4>
-<p>게시글 페이지와 같이 페이지의 역할을 하면서 같은 형식의 여러 콘텐츠를 보여주는 컴포넌트를 저장하기 위한 디렉토리</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Project" /><category term="Project" /><category term="Blockchain" /></entry><entry><title type="html">가장 긴 문자열</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="가장 긴 문자열" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="가장-긴-문자열">가장 긴 문자열</h1>
+<p>게시글 페이지와 같이 페이지의 역할을 하면서 같은 형식의 여러 콘텐츠를 보여주는 컴포넌트를 저장하기 위한 디렉토리</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Project" /><category term="Project" /><category term="Gatsby" /><category term="Blog" /></entry><entry><title type="html">가장 긴 문자열</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="가장 긴 문자열" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="가장-긴-문자열">가장 긴 문자열</h1>
 <p>문자의 길이를 객체와 비교한 후 객체에 저장된 숫자보다 크다면 answer에 문자를 저장하고 반환.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
@@ -344,33 +367,4 @@ charCodeAt을 이용하여 문자를 ASCII코드로 변환후 if문에서 대문
 
         <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">85</span><span class="p">]</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">암호화와 합의 알고리즘</title><link href="http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="암호화와 합의 알고리즘" /><published>2022-05-26T00:00:00+09:00</published><updated>2022-05-26T00:00:00+09:00</updated><id>http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80%20%ED%95%A9%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blockchain_theory/%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"><![CDATA[<h1 id="암호화-기술과-보안">암호화 기술과 보안</h1>
-
-<p>블록체인은 분산처리와 동시에 암호화 기술을 적용하여 높은 보안성을 확보한 기술이다. 블록체인에 적용되는 암호화 기술에는 해시 함수, 전자 서명, 공개키 암호화 알고리즘 등이 있으며 블록체인 플랫폼에는 51% 공격, 이중 지불 문제(Double Spending) 등 블록체인의 취약점을 노리는 다양한 공격 방식이 있다.</p>
-
-<h1 id="기존-시스템과-블록체인-보안적-특징">기존 시스템과 블록체인 보안적 특징</h1>
-
-<h2 id="기존-데이터베이스와-블록체인의-보안적-문제와-차이점">기존 데이터베이스와 블록체인의 보안적 문제와 차이점</h2>
-
-<h3 id="무결성">무결성</h3>
-
-<p>기존 데이터 베이스와 다르게 블록체인은 분산 시스템이기 때문에 각 노드들이 가지고 있는 사본을 통해 다른 노드에 문제가 발생해도 전체 블록체인 네트워크의 무결성은 보장된다.</p>
-
-<h3 id="비가역성">비가역성</h3>
-
-<p>블록체인 기술은 중앙 통제 방식이 아닌 분산 데이터 저장 방식시이 때문에 단일 공격 지점이 없어 데이터 위변조 위험이 차단된다.</p>
-
-<h2 id="보안적-특징">보안적 특징</h2>
-
-<ol>
-  <li>데이터 무결성
-합의 알고리즘을 통해 데이터의 정확성과 일관성을 유지(무결성)</li>
-  <li>거래 투명성
-퍼블릭 블록체인의 경우 네트워크에 접속해 트랜잭션의 기록을 확인할 수 있다.</li>
-  <li>감시 가능성
-Hashing 기술을 통해 블록에 담겨 있는 트랙잭션이나 데이터는 수정할 수 없다. 만약 트랜잭션에 변경이 일어나면 머클 해시 값이 변경되어 위변조 시도를 바로 발견할 수 있다.</li>
-</ol>
-
-<h2 id="해시-함수">해시 함수</h2>
-
-<p>해싱(Hashing)</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Blockchain_theory" /><category term="Blockchain_theory" /></entry></feed>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry></feed>

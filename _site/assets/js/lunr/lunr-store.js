@@ -197,9 +197,15 @@ var store = [{
         "url": "/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/",
         "teaser": null
       },{
+        "title": "가운데 문자 출력",
+        "excerpt":"가운데 문자 출력 문자열의 길이가 홀수일 경우와 짝수일 경우를 나눠서 푸는 문제이다. 처음 문제를 풀때 for문과 if문으로 문제를 해결할려고 했으나 어려워 substring으로 문제를 해결했다. for문으로도 문제를 해결할 수 있을것 같은데 좀 더 도전해 봐야 겠다. substring string 객체의 시작 인덱스로 부터 종료 인덱스 전 까지 문자열의 부분 문자열을 반환합니다. str.substring(indexStart[,...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/",
+        "teaser": null
+      },{
         "title": "Jekyll에서 Gatsby로",
         "excerpt":"Jekyll 에서 Gatsby로 직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이...","categories": ["Project"],
-        "tags": ["Project","Blockchain"],
+        "tags": ["Project","Gatsby","Blog"],
         "url": "/project/GatsbyBlog00/",
         "teaser": null
       }]

@@ -11,19 +11,15 @@
     <script>
         function solution(str) {
             let answer;
-            let mid = Math.floor(str.length / 2);
-            for (let i = 0 ; i < str.length; i++) {
-                console.log(str[i])
-                if((str.length%2)===0){
-                    answer = str[mid];
-                }
-                else answer = str[mid];
+            let mid = Math.floor(str.length / 2); // 몫 출력
+            console.log(mid);
+            if (str.length % 2 === 1) {
+                answer = str.substring(mid, 1);
             }
-
-
+            else answer = str.substring(mid-1, 2);
             return answer;
         }
-        console.log("sol", solution('asfsdf'));
+        console.log("sol", solution('teacher'));
         console.log("sol", solution('good'));
 
     </script>

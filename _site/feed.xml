@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-03T19:08:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">가운데 문자 출력</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/" rel="alternate" type="text/html" title="가운데 문자 출력" /><published>2022-06-03T00:00:00+09:00</published><updated>2022-06-03T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EB%AC%B8%EC%9E%90%20%EC%B6%9C%EB%A0%A5</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/"><![CDATA[<h1 id="가운데-문자-출력">가운데 문자 출력</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-13T21:22:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NonamedBread</title><subtitle>An amazing website.</subtitle><author><name>Lee Kyuhwan</name></author><entry><title type="html">가위 바위 보</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9C%84-%EB%B0%94%EC%9C%84-%EB%B3%B4/" rel="alternate" type="text/html" title="가위 바위 보" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9C%84%20%EB%B0%94%EC%9C%84%20%EB%B3%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9C%84-%EB%B0%94%EC%9C%84-%EB%B3%B4/"><![CDATA[<h1 id="가위-바위-보">가위 바위 보</h1>
+
+<p>두 사람(A, B)이 가위바위보 게임을 해서 이긴 사람을 출력하고 비기면 D를 출력하는 문제
+경우를 따질때에는 기준을 잘잡아야 된다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">str1</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">str1</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">D </span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">str1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">A </span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="nx">str1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">A </span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">3</span> <span class="o">&amp;&amp;</span> <span class="nx">str1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">A </span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">B </span><span class="dl">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">str1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">보이는 학생</title><link href="http://localhost:4000/algorithm/%EB%B3%B4%EC%9D%B4%EB%8A%94-%ED%95%99%EC%83%9D/" rel="alternate" type="text/html" title="보이는 학생" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%B3%B4%EC%9D%B4%EB%8A%94%20%ED%95%99%EC%83%9D</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%B3%B4%EC%9D%B4%EB%8A%94-%ED%95%99%EC%83%9D/"><![CDATA[<h2 id="보이는-학생">보이는 학생</h2>
+
+<p>학생들의 키를 입력 받아 맨 앞에 서 있는 선생님이 볼 수 있는 학생의 수를 구하는 문제</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">str</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">max</span> <span class="o">=</span> <span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+      <span class="nx">sum</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">sum</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="mi">130</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">145</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">153</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">점수계산</title><link href="http://localhost:4000/algorithm/%EC%A0%90%EC%88%98%EA%B3%84%EC%82%B0/" rel="alternate" type="text/html" title="점수계산" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%A0%90%EC%88%98%EA%B3%84%EC%82%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%A0%90%EC%88%98%EA%B3%84%EC%82%B0/"><![CDATA[<h1 id="점수계산">점수계산</h1>
+
+<p>문제를 맞혔을 경우 1점으로 계산하고 연속으로 문제의 답이 맞는 경우 가산점 1점을 부여하는 문제</p>
+
+<h2 id="내풀이">내풀이</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">str</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="nx">cnt</span><span class="o">++</span><span class="p">;</span>
+      <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">cnt</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="nx">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">중복단어제거</title><link href="http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%8B%A8%EC%96%B4%EC%A0%9C%EA%B1%B0/" rel="alternate" type="text/html" title="중복단어제거" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%8B%A8%EC%96%B4%EC%A0%9C%EA%B1%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%8B%A8%EC%96%B4%EC%A0%9C%EA%B1%B0/"><![CDATA[<h1 id="중복단어제거">중복단어제거</h1>
+
+<p>indexOf와 filter를 사용하여 중복되는 단어를 제거하는 문제</p>
+
+<h2 id="filter">filter</h2>
+
+<p>filter 함수는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다
+문제에서 indexOf의 인덱스번호와 filter의 인덱스번호가 같으면 True를 반환</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">MDN : filter</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+
+  <span class="c1">// console.log(str.indexOf("good"));</span>
+  <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// console.log(v, i);</span>
+    <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">===</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="p">});</span>
+
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">good</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">good</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">student</span><span class="dl">"</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">큰 수 출력하기</title><link href="http://localhost:4000/algorithm/%ED%81%B0-%EC%88%98-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="큰 수 출력하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%ED%81%B0%20%EC%88%98%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%ED%81%B0-%EC%88%98-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"><![CDATA[<h1 id="큰-수-출력하기">큰 수 출력하기</h1>
+
+<p>수 배열에서 첫 수는 무조건 출력하고 바로 앞 수 보다 큰 수만 출력하는 문제</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">i</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">str</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">중복문자제거</title><link href="http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%AC%B8%EC%9E%90%EC%A0%9C%EA%B1%B0/" rel="alternate" type="text/html" title="중복문자제거" /><published>2022-06-07T00:00:00+09:00</published><updated>2022-06-07T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%AC%B8%EC%9E%90%EC%A0%9C%EA%B1%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%A4%91%EB%B3%B5%EB%AC%B8%EC%9E%90%EC%A0%9C%EA%B1%B0/"><![CDATA[<h1 id="중복문자제거">중복문자제거</h1>
+
+<p>indexOf를 사용하여 중복되는 문자를 제거하는 문제</p>
+
+<h2 id="indexof">indexOf</h2>
+
+<p>배열에서 지정된 요소를 찾을 수 있는 첫 번째 인덱스를 반환하고 존재하지 않으면 -1을 반환하는 메서드</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">MDN : indexOf</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">k</span><span class="dl">"</span><span class="p">));</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//console.log(str[i], i, str.indexOf(str[i]))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">str</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">]))</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">str</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="dl">"</span><span class="s2">ksekkset</span><span class="dl">"</span><span class="p">));</span>
+</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">가운데 문자 출력</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/" rel="alternate" type="text/html" title="가운데 문자 출력" /><published>2022-06-03T00:00:00+09:00</published><updated>2022-06-03T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EB%AC%B8%EC%9E%90%20%EC%B6%9C%EB%A0%A5</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9A%B4%EB%8D%B0-%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5/"><![CDATA[<h1 id="가운데-문자-출력">가운데 문자 출력</h1>
 <p>문자열의 길이가 홀수일 경우와 짝수일 경우를 나눠서 푸는 문제이다. 처음 문제를 풀때 for문과 if문으로 문제를 해결할려고 했으나 어려워 substring으로 문제를 해결했다. for문으로도 문제를 해결할 수 있을것 같은데 좀 더 도전해 봐야 겠다.</p>
 
 <h2 id="substring">substring</h2>
@@ -26,7 +144,9 @@
 <p>직접 만드는 블로그에 대한 로망으로 아무것도 모른 체 사용자가 많다는 이유로 Github Page와 Jekyll로 블로그를 시작했다… 하지만 프론트엔드 공부와 프로젝트를 리액트로 진행하며 Gatsby로 만든 블로그에 공부한 부분을 직접 적용해 보면 좋겠다는 생각이 들었고 요새 코테공부와 이력서만 넣느라 우울감이 올라왔는데 환기 겸 가볍게 진행해 보려고 한다. 블로그 마이그레이션이 언제 끝날지는 모르겠으나 천천히 진행해 보겠다.</p>
 
 <h2 id="참고">참고</h2>
+
 <p><a href="https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard">https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8/dashboard</a></p>
+
 <blockquote>
   <p>인프런에서 Gatsby로 블로그 개발하는 강의가 있어 참고 하였다.</p>
 </blockquote>
@@ -48,6 +168,7 @@
 <p>curl을 설치한 후에 <code class="language-plaintext highlighter-rouge">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</code>명령을 사용하여 nvm을 설치한다.</p>
 
 <p>설치를 확인하기 위해 <code class="language-plaintext highlighter-rouge">command -v nvm</code>명령을 입력하면 ‘nvm’이 반환되는 것을 확인 한다.</p>
+
 <blockquote>
   <p>확인이 안된다면 터미널을 닫았다가 다시 열어서 시도해 보자
 <code class="language-plaintext highlighter-rouge">nvm ls</code> 명령을 사용하여 설치된 노드 버전을 확인하고 최신 lts 버전이 아니라면 제거하고 다시 설치하자.</p>
@@ -64,12 +185,6 @@
 </blockquote>
 
 <p><a href="https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl">docs : nodejs-on-wsl2 </a></p>
-
-<h2 id="yarn-설치">yarn 설치</h2>
-
-<p>설치 되어있는 yarn 패키지를
-<code class="language-plaintext highlighter-rouge">https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl</code>명령을 사용해 두 패키지 모두 삭제하고
-<code class="language-plaintext highlighter-rouge">sudo npm install --global yarn</code> NPM을 통해 yarn패키지를 설치한다.</p>
 
 <h1 id="gatsby-프로젝트-생성">Gatsby 프로젝트 생성</h1>
 
@@ -96,16 +211,25 @@
 <h2 id="디렉토리-설명">디렉토리 설명</h2>
 
 <h3 id="contents">contents</h3>
+
 <p>블로그 포스트 관련 파일들을 저장하기 위한 디렉토리</p>
 
 <h3 id="src">src</h3>
+
 <h4 id="components">components</h4>
+
 <p>React Component를 저장하기 위한 디렉토리</p>
+
 <h4 id="hooks">hooks</h4>
+
 <p>Custom Hooks을 저장하기 위한 디렉토리</p>
+
 <h4 id="pages">pages</h4>
+
 <p>페이지의 역할을 하는 컴포넌트를 저장하기 위한 디렉토리 페이의 역할이 아닌 컴포넌트들은 해당 디렉토리에 저장하면 안된다.</p>
+
 <h4 id="templates">templates</h4>
+
 <p>게시글 페이지와 같이 페이지의 역할을 하면서 같은 형식의 여러 콘텐츠를 보여주는 컴포넌트를 저장하기 위한 디렉토리</p>]]></content><author><name>Lee Kyuhwan</name></author><category term="Project" /><category term="Project" /><category term="Gatsby" /><category term="Blog" /></entry><entry><title type="html">가장 긴 문자열</title><link href="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="가장 긴 문자열" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="가장-긴-문자열">가장 긴 문자열</h1>
 <p>문자의 길이를 객체와 비교한 후 객체에 저장된 숫자보다 크다면 answer에 문자를 저장하고 반환.</p>
 
@@ -154,217 +278,4 @@ charCodeAt을 이용하여 문자를 ASCII코드로 변환후 if문에서 대문
         <span class="p">}</span>
         <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">KoreaTimeGood</span><span class="dl">'</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">대문자 통일</title><link href="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/" rel="alternate" type="text/html" title="대문자 통일" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C%20%ED%86%B5%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C-%ED%86%B5%EC%9D%BC/"><![CDATA[<h1 id="대문자로-통일">대문자로 통일</h1>
-
-<p>toLowerCase를 사용한 객체와 비교하여 같을 경우 toUpperCase를 사용하여 객체에 저장하여 반환</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
-          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
-              <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span>
-             <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
-             <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span>  <span class="nx">i</span>
-          <span class="p">}</span>
-          <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">itisTimeTostudy</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">대소문자 변환</title><link href="http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/" rel="alternate" type="text/html" title="대소문자 변환" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B3%80%ED%99%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%ED%99%98/"><![CDATA[<h1 id="대소문자-변환">대소문자 변환</h1>
-<p>if문을 사용하여 대문자일 경우 소문자로 변환 그렇지 않을 경우 대문자로 변환</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
-            <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
-        <span class="p">}</span>
-         <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">StuDY</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">A를 #으로</title><link href="http://localhost:4000/algorithm/A%EB%A5%BC-%EC%9C%BC%EB%A1%9C/" rel="alternate" type="text/html" title="A를 #으로" /><published>2022-06-01T00:00:00+09:00</published><updated>2022-06-01T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/A%EB%A5%BC#%EC%9C%BC%EB%A1%9C</id><content type="html" xml:base="http://localhost:4000/algorithm/A%EB%A5%BC-%EC%9C%BC%EB%A1%9C/"><![CDATA[<h1 id="a를-으로">A를 #으로</h1>
-
-<p>문자열에서 A를 찾아 #으로 바꾸는 문제</p>
-
-<h2 id="for문">for문</h2>
-
-<p>빈 문자 객체에 for문을 이용하여 하나씩 추가하는 방법으로 풀이</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="dl">''</span>
-            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">){</span>
-                <span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="o">===</span><span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">){</span>
-                    <span class="nx">answer</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">;</span>
-                <span class="p">}</span>
-                <span class="k">else</span> <span class="nx">answer</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
-</code></pre></div></div>
-<h2 id="replace">replace</h2>
-
-<p>어떤 패턴에 일치하는 일부 또는 모든 부분이 교체된 새로운 문자열을 반환합니다.
-<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace">MDN : replace</a></p>
-
-<h2 id="g-i">/g, /i</h2>
-<p>/뒤에 g를 붙이면 모든 문자열에서 치환하며 i를 붙이면 대소문자 구분없이 문자열을 치환한다. gi로 동시에 사용도 할 수 있다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
-            
-            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
-            <span class="nx">answer</span> <span class="o">=</span> <span class="nx">answer</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/A/g</span><span class="p">,</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span><span class="p">);</span>
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-            
-        <span class="p">}</span>
-        
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">BANANA</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">문자 찾기</title><link href="http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0/" rel="alternate" type="text/html" title="문자 찾기" /><published>2022-06-01T00:00:00+09:00</published><updated>2022-06-01T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorithm/%EB%AC%B8%EC%9E%90%EC%B0%BE%EA%B8%B0/"><![CDATA[<h1 id="문자-찾기">문자 찾기</h1>
-
-<h2 id="for문">for문</h2>
-<p>찾으려는 문자와 같으면 객체의 갯수를 증가 시켜 일치하는 문자의 갯수를 반환한다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="nx">answer</span><span class="o">++</span><span class="p">;</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
-
-</code></pre></div></div>
-<h2 id="split">split</h2>
-
-<p>String 객체를 지정한 구분자를 이용하여 여러 개의 문자열로 나눈후 문자열의 갯수를 반환한다.</p>
-
-<blockquote>
-  <image src="https://user-images.githubusercontent.com/93482597/171571296-74cc3267-5044-4612-8b25-58c8009db4e0.png" />
-
-  <p>구분자를 기준으로 문자열이 생기므로 -1하여 반환한다</p>
-</blockquote>
-
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/split">MDN : split</a></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">str1</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">str1</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
-            
-            <span class="k">return</span> <span class="nx">answer</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">COMPUTERPROGRAMMING</span><span class="dl">'</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="dl">'</span><span class="s1">R</span><span class="dl">'</span><span class="p">));</span>
-
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">일곱 난쟁이</title><link href="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/" rel="alternate" type="text/html" title="일곱 난쟁이" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1%20%EB%82%9C%EC%9F%81%EC%9D%B4</id><content type="html" xml:base="http://localhost:4000/algorithm/%EC%9D%BC%EA%B3%B1-%EB%82%9C%EC%9F%81%EC%9D%B4/"><![CDATA[<h1 id="일곱-난쟁이">일곱 난쟁이</h1>
-
-<p>전체 인덱스의 합에서 두개의 인덱스의 합을 뺏을떄 100이 되게 하는 두개의 인덱스를 찾는 문제</p>
-
-<h1 id="reduce">reduce</h1>
-<p>배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 하나의 결과값을 반환합니다.</p>
-
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">MDN : reduce</a></p>
-
-<h1 id="slice-spilice-차이">slice, spilice 차이</h1>
-
-<h2 id="slice">slice</h2>
-
-<p>어떤 배열의 begin부터 end까지(end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환합니다. 원본 배열은 바뀌지 않는다.</p>
-
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">MDN : slice</a></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">([</span><span class="nx">begin</span><span class="p">[,</span> <span class="nx">end</span><span class="p">]])</span>
-
-<span class="c1">// ex</span>
-<span class="kd">const</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">ant</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bison</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">camel</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">duck</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">elephant</span><span class="dl">'</span><span class="p">];</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
-<span class="c1">// expected output: Array ["camel", "duck", "elephant"]</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
-<span class="c1">// expected output: Array ["camel", "duck"]</span>
-</code></pre></div></div>
-
-<h2 id="splice">splice</h2>
-
-<p>배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경합니다.
-<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">MDN : splice</a></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">array</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">start</span><span class="p">[,</span> <span class="nx">deleteCount</span><span class="p">[,</span> <span class="nx">item1</span><span class="p">[,</span> <span class="nx">item2</span><span class="p">[,</span> <span class="p">...]]]])</span>
-</code></pre></div></div>
-<p>deleteCounte : 제거할 요소의 수 0이면 어떤 요소도 제거하지 않는다.</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//ex</span>
-<span class="kd">const</span> <span class="nx">months</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Jan</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">March</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">April</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">June</span><span class="dl">'</span><span class="p">];</span>
-<span class="nx">months</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Feb</span><span class="dl">'</span><span class="p">);</span>
-<span class="c1">// inserts at index 1</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">months</span><span class="p">);</span>
-<span class="c1">// expected output: Array ["Jan", "Feb", "March", "April", "June"]</span>
-
-<span class="nx">months</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="dl">'</span><span class="s1">May</span><span class="dl">'</span><span class="p">);</span>
-<span class="c1">// replaces 1 element at index 4</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">months</span><span class="p">);</span>
-<span class="c1">// expected output: Array ["Jan", "Feb", "March", "April", "May"]</span>
-
-</code></pre></div></div>
-
-<h1 id="풀이">풀이</h1>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">;</span>
-            <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-            
-           <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-           <span class="p">{</span>
-               
-               <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span><span class="o">+</span><span class="mi">1</span> <span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span>
-               <span class="p">{</span>
-                  
-                  <span class="k">if</span><span class="p">((</span><span class="nx">sum</span><span class="o">-</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">+</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]))</span><span class="o">===</span><span class="mi">100</span><span class="p">)</span>
-                  <span class="p">{</span>
-                      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-                      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-            
-        <span class="p">}</span>
-        
-        <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">7</span> <span class="p">,</span><span class="mi">23</span> <span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">sol</span><span class="dl">"</span><span class="p">,</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
-</code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry><entry><title type="html">홀수</title><link href="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/" rel="alternate" type="text/html" title="홀수" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/%ED%99%80%EC%88%98</id><content type="html" xml:base="http://localhost:4000/algorithm/%ED%99%80%EC%88%98/"><![CDATA[<h1 id="홀수">홀수</h1>
-
-<p>배열로 주어진 자연수에서 홀수들의 합을 구하고 최솟값을 구하는 문제</p>
-
-<h1 id="for-of-명령문">for …of 명령문</h1>
-
-<p>반복가능한 객체에 대해서 반복하고 각 배렬 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크롤 호출하는 루프를 생성</p>
-
-<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">MDN : for…of</a></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
-           
-          <span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="p">[];</span>
-          <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-          <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_SAFE_INTEGER</span><span class="p">;</span>
-          <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span>
-          <span class="p">{</span>
-              <span class="k">if</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">%</span><span class="mi">2</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span>
-              <span class="p">{</span>
-                <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
-                <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">&lt;</span> <span class="nx">min</span><span class="p">)</span> <span class="nx">min</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-            <span class="p">}</span>
-               
-            <span class="p">}</span>
-            <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">sum</span><span class="p">);</span>
-            <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">min</span><span class="p">);</span>
-            
-            <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
-
-        <span class="p">}</span>
-
-        <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">85</span><span class="p">]</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span>
 </code></pre></div></div>]]></content><author><name>Lee Kyuhwan</name></author><category term="ALGORITHM" /><category term="ALGORITHM" /><category term="Inflearn" /></entry></feed>

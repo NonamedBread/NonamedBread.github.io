@@ -1,0 +1,27 @@
+I".
+<h1 id="중복단어제거">중복단어제거</h1>
+
+<p>indexOf와 filter를 사용하여 중복되는 단어를 제거하는 문제</p>
+
+<h2 id="filter">filter</h2>
+
+<p>filter 함수는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다
+문제에서 indexOf의 인덱스번호와 filter의 인덱스번호가 같으면 True를 반환</p>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">MDN : filter</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+
+  <span class="c1">// console.log(str.indexOf("good"));</span>
+  <span class="nx">answer</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// console.log(v, i);</span>
+    <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">===</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="p">});</span>
+
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">good</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">good</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">student</span><span class="dl">"</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">solution</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span>
+</code></pre></div></div>
+:ET

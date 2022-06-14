@@ -208,4 +208,40 @@ var store = [{
         "tags": ["Project","Gatsby","Blog"],
         "url": "/project/GatsbyBlog00/",
         "teaser": null
+      },{
+        "title": "중복문자제거",
+        "excerpt":"중복문자제거 indexOf를 사용하여 중복되는 문자를 제거하는 문제 indexOf 배열에서 지정된 요소를 찾을 수 있는 첫 번째 인덱스를 반환하고 존재하지 않으면 -1을 반환하는 메서드 MDN : indexOf function solution(str) { let answer = \"\"; console.log(str.indexOf(\"k\")); for (let i = 0; i &lt; str.length; i++) { //console.log(str[i], i, str.indexOf(str[i])) if (i ===...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%A4%91%EB%B3%B5%EB%AC%B8%EC%9E%90%EC%A0%9C%EA%B1%B0/",
+        "teaser": null
+      },{
+        "title": "가위 바위 보",
+        "excerpt":"가위 바위 보 두 사람(A, B)이 가위바위보 게임을 해서 이긴 사람을 출력하고 비기면 D를 출력하는 문제 경우를 따질때에는 기준을 잘잡아야 된다. function solution(str, str1) { let answer = \"\"; for (let i = 0; i &lt; str.length; i++) { console.log(str[i], str1[i]); if (str[i] === str1[i]) answer += \"D \"; else...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EA%B0%80%EC%9C%84-%EB%B0%94%EC%9C%84-%EB%B3%B4/",
+        "teaser": null
+      },{
+        "title": "보이는 학생",
+        "excerpt":"보이는 학생 학생들의 키를 입력 받아 맨 앞에 서 있는 선생님이 볼 수 있는 학생의 수를 구하는 문제 function solution(str) { let sum = 1; let max = str[0]; for (let i = 1; i &lt; str.length; i++) { if (str[i] &gt; max) { max = str[i]; sum += 1;...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EB%B3%B4%EC%9D%B4%EB%8A%94-%ED%95%99%EC%83%9D/",
+        "teaser": null
+      },{
+        "title": "점수계산",
+        "excerpt":"점수계산 문제를 맞혔을 경우 1점으로 계산하고 연속으로 문제의 답이 맞는 경우 가산점 1점을 부여하는 문제 내풀이 function solution(str) { let answer = 0; let cnt = 0; for (let i = 0; i &lt; str.length; i++) { if (str[i] === 1) { answer++; if (str[i] === str[i - 1]) cnt++;...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%A0%90%EC%88%98%EA%B3%84%EC%82%B0/",
+        "teaser": null
+      },{
+        "title": "중복단어제거",
+        "excerpt":"중복단어제거 indexOf와 filter를 사용하여 중복되는 단어를 제거하는 문제 filter filter 함수는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다 문제에서 indexOf의 인덱스번호와 filter의 인덱스번호가 같으면 True를 반환 MDN : filter function solution(str) { let answer; // console.log(str.indexOf(\"good\")); answer = str.filter(function (v, i) { // console.log(v, i); return str.indexOf(v)...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%EC%A4%91%EB%B3%B5%EB%8B%A8%EC%96%B4%EC%A0%9C%EA%B1%B0/",
+        "teaser": null
+      },{
+        "title": "큰 수 출력하기",
+        "excerpt":"큰 수 출력하기 수 배열에서 첫 수는 무조건 출력하고 바로 앞 수 보다 큰 수만 출력하는 문제 function solution(str) { let answer = []; answer.push(str[0]); for (let i = 1; i &lt; str.length; i++) { console.log(str[i], i); if (str[i] &gt; str[i - 1]) answer.push(str[i]); } return answer; } let str...","categories": ["ALGORITHM"],
+        "tags": ["ALGORITHM","Inflearn"],
+        "url": "/algorithm/%ED%81%B0-%EC%88%98-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
+        "teaser": null
       }]

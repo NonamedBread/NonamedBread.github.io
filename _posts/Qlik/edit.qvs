@@ -1,0 +1,7 @@
+Above(column(4),1) / Above(column(2),2)
+
+Above(column(1),1) / Above(column(1),4)
+
+Above(column(1),1) / Above(column(1),6)
+
+Above(column(1),1) / Above(column(1),8)
